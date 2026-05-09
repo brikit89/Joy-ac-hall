@@ -1,0 +1,21 @@
+/**
+ * Cloudflare Worker config for the Joy AC Hall website.
+ * This is a Worker with Static Assets (the unified Pages successor).
+ *
+ * - assets.directory: where the built static files live
+ * - assets.not_found_handling: "single-page-application" tells Cloudflare to
+ *   serve /index.html for any path that doesn't match a static file, so React
+ *   Router takes over for client-side routes like /rooms/dormitory-hall.
+ *
+ * Build is run by the dashboard build command (`npm run build:client`)
+ * which writes to ./dist/spa.
+ */
+{
+  "$schema": "https://json-schema.cloudflare.com/wrangler.jsonc.json",
+  "name": "joy-ac-hall",
+  "compatibility_date": "2025-01-01",
+  "assets": {
+    "directory": "./dist/spa",
+    "not_found_handling": "single-page-application"
+  }
+}
