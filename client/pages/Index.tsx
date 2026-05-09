@@ -16,9 +16,6 @@ import {
   Thermometer,
   Mic2,
   Bus,
-  Facebook,
-  Instagram,
-  Youtube,
   Phone as PhoneIcon,
   MessageCircle,
   Clock,
@@ -35,6 +32,7 @@ import {
 } from "@/components/ui/accordion";
 import { useDocumentMeta } from "@/hooks/useDocumentMeta";
 import { GoogleReviews } from "@/components/GoogleReviews";
+import { SiteFooter } from "@/components/SiteFooter";
 import faqsData from "@/data/faqs.json";
 import attractionsData from "@/data/attractions.json";
 import siteConfig from "@/data/site.json";
@@ -301,12 +299,12 @@ const Index = () => {
           <div className="flex justify-between items-center h-24">
             <button
               onClick={() => scrollToSection("home")}
-              className="flex items-center gap-2 hover:opacity-80 transition-opacity"
+              className="flex items-start hover:opacity-80 transition-opacity self-start"
             >
               <img
                 src={headerScrolled ? "/logo-coloured.png" : "/logo.png"}
                 alt="Joy AC Hall Logo"
-                className="h-20 w-auto max-w-full"
+                className="h-32 w-auto max-w-full"
               />
             </button>
 
@@ -738,120 +736,7 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="bg-primary text-white py-16 px-4">
-        <div className="max-w-6xl mx-auto">
-          <div className="grid md:grid-cols-3 gap-12 mb-12">
-            <div>
-              <h4 className="text-xl font-bold mb-4">
-                About Joy AC Hall & Rooms
-              </h4>
-              <p className="text-gray-200">
-                Premium dormitory and group accommodation in Rameswaram for
-                pilgrims and travelers. Strategic location near Ramanathaswamy
-                Temple, Pamban Bridge and Dr APJ Abdul Kalam Memorial.
-              </p>
-            </div>
-
-            <div>
-              <h4 className="text-xl font-bold mb-4">Quick Links</h4>
-              <ul className="space-y-2 text-gray-200">
-                <li>
-                  <button
-                    onClick={() => scrollToSection("rooms")}
-                    className="hover:text-white transition-colors"
-                  >
-                    Our Rooms
-                  </button>
-                </li>
-                <li>
-                  <button
-                    onClick={() => scrollToSection("amenities")}
-                    className="hover:text-white transition-colors"
-                  >
-                    Amenities
-                  </button>
-                </li>
-                <li>
-                  <button
-                    onClick={() => scrollToSection("attractions")}
-                    className="hover:text-white transition-colors"
-                  >
-                    Attractions
-                  </button>
-                </li>
-                <li>
-                  <a
-                    href="https://wa.me/918122445538"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="hover:text-white transition-colors"
-                  >
-                    Book Now
-                  </a>
-                </li>
-              </ul>
-            </div>
-
-            <div>
-              <h4 className="text-xl font-bold mb-4">Follow Us</h4>
-              <div className="flex gap-4">
-                <a
-                  href="https://www.facebook.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center hover:bg-white/30 transition-colors"
-                  aria-label="Facebook"
-                >
-                  <Facebook size={20} />
-                </a>
-                <a
-                  href="https://www.instagram.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center hover:bg-white/30 transition-colors"
-                  aria-label="Instagram"
-                >
-                  <Instagram size={20} />
-                </a>
-                <a
-                  href="https://www.youtube.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center hover:bg-white/30 transition-colors"
-                  aria-label="YouTube"
-                >
-                  <Youtube size={20} />
-                </a>
-              </div>
-            </div>
-          </div>
-
-          {/* Map Section */}
-          <div className="mt-12 pt-8 border-t border-white/20">
-            <h4 className="text-xl font-bold mb-6 text-center">Visit Our Location</h4>
-            <div className="flex justify-center">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3937.54552272344!2d79.24418387508052!3d9.284836190787066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b01e57b84786dc5%3A0x36f1e2f3e163a4e8!2sJoy%20AC%20Hall%20%26%20Dormitory!5e0!3m2!1sen!2sin!4v1773055304001!5m2!1sen!2sin"
-                width="600"
-                height="450"
-                style={{ border: 0, borderRadius: "8px" }}
-                allowFullScreen
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-              ></iframe>
-            </div>
-          </div>
-
-          <div className="border-t border-white/20 pt-8 mt-8 text-center text-gray-200">
-            <p>
-              &copy; {new Date().getFullYear()} Joy AC Hall & Rooms. All
-              rights reserved. | Budget Dormitory in Rameswaram near
-              Ramanathaswamy Temple & Pamban Bridge.
-            </p>
-          </div>
-        </div>
-      </footer>
+      <SiteFooter />
 
       {/* Room Details Modal */}
       {selectedRoom && (

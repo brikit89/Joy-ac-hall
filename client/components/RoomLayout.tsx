@@ -7,6 +7,7 @@ import {
   MessageCircle,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { SiteFooter } from "@/components/SiteFooter";
 
 interface NavLink {
   id: string;
@@ -72,13 +73,13 @@ export const RoomLayout = ({ children }: RoomLayoutProps) => {
           <div className="flex justify-between items-center h-24">
             <Link
               to="/"
-              className="flex items-center gap-2 hover:opacity-80 transition-opacity"
+              className="flex items-start hover:opacity-80 transition-opacity self-start"
               aria-label="Back to home"
             >
               <img
                 src={headerScrolled ? "/logo-coloured.png" : "/logo.png"}
                 alt="Joy AC Hall Logo"
-                className="h-20 w-auto max-w-full"
+                className="h-32 w-auto max-w-full"
               />
             </Link>
 
@@ -184,6 +185,8 @@ export const RoomLayout = ({ children }: RoomLayoutProps) => {
       </header>
 
       {children}
+
+      <SiteFooter />
 
       {/* Mobile Sticky Booking Bar */}
       <div className="fixed bottom-0 left-0 right-0 lg:hidden z-40 bg-white border-t border-gray-200 shadow-lg">

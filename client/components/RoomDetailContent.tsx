@@ -14,7 +14,6 @@ import {
   Clock,
   Phone,
   MessageCircle,
-  Navigation,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { GoogleReviews } from "@/components/GoogleReviews";
@@ -357,7 +356,7 @@ export const RoomDetailContent = ({
           </h2>
           <div className="w-20 h-1 bg-accent mx-auto rounded-full mb-12" />
 
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 gap-8 max-w-3xl mx-auto">
             <div className="bg-white rounded-lg p-8 text-center shadow-lg">
               <Phone className="w-12 h-12 text-primary mx-auto mb-4" />
               <h3 className="text-xl font-bold text-primary mb-2">Call Us</h3>
@@ -379,21 +378,6 @@ export const RoomDetailContent = ({
                 className="text-accent hover:text-accent/80 font-semibold"
               >
                 Message Us
-              </a>
-            </div>
-
-            <div className="bg-white rounded-lg p-8 text-center shadow-lg">
-              <Navigation className="w-12 h-12 text-primary mx-auto mb-4" />
-              <h3 className="text-xl font-bold text-primary mb-2">
-                Get Directions
-              </h3>
-              <a
-                href="https://maps.google.com/?q=4/3001+Valasai+St+Rameswaram"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-accent hover:text-accent/80 font-semibold"
-              >
-                View on Maps
               </a>
             </div>
           </div>
