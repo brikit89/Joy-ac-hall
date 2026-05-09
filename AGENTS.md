@@ -150,9 +150,8 @@ const data: MyRouteResponse = await response.json();
 
 ## Production Deployment
 
-- **Standard**: `npm run build`
-- **Binary**: Self-contained executables (Linux, macOS, Windows)
-- **Cloud Deployment**: Use either Netlify or Vercel via their MCP integrations for easy deployment. Both providers work well with this starter template.
+- **Standard**: `npm run build:client`
+- **Cloud Deployment**: Cloudflare Pages — `main` branch auto-deploys. See [DEPLOY.md](./DEPLOY.md) for the full setup.
 
 ## Architecture Notes
 

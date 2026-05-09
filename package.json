@@ -19,14 +19,12 @@
     "test": "vitest --run",
     "format.fix": "prettier --write .",
     "typecheck": "tsc",
-    "firebase:serve": "npm run build:client && firebase emulators:start --only hosting",
-    "firebase:deploy": "npm run build:client && firebase deploy --only hosting",
+    "preview": "npm run build:client && npx serve dist/spa",
     "cms:proxy": "npx decap-server"
   },
   "dependencies": {
     "dotenv": "^17.2.1",
     "express": "^5.1.0",
-    "firebase": "^12.13.0",
     "zod": "^3.25.76"
   },
   "devDependencies": {

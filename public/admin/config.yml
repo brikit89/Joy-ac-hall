@@ -2,14 +2,13 @@
 # Docs: https://decapcms.org/docs/configuration-options/
 
 # ─── BACKEND ───────────────────────────────────────────────────────────
-# Using GitHub backend (works on any host, including Firebase).
-# You will need to create a GitHub OAuth App and host an OAuth proxy
-# (see README in this folder). Replace `repo` and `base_url` with your values.
+# GitHub backend — content commits go to your repo's main branch.
+# The OAuth proxy below is the Cloudflare Worker in cloudflare-worker/.
 backend:
   name: github
-  repo: YOUR_GITHUB_USERNAME/joy-rameswaram-luxury-875   # <-- change this
+  repo: Ozzitech/Joy-ac-hall
   branch: main
-  base_url: https://decap-oauth.YOUR_DOMAIN.workers.dev   # <-- your OAuth proxy URL
+  base_url: https://joy-ac-hall-cms-oauth.brikit-38a.workers.dev   # ← replace if your Worker URL differs
   auth_endpoint: auth
 
 # Local proxy for in-development editing without GitHub
