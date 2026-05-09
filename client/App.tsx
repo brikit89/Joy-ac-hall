@@ -11,6 +11,7 @@ import NotFound from "./pages/NotFound";
 import DormitoryHall from "./pages/DormitoryHall";
 import DoubleRoom from "./pages/DoubleRoom";
 import FamilyDeluxeRoom from "./pages/FamilyDeluxeRoom";
+import { ScrollToTop } from "./components/ScrollToTop";
 
 const queryClient = new QueryClient();
 
@@ -20,6 +21,7 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/rooms/dormitory-hall" element={<DormitoryHall />} />

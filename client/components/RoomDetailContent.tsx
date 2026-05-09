@@ -139,19 +139,19 @@ export const RoomDetailContent = ({
           </h2>
           <div className="w-20 h-1 bg-accent mx-auto rounded-full mb-12" />
 
-          <div className="relative bg-gray-100 h-96 md:h-[500px] flex items-center justify-center group rounded-lg overflow-hidden">
+          <div className="relative aspect-[4/3] w-full max-w-3xl mx-auto flex items-center justify-center group rounded-lg overflow-hidden">
             {isVideo && room.sliderVideos ? (
               <video
                 key={`v-${mediaIndex}`}
                 src={room.sliderVideos[mediaIndex]}
                 controls
-                className="w-full h-full max-w-full object-contain"
+                className="w-full h-full max-w-full object-cover"
               />
             ) : (
               <img
                 src={room.sliderImages[mediaIndex]}
                 alt={`${room.name} - Image ${mediaIndex + 1}`}
-                className="w-full h-full max-w-full object-contain"
+                className="w-full h-full max-w-full object-cover"
               />
             )}
 

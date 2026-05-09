@@ -532,13 +532,13 @@ const Index = () => {
                 key={room.id}
                 className="card-hover rounded-lg overflow-hidden shadow-md border border-gray-100 bg-white"
               >
-                <div className="relative h-48 overflow-hidden bg-gray-100">
+                <div className="relative h-48 overflow-hidden">
                   <img
                     src={room.image}
                     alt={room.name}
                     loading="lazy"
                     decoding="async"
-                    className="w-full h-full max-w-full object-contain hover:scale-105 transition-transform duration-300"
+                    className="w-full h-full max-w-full object-cover hover:scale-105 transition-transform duration-300"
                   />
                 </div>
                 <div className="p-6">
@@ -621,13 +621,13 @@ const Index = () => {
           <div className="flex flex-wrap justify-center gap-8">
             {attractions.map((attraction, idx) => (
               <div key={idx} className="card-hover rounded-lg overflow-hidden shadow-md bg-white w-full md:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.34rem)]">
-                <div className="relative h-40 overflow-hidden bg-gray-100">
+                <div className="relative h-40 overflow-hidden">
                   <img
                     src={attraction.image}
                     alt={attraction.name}
                     loading="lazy"
                     decoding="async"
-                    className="w-full h-full max-w-full object-contain hover:scale-105 transition-transform duration-300"
+                    className="w-full h-full max-w-full object-cover hover:scale-105 transition-transform duration-300"
                   />
                 </div>
                 <div className="p-6">
