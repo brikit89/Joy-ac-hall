@@ -102,13 +102,11 @@ export const SiteFooter = () => {
           <h4 className="text-xl font-bold mb-6 text-center">
             Visit Our Location
           </h4>
-          <div className="flex justify-center">
+          <div className="w-full max-w-2xl mx-auto aspect-[4/3] sm:aspect-[16/9] rounded-lg overflow-hidden">
             <iframe
               title="Joy AC Hall & Rooms — Google Maps location"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3937.54552272344!2d79.24418387508052!3d9.284836190787066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b01e57b84786dc5%3A0x36f1e2f3e163a4e8!2sJoy%20AC%20Hall%20%26%20Dormitory!5e0!3m2!1sen!2sin!4v1773055304001!5m2!1sen!2sin"
-              width="600"
-              height="450"
-              style={{ border: 0, borderRadius: "8px", maxWidth: "100%" }}
+              className="w-full h-full border-0"
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"

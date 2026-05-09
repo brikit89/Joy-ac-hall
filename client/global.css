@@ -109,9 +109,13 @@
     @apply border-border;
   }
 
+  /* `overflow-x: clip` (not `hidden`) avoids making body the scroll container
+     on mobile Safari, which would otherwise break `position: fixed` elements
+     like the mobile bottom bar. */
+  html,
   body {
     @apply bg-background text-foreground;
-    overflow-x: hidden;
+    overflow-x: clip;
   }
 
   :where(p, span, li, h1, h2, h3, h4, h5, h6, a, button, label, td, th) {
