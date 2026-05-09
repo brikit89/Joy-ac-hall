@@ -119,13 +119,14 @@ const Index = () => {
       price: "Rs. 3,600",
       priceType: "per room",
       features: ["AC / Non-AC available", "Attached bathroom", "Family comfort"],
-      image:
-        "https://cdn.builder.io/api/v1/image/assets%2F9ab187ea44d746dabf821e39227b5937%2Fa868046a47434959ae400cccb9334e5f",
+      image: "/RoomsImage/FamilyDeluxeRoom/Family%20Deluxe%20hero%20banner.png",
       sliderImages: [
-        "https://cdn.builder.io/api/v1/image/assets%2F9ab187ea44d746dabf821e39227b5937%2Fa868046a47434959ae400cccb9334e5f",
-        "https://cdn.builder.io/api/v1/image/assets%2F9ab187ea44d746dabf821e39227b5937%2F850d5c09120b49b591e3d1794b7b6152",
-        "https://cdn.builder.io/api/v1/image/assets%2F9ab187ea44d746dabf821e39227b5937%2F25a1e4ad5c244c33b09c258c12ddee9d",
-        "https://cdn.builder.io/api/v1/image/assets%2F9ab187ea44d746dabf821e39227b5937%2F900edb8e5d2940ddbf03b0ca8b36ef59",
+        "/RoomsImage/FamilyDeluxeRoom/Family%20Deluxe%20hero%20banner.png",
+        "/RoomsImage/FamilyDeluxeRoom/Duplex%20room%20bed%203.png",
+        "/RoomsImage/FamilyDeluxeRoom/Duplex%20room%20bed%204.png",
+        "/RoomsImage/FamilyDeluxeRoom/Duplex%20family%20room%20bathroom.png",
+        "/RoomsImage/FamilyDeluxeRoom/Family%20room%20Heater.png",
+        "/RoomsImage/FamilyDeluxeRoom/covered%20parking%20.png",
       ],
       sliderVideos: [
         "https://cdn.builder.io/o/assets%2F9ab187ea44d746dabf821e39227b5937%2Fbf0bf71d75da4c7f921170e18da96927%2Fcompressed?apiKey=9ab187ea44d746dabf821e39227b5937&token=bf0bf71d75da4c7f921170e18da96927&alt=media&optimized=true",
@@ -141,12 +142,14 @@ const Index = () => {
       price: "Rs. 2,000",
       priceType: "per room",
       features: ["AC / Non-AC available", "Electric kettle", "Wardrobe"],
-      image:
-        "https://cdn.builder.io/api/v1/image/assets%2F9ab187ea44d746dabf821e39227b5937%2Ffbcf8d3ad06549ea92bdc5081361a8a5",
+      image: "/RoomsImage/DoubleRoom/Double%20room%20Hero%20banner.png",
       sliderImages: [
-        "https://cdn.builder.io/api/v1/image/assets%2F9ab187ea44d746dabf821e39227b5937%2Ffbcf8d3ad06549ea92bdc5081361a8a5",
-        "https://cdn.builder.io/api/v1/image/assets%2F9ab187ea44d746dabf821e39227b5937%2F9ea134dd255344f09e2f2f1e3d2a0fea",
-        "https://cdn.builder.io/api/v1/image/assets%2F9ab187ea44d746dabf821e39227b5937%2F1b81c2bf85ba4a4796db83571f7334a0",
+        "/RoomsImage/DoubleRoom/Double%20room%20Hero%20banner.png",
+        "/RoomsImage/DoubleRoom/Double%20room%20ac.png",
+        "/RoomsImage/DoubleRoom/Double%20room%20bed%202%20.png",
+        "/RoomsImage/DoubleRoom/double%20room%20bathroom.png",
+        "/RoomsImage/DoubleRoom/Heater%20%20in%20Bathroom.jpg.jpeg",
+        "/RoomsImage/DoubleRoom/covered%20parking%20.png",
       ],
       sliderVideos: [
         "https://cdn.builder.io/o/assets%2F9ab187ea44d746dabf821e39227b5937%2F7443dbf4ae5649ec834da0899d60ae16%2Fcompressed?apiKey=9ab187ea44d746dabf821e39227b5937&token=7443dbf4ae5649ec834da0899d60ae16&alt=media&optimized=true",
@@ -165,12 +168,12 @@ const Index = () => {
         "4 Shared Bathrooms",
         "Best for pilgrimage groups",
       ],
-      image:
-        "https://cdn.builder.io/api/v1/image/assets%2F9ab187ea44d746dabf821e39227b5937%2Fd10d1e1d85c1408c982f58841ec64b68",
+      image: "/RoomsImage/Dormitoryhall/Dormitory%20Hall%20hero%20banner.png",
       sliderImages: [
-        "https://cdn.builder.io/api/v1/image/assets%2F9ab187ea44d746dabf821e39227b5937%2Fd10d1e1d85c1408c982f58841ec64b68",
-        "https://cdn.builder.io/api/v1/image/assets%2F9ab187ea44d746dabf821e39227b5937%2F16885125ed994845879d07da56b0e6b5",
-        "https://cdn.builder.io/api/v1/image/assets%2F9ab187ea44d746dabf821e39227b5937%2Ff1ae1ed1b3ea4895bd238dcbbd942ef5",
+        "/RoomsImage/Dormitoryhall/Dormitory%20Hall%20hero%20banner.png",
+        "/RoomsImage/Dormitoryhall/Dorm%20Refresh%20area.png",
+        "/RoomsImage/Dormitoryhall/Dorm%20Shared%20Bathrooms.jpeg",
+        "/RoomsImage/Dormitoryhall/coveredparking%20.png",
       ],
       sliderVideos: [],
       roomTypes: ["AC Dormitory", "Non-AC Dormitory"],

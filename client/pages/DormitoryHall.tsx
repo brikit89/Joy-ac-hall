@@ -21,9 +21,10 @@ const room: RoomData = {
     "Bus parking on-site",
   ],
   sliderImages: [
-    "https://cdn.builder.io/api/v1/image/assets%2F9ab187ea44d746dabf821e39227b5937%2Fd10d1e1d85c1408c982f58841ec64b68",
-    "https://cdn.builder.io/api/v1/image/assets%2F9ab187ea44d746dabf821e39227b5937%2F16885125ed994845879d07da56b0e6b5",
-    "https://cdn.builder.io/api/v1/image/assets%2F9ab187ea44d746dabf821e39227b5937%2Ff1ae1ed1b3ea4895bd238dcbbd942ef5",
+    "/RoomsImage/Dormitoryhall/Dormitory%20Hall%20hero%20banner.png",
+    "/RoomsImage/Dormitoryhall/Dorm%20Refresh%20area.png",
+    "/RoomsImage/Dormitoryhall/Dorm%20Shared%20Bathrooms.jpeg",
+    "/RoomsImage/Dormitoryhall/coveredparking%20.png",
   ],
   roomTypes: ["AC Dormitory", "Non-AC Dormitory"],
 };
@@ -86,7 +87,7 @@ const DormitoryHall = () => {
       "Spacious AC dormitory hall in Rameswaram for 30–50 person pilgrimage groups, school tours and travel parties. ₹250 per person, 4 shared bathrooms, hot water, kitchen and bus parking near Ramanathaswamy Temple.",
     canonical: "https://joyachall.com/rooms/dormitory-hall",
     ogImage:
-      "https://cdn.builder.io/api/v1/image/assets%2F9ab187ea44d746dabf821e39227b5937%2Fd10d1e1d85c1408c982f58841ec64b68?format=webp&width=1200",
+      "https://joyachall.com/RoomsImage/Dormitoryhall/Dormitory%20Hall%20hero%20banner.png",
     keywords:
       "dormitory in Rameswaram, AC dormitory Rameswaram, group stay near Ramanathaswamy Temple, school tour stay Rameswaram, pilgrimage dormitory hall Rameswaram",
     jsonLd: [
@@ -98,7 +99,7 @@ const DormitoryHall = () => {
           "AC dormitory hall accommodating 30–50 persons with 4 shared bathrooms. Best for pilgrimage groups, school tours and large travel parties visiting Rameswaram.",
         url: "https://joyachall.com/rooms/dormitory-hall",
         image:
-          "https://cdn.builder.io/api/v1/image/assets%2F9ab187ea44d746dabf821e39227b5937%2Fd10d1e1d85c1408c982f58841ec64b68",
+          "https://joyachall.com/RoomsImage/Dormitoryhall/Dormitory%20Hall%20hero%20banner.png",
         occupancy: { "@type": "QuantitativeValue", minValue: 30, maxValue: 50 },
         amenityFeature: [
           { "@type": "LocationFeatureSpecification", name: "AC / Non-AC", value: true },

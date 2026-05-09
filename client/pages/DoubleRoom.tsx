@@ -21,9 +21,12 @@ const room: RoomData = {
     "Hot water",
   ],
   sliderImages: [
-    "https://cdn.builder.io/api/v1/image/assets%2F9ab187ea44d746dabf821e39227b5937%2Ffbcf8d3ad06549ea92bdc5081361a8a5",
-    "https://cdn.builder.io/api/v1/image/assets%2F9ab187ea44d746dabf821e39227b5937%2F9ea134dd255344f09e2f2f1e3d2a0fea",
-    "https://cdn.builder.io/api/v1/image/assets%2F9ab187ea44d746dabf821e39227b5937%2F1b81c2bf85ba4a4796db83571f7334a0",
+    "/RoomsImage/DoubleRoom/Double%20room%20Hero%20banner.png",
+    "/RoomsImage/DoubleRoom/Double%20room%20ac.png",
+    "/RoomsImage/DoubleRoom/Double%20room%20bed%202%20.png",
+    "/RoomsImage/DoubleRoom/double%20room%20bathroom.png",
+    "/RoomsImage/DoubleRoom/Heater%20%20in%20Bathroom.jpg.jpeg",
+    "/RoomsImage/DoubleRoom/covered%20parking%20.png",
   ],
   sliderVideos: [
     "https://cdn.builder.io/o/assets%2F9ab187ea44d746dabf821e39227b5937%2F7443dbf4ae5649ec834da0899d60ae16%2Fcompressed?apiKey=9ab187ea44d746dabf821e39227b5937&token=7443dbf4ae5649ec834da0899d60ae16&alt=media&optimized=true",
@@ -87,7 +90,7 @@ const DoubleRoom = () => {
       "Comfortable AC / Non-AC double room in Rameswaram for 4 persons. ₹2,000 per room with electric kettle, wardrobe and hot water. Near Ramanathaswamy Temple, Pamban Bridge and Dr APJ Abdul Kalam Memorial.",
     canonical: "https://joyachall.com/rooms/double-room",
     ogImage:
-      "https://cdn.builder.io/api/v1/image/assets%2F9ab187ea44d746dabf821e39227b5937%2Ffbcf8d3ad06549ea92bdc5081361a8a5?format=webp&width=1200",
+      "https://joyachall.com/RoomsImage/DoubleRoom/Double%20room%20Hero%20banner.png",
     keywords:
       "double room Rameswaram, AC double room near Ramanathaswamy Temple, 4 person room Rameswaram, budget room Rameswaram",
     jsonLd: [
@@ -99,7 +102,7 @@ const DoubleRoom = () => {
           "AC / Non-AC double room for up to 4 persons with electric kettle, wardrobe and hot water. Located on the National Highway in Rameswaram.",
         url: "https://joyachall.com/rooms/double-room",
         image:
-          "https://cdn.builder.io/api/v1/image/assets%2F9ab187ea44d746dabf821e39227b5937%2Ffbcf8d3ad06549ea92bdc5081361a8a5",
+          "https://joyachall.com/RoomsImage/DoubleRoom/Double%20room%20Hero%20banner.png",
         occupancy: { "@type": "QuantitativeValue", value: 4 },
         amenityFeature: [
           { "@type": "LocationFeatureSpecification", name: "AC / Non-AC", value: true },

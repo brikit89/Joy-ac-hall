@@ -21,10 +21,12 @@ const room: RoomData = {
     "Hot water",
   ],
   sliderImages: [
-    "https://cdn.builder.io/api/v1/image/assets%2F9ab187ea44d746dabf821e39227b5937%2Fa868046a47434959ae400cccb9334e5f",
-    "https://cdn.builder.io/api/v1/image/assets%2F9ab187ea44d746dabf821e39227b5937%2F850d5c09120b49b591e3d1794b7b6152",
-    "https://cdn.builder.io/api/v1/image/assets%2F9ab187ea44d746dabf821e39227b5937%2F25a1e4ad5c244c33b09c258c12ddee9d",
-    "https://cdn.builder.io/api/v1/image/assets%2F9ab187ea44d746dabf821e39227b5937%2F900edb8e5d2940ddbf03b0ca8b36ef59",
+    "/RoomsImage/FamilyDeluxeRoom/Family%20Deluxe%20hero%20banner.png",
+    "/RoomsImage/FamilyDeluxeRoom/Duplex%20room%20bed%203.png",
+    "/RoomsImage/FamilyDeluxeRoom/Duplex%20room%20bed%204.png",
+    "/RoomsImage/FamilyDeluxeRoom/Duplex%20family%20room%20bathroom.png",
+    "/RoomsImage/FamilyDeluxeRoom/Family%20room%20Heater.png",
+    "/RoomsImage/FamilyDeluxeRoom/covered%20parking%20.png",
   ],
   sliderVideos: [
     "https://cdn.builder.io/o/assets%2F9ab187ea44d746dabf821e39227b5937%2Fbf0bf71d75da4c7f921170e18da96927%2Fcompressed?apiKey=9ab187ea44d746dabf821e39227b5937&token=bf0bf71d75da4c7f921170e18da96927&alt=media&optimized=true",
@@ -90,7 +92,7 @@ const FamilyDeluxeRoom = () => {
       "Spacious AC / Non-AC family deluxe room in Rameswaram for 8 persons with attached bathroom. ₹3,600 per room near Ramanathaswamy Temple, Pamban Bridge and Dr APJ Abdul Kalam Memorial.",
     canonical: "https://joyachall.com/rooms/family-deluxe-room",
     ogImage:
-      "https://cdn.builder.io/api/v1/image/assets%2F9ab187ea44d746dabf821e39227b5937%2Fa868046a47434959ae400cccb9334e5f?format=webp&width=1200",
+      "https://joyachall.com/RoomsImage/FamilyDeluxeRoom/Family%20Deluxe%20hero%20banner.png",
     keywords:
       "family room Rameswaram, deluxe room Rameswaram, 8 person family room near Ramanathaswamy Temple, family stay Rameswaram, AC family room Rameswaram",
     jsonLd: [
@@ -102,7 +104,7 @@ const FamilyDeluxeRoom = () => {
           "AC / Non-AC family deluxe room for up to 8 persons with attached bathroom. Ideal for families visiting Rameswaram.",
         url: "https://joyachall.com/rooms/family-deluxe-room",
         image:
-          "https://cdn.builder.io/api/v1/image/assets%2F9ab187ea44d746dabf821e39227b5937%2Fa868046a47434959ae400cccb9334e5f",
+          "https://joyachall.com/RoomsImage/FamilyDeluxeRoom/Family%20Deluxe%20hero%20banner.png",
         occupancy: { "@type": "QuantitativeValue", value: 8 },
         amenityFeature: [
           { "@type": "LocationFeatureSpecification", name: "AC / Non-AC", value: true },
