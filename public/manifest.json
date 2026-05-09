@@ -1,0 +1,54 @@
+{
+  "name": "Joy AC Hall & Rooms",
+  "short_name": "Joy AC Hall",
+  "description": "Budget AC dormitory and family rooms in Rameswaram for pilgrimage groups, school tours and family travelers near Ramanathaswamy Temple, Pamban Bridge and Dr APJ Abdul Kalam Memorial.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#ffffff",
+  "theme_color": "#1E4E8C",
+  "lang": "en-IN",
+  "dir": "ltr",
+  "categories": ["travel", "lifestyle", "business"],
+  "icons": [
+    {
+      "src": "/logo-coloured.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/logo-coloured.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/logo-coloured.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Family Deluxe Room",
+      "short_name": "Family Room",
+      "description": "8-person family deluxe room with attached bathroom",
+      "url": "/rooms/family-deluxe-room"
+    },
+    {
+      "name": "Double Room",
+      "short_name": "Double Room",
+      "description": "4-person AC / Non-AC double room",
+      "url": "/rooms/double-room"
+    },
+    {
+      "name": "Dormitory Hall",
+      "short_name": "Dormitory",
+      "description": "30-50 person AC dormitory hall for groups",
+      "url": "/rooms/dormitory-hall"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "items": [
+    {
+      "name": "Villondi Theertham",
+      "distance": "2.4 km",
+      "travelTime": "6 min drive",
+      "visitorTime": "6:00 AM – 6:00 PM",
+      "description": "Freshwater spring spot near the sea. A sacred site with Rama-era mythic associations and tranquil surroundings. Perfect for a peaceful spiritual experience.",
+      "image": "https://cdn.builder.io/api/v1/image/assets%2F9ab187ea44d746dabf821e39227b5937%2Fe2255f2a8b5b4f2daacadf28d159f872"
+    },
+    {
+      "name": "Dr. A.P.J. Abdul Kalam Memorial",
+      "distance": "2.8 km",
+      "travelTime": "6 min drive",
+      "visitorTime": "9:00 AM – 5:00 PM (Closed Fridays)",
+      "description": "Memorial honoring India's Missile Man with gallery depicting awards and memories. A patriotic site celebrating the life of India's great scientist.",
+      "image": "https://cdn.builder.io/api/v1/image/assets%2F9ab187ea44d746dabf821e39227b5937%2F61ac85fd770d429da7f1590d4d5131c5"
+    },
+    {
+      "name": "Pamban Bridge",
+      "distance": "5.7 km",
+      "travelTime": "8 min drive",
+      "visitorTime": "Open 24 Hours",
+      "description": "India's first sea bridge with both railway and road integration. An engineering marvel where trains glide over the ocean.",
+      "image": "https://cdn.builder.io/api/v1/image/assets%2F9ab187ea44d746dabf821e39227b5937%2F8f60b10ee6174ee6b642204b7e5ee9ce"
+    },
+    {
+      "name": "Panchamukhi Anjaneya Temple",
+      "distance": "6.2 km",
+      "travelTime": "10 min drive",
+      "visitorTime": "6:00 AM – 12:00 PM & 4:00 PM – 8:00 PM",
+      "description": "Five-faced Hanuman temple with a unique idol. A powerful prayer place with Ram Setu-linked spiritual significance.",
+      "image": "https://cdn.builder.io/api/v1/image/assets%2F9ab187ea44d746dabf821e39227b5937%2F9331601b055f4dcfb8bf885512078e11"
+    },
+    {
+      "name": "Ramanathaswamy Temple",
+      "distance": "8.4 km",
+      "travelTime": "16 min drive",
+      "visitorTime": "5:00 AM – 1:00 PM & 3:00 PM – 9:00 PM",
+      "description": "Sacred Jyotirlinga Temple of Lord Shiva. One of the 12 Jyotirlingas associated with Ram Setu and a monumental temple complex.",
+      "image": "https://cdn.builder.io/api/v1/image/assets%2F9ab187ea44d746dabf821e39227b5937%2F698fe0a9667f42fb86ebd680257017c9"
+    },
+    {
+      "name": "Agni Theertham",
+      "distance": "8.6 km",
+      "travelTime": "16 min drive",
+      "visitorTime": "Open 24 Hours",
+      "description": "Holy sea bathing spot opposite Ramanathaswamy Temple. A sacred site for ritual baths with mythic ties to the Ramayana.",
+      "image": "https://cdn.builder.io/api/v1/image/assets%2F9ab187ea44d746dabf821e39227b5937%2Ffbb012cc56da4acd84db563d2e2f0c62"
+    },
+    {
+      "name": "Dhanushkodi & Arichal Munai",
+      "distance": "19 km",
+      "travelTime": "20 min drive",
+      "visitorTime": "6:00 AM – 6:00 PM",
+      "description": "Scenic and historic spot at the Land's End of India. Featuring Arichal Munai with coastal views and Ram Setu mythic legacy.",
+      "image": "https://cdn.builder.io/api/v1/image/assets%2F9ab187ea44d746dabf821e39227b5937%2Fd796ef0299344666a959286e67f90e87"
+    }
+  ]
+}

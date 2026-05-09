@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://joyachall.com/</loc>
+    <lastmod>2026-05-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://cdn.builder.io/api/v1/image/assets%2F9ab187ea44d746dabf821e39227b5937%2F6cb03dfcf88d421e94c4b20dd13e32b3</image:loc>
+      <image:title>Joy AC Hall &amp; Rooms — Rameswaram</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://joyachall.com/rooms/family-deluxe-room</loc>
+    <lastmod>2026-05-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://cdn.builder.io/api/v1/image/assets%2F9ab187ea44d746dabf821e39227b5937%2Fa868046a47434959ae400cccb9334e5f</image:loc>
+      <image:title>Family Deluxe Room — Joy AC Hall</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://joyachall.com/rooms/double-room</loc>
+    <lastmod>2026-05-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://cdn.builder.io/api/v1/image/assets%2F9ab187ea44d746dabf821e39227b5937%2Ffbcf8d3ad06549ea92bdc5081361a8a5</image:loc>
+      <image:title>Double Room — Joy AC Hall</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://joyachall.com/rooms/dormitory-hall</loc>
+    <lastmod>2026-05-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://cdn.builder.io/api/v1/image/assets%2F9ab187ea44d746dabf821e39227b5937%2Fd10d1e1d85c1408c982f58841ec64b68</image:loc>
+      <image:title>Dormitory Hall — Joy AC Hall</image:title>
+    </image:image>
+  </url>
+</urlset>

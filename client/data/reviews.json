@@ -1,0 +1,22 @@
+{
+  "items": [
+    {
+      "author": "Amuthan K",
+      "time": "a week ago",
+      "rating": 5,
+      "text": "Had a great stay at this hotel. The rooms were clean and well-maintained, and the staff were very polite and helpful throughout. Check-in and check-out were smooth, and the location was convenient for getting around. Overall, a comfortable and pleasant experience—would definitely stay here again."
+    },
+    {
+      "author": "ajith bu",
+      "time": "2 days ago",
+      "rating": 5,
+      "text": "The lodging experience was very comfortable and pleasant. The rooms were clean, well-maintained, and suitable for families. The atmosphere was peaceful, making it a good place to relax after travel."
+    },
+    {
+      "author": "Sandhiya Chandrasekar",
+      "time": "a week ago",
+      "rating": 5,
+      "text": "Really enjoyed my stay here. The room was neat, comfortable, and exactly as expected. The staff were courteous and quick to assist, making the overall experience smooth. The location is a big plus, with easy access to everything nearby."
+    }
+  ]
+}

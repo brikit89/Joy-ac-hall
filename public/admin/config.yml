@@ -1,0 +1,148 @@
+# Decap CMS configuration for Joy AC Hall & Rooms
+# Docs: https://decapcms.org/docs/configuration-options/
+
+# ─── BACKEND ───────────────────────────────────────────────────────────
+# Using GitHub backend (works on any host, including Firebase).
+# You will need to create a GitHub OAuth App and host an OAuth proxy
+# (see README in this folder). Replace `repo` and `base_url` with your values.
+backend:
+  name: github
+  repo: YOUR_GITHUB_USERNAME/joy-rameswaram-luxury-875   # <-- change this
+  branch: main
+  base_url: https://decap-oauth.YOUR_DOMAIN.workers.dev   # <-- your OAuth proxy URL
+  auth_endpoint: auth
+
+# Local proxy for in-development editing without GitHub
+# Run with: npm run cms:proxy
+local_backend: true
+
+# ─── PUBLISHING ────────────────────────────────────────────────────────
+publish_mode: simple           # use "editorial_workflow" if you want PR-based drafts
+media_folder: public/uploads   # where uploaded images are stored
+public_folder: /uploads        # path the site uses to reference them
+site_url: https://joyachall.com
+display_url: https://joyachall.com
+logo_url: /logo-coloured.png
+
+# ─── COLLECTIONS ───────────────────────────────────────────────────────
+collections:
+  # ── 1. Site config (hero text, contact info) ───
+  - name: site
+    label: Site Settings
+    files:
+      - file: client/data/site.json
+        label: Site Settings
+        name: settings
+        format: json
+        fields:
+          - { name: phone, label: "Phone (E.164)", widget: string }
+          - { name: phoneDisplay, label: "Phone (display format)", widget: string }
+          - { name: whatsapp, label: "WhatsApp number (no spaces)", widget: string }
+          - { name: email, label: "Email", widget: string }
+          - { name: address, label: "Full address", widget: text }
+          - { name: googleMapsUrl, label: "Google Maps place URL", widget: string }
+          - { name: googleReviewsUrl, label: "Google reviews URL", widget: string }
+          - { name: heroTitle, label: "Hero title", widget: string }
+          - { name: heroSubtitle, label: "Hero subtitle", widget: text }
+          - { name: aboutTitle, label: "About section title", widget: string }
+          - { name: aboutBody, label: "About section body", widget: markdown }
+
+  # ── 2. Rooms ─────────────────────────────────────
+  - name: rooms
+    label: Rooms
+    label_singular: Room
+    folder: client/data/rooms
+    format: json
+    create: false                 # set true if you want to allow new rooms
+    delete: false
+    extension: json
+    slug: "{{slug}}"
+    identifier_field: name
+    fields:
+      - { name: id, label: "ID (do not change)", widget: number }
+      - { name: name, label: "Name", widget: string }
+      - { name: slug, label: "URL slug (e.g. dormitory-hall)", widget: string }
+      - { name: capacity, label: "Capacity", widget: string }
+      - { name: price, label: "Price (e.g. Rs. 250)", widget: string }
+      - { name: priceType, label: "Price type (per room / per person)", widget: string }
+      - {
+          name: features,
+          label: "Features",
+          widget: list,
+          field: { name: feature, label: "Feature", widget: string },
+        }
+      - { name: image, label: "Card image URL", widget: string }
+      - {
+          name: sliderImages,
+          label: "Slider image URLs",
+          widget: list,
+          field: { name: url, label: "URL", widget: string },
+        }
+      - {
+          name: sliderVideos,
+          label: "Slider video URLs",
+          required: false,
+          widget: list,
+          field: { name: url, label: "URL", widget: string },
+        }
+      - {
+          name: roomTypes,
+          label: "Room types (e.g. AC / Non-AC)",
+          widget: list,
+          field: { name: type, label: "Type", widget: string },
+        }
+      - { name: description, label: "Hero description", widget: text }
+
+  # ── 3. Attractions (home page) ───────────────────
+  - name: attractions
+    label: Attractions
+    files:
+      - file: client/data/attractions.json
+        label: Attractions list
+        name: list
+        format: json
+        fields:
+          - name: items
+            label: Attractions
+            widget: list
+            fields:
+              - { name: name, label: Name, widget: string }
+              - { name: distance, label: Distance, widget: string }
+              - { name: travelTime, label: Travel time, widget: string }
+              - { name: visitorTime, label: Visitor hours, widget: string }
+              - { name: description, label: Description, widget: text }
+              - { name: image, label: Image URL, widget: string }
+
+  # ── 4. FAQs (home page) ──────────────────────────
+  - name: faqs
+    label: FAQs
+    files:
+      - file: client/data/faqs.json
+        label: FAQ list
+        name: list
+        format: json
+        fields:
+          - name: items
+            label: Questions
+            widget: list
+            fields:
+              - { name: question, label: Question, widget: string }
+              - { name: answer, label: Answer, widget: text }
+
+  # ── 5. Reviews ───────────────────────────────────
+  - name: reviews
+    label: Google Reviews
+    files:
+      - file: client/data/reviews.json
+        label: Reviews list
+        name: list
+        format: json
+        fields:
+          - name: items
+            label: Reviews
+            widget: list
+            fields:
+              - { name: author, label: Author, widget: string }
+              - { name: time, label: "Time (e.g. a week ago)", widget: string }
+              - { name: rating, label: "Rating (1-5)", widget: number, min: 1, max: 5 }
+              - { name: text, label: Review text, widget: text }

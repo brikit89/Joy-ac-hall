@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#1E4E8C"/>
+      <stop offset="0.6" stop-color="#2C6FB7"/>
+      <stop offset="1" stop-color="#1E4E8C"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.85" cy="0.15" r="0.6">
+      <stop offset="0" stop-color="#D4A437" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#D4A437" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+
+  <!-- Decorative wave -->
+  <path d="M 0 540 Q 300 480 600 540 T 1200 540 L 1200 630 L 0 630 Z" fill="#D4A437" fill-opacity="0.25"/>
+  <path d="M 0 580 Q 300 520 600 580 T 1200 580 L 1200 630 L 0 630 Z" fill="#1E4E8C" fill-opacity="0.7"/>
+
+  <!-- Bed icon (echoes the brand mark) -->
+  <g transform="translate(80, 180)">
+    <circle cx="80" cy="80" r="78" stroke="#D4A437" stroke-width="6" fill="none"/>
+    <path d="M 30 105 L 30 70 L 60 70 L 60 90 L 100 90 L 100 70 L 130 70 L 130 105 Z" fill="#D4A437"/>
+    <path d="M 25 105 L 135 105" stroke="#D4A437" stroke-width="5"/>
+    <path d="M 0 145 Q 80 130 160 145" stroke="#D4A437" stroke-width="5" fill="none"/>
+  </g>
+
+  <!-- Brand name -->
+  <text x="290" y="240" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="80" font-weight="800" fill="#FFFFFF" letter-spacing="-2">
+    JOY AC HALL
+  </text>
+  <text x="290" y="290" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="32" font-weight="500" fill="#D4A437" letter-spacing="2">
+    Family Rooms &amp; Group Stay
+  </text>
+
+  <!-- Gold divider -->
+  <rect x="290" y="318" width="100" height="5" fill="#D4A437" rx="2"/>
+
+  <!-- Tagline -->
+  <text x="290" y="370" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="28" font-weight="400" fill="#FFFFFF" opacity="0.95">
+    Budget AC dormitory and rooms in Rameswaram
+  </text>
+  <text x="290" y="406" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="22" font-weight="400" fill="#FFFFFF" opacity="0.8">
+    Near Ramanathaswamy Temple · Pamban Bridge · Kalam Memorial
+  </text>
+
+  <!-- Bottom info pill: phone -->
+  <rect x="80" y="478" width="380" height="56" fill="#FFFFFF" fill-opacity="0.12" rx="28"/>
+  <text x="270" y="514" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="22" font-weight="600" fill="#FFFFFF" text-anchor="middle">
+    Book direct: +91 81224 45538
+  </text>
+
+  <!-- Bottom info pill: rating -->
+  <rect x="480" y="478" width="280" height="56" fill="#D4A437" rx="28"/>
+  <text x="620" y="514" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="22" font-weight="700" fill="#1E4E8C" text-anchor="middle">
+    ★ 5.0 on Google
+  </text>
+
+  <!-- URL bottom-right -->
+  <text x="1120" y="514" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="20" font-weight="500" fill="#FFFFFF" opacity="0.7" text-anchor="end">
+    joyachall.com
+  </text>
+</svg>
