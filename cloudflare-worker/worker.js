@@ -65,15 +65,39 @@ export default {
 <p>Authorizing with GitHub… you can close this window if it does not close automatically.</p>
 <script>
 (function () {
-  var msg = "authorization:github:${messageType}:" + ${JSON.stringify(JSON.stringify(payload))};
-  function send() {
+  var tokenMsg = "authorization:github:${messageType}:" + ${JSON.stringify(JSON.stringify(payload))};
+
+  function sendHandshake() {
     if (!window.opener) return;
-    window.opener.postMessage(msg, "*");
+    window.opener.postMessage("authorizing:github", "*");
   }
+
+  function sendToken(targetOrigin) {
+    if (!window.opener) return;
+    window.opener.postMessage(tokenMsg, targetOrigin || "*");
+  }
+
+  // Decap CMS uses a 2-step handshake:
+  //   1. popup → CMS:   "authorizing:github"
+  //   2. CMS → popup:   "authorizing:github"
+  //   3. popup → CMS:   "authorization:github:success:{token,...}"
   window.addEventListener("message", function (e) {
-    if (e.data === "authorizing:github") send();
+    if (e.data === "authorizing:github") {
+      sendToken(e.origin);
+      // Close shortly after so the user isn't left looking at this page
+      setTimeout(function () { window.close(); }, 500);
+    }
   }, false);
-  send();
+
+  sendHandshake();
+  // In case the CMS missed our first handshake (e.g. listener not yet
+  // attached), retry a few times.
+  var retries = 0;
+  var retryTimer = setInterval(function () {
+    retries++;
+    if (retries > 20) { clearInterval(retryTimer); return; }
+    sendHandshake();
+  }, 250);
 })();
 </script>
 </body></html>`;
