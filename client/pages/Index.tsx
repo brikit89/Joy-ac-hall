@@ -276,14 +276,14 @@ const Index = () => {
   };
 
   useDocumentMeta({
-    title: "Joy AC Hall & Rooms — Family Rooms & Group Stay Dormitory in Rameswaram",
+    title: "Joy AC Hall – AC Rooms, Group Stay & Event Hall in Rameswaram",
     description:
-      "Budget AC dormitory and family rooms in Rameswaram near Ramanathaswamy Temple, Pamban Bridge & Dr APJ Abdul Kalam Memorial. Group stay for pilgrimage tours, school tours and families. Book direct: +91 81224 45538.",
+      "Joy AC Hall offers AC rooms, family stay, group accommodation, wedding hall and event facilities in Rameswaram, Tamil Nadu. Near Ramanathaswamy Temple & Pamban Bridge. Book: +91 81224 45538.",
     canonical: "https://joyachall.com/",
     ogImage:
       "https://cdn.builder.io/api/v1/image/assets%2F9ab187ea44d746dabf821e39227b5937%2F6cb03dfcf88d421e94c4b20dd13e32b3?format=webp&width=1200",
     keywords:
-      "dormitory in Rameswaram, group stay Rameswaram, AC rooms Rameswaram, accommodation near Ramanathaswamy Temple, lodge near Pamban Bridge, pilgrimage stay Rameswaram, family rooms Rameswaram, budget hotel Rameswaram",
+      "Joy AC Hall, AC Rooms in Rameswaram, Group Stay in Rameswaram, Wedding Hall in Rameswaram, Family Stay Rameswaram, dormitory in Rameswaram, event hall Rameswaram, accommodation near Ramanathaswamy Temple, lodge near Pamban Bridge, pilgrimage stay Rameswaram, budget hotel Rameswaram",
     jsonLd: [faqSchema],
   });
 
@@ -344,7 +344,7 @@ const Index = () => {
                     : "bg-white text-primary hover:bg-gray-100"
                 }`}
               >
-                Book Group Stay
+                +91 81224 45538
               </Button>
             </a>
 
@@ -393,7 +393,7 @@ const Index = () => {
                         : "bg-white text-primary hover:bg-gray-100"
                     }`}
                   >
-                    Book Group Stay
+                    +91 81224 45538
                   </Button>
                 </a>
               </div>

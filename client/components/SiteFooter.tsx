@@ -26,12 +26,13 @@ export const SiteFooter = () => {
         <div className="grid md:grid-cols-3 gap-12 mb-12">
           <div>
             <h4 className="text-xl font-bold mb-4">
-              About Joy AC Hall &amp; Rooms
+              About Joy AC Hall
             </h4>
             <p className="text-gray-200">
-              Premium dormitory and group accommodation in Rameswaram for
-              pilgrims and travelers. Strategic location near Ramanathaswamy
-              Temple, Pamban Bridge and Dr APJ Abdul Kalam Memorial.
+              Joy AC Hall offers AC rooms, family stay, group accommodation,
+              wedding hall and event facilities in Rameswaram, Tamil Nadu.
+              Located near Ramanathaswamy Temple, Pamban Bridge and Dr APJ
+              Abdul Kalam Memorial.
             </p>
           </div>
 
@@ -116,8 +117,8 @@ export const SiteFooter = () => {
 
         <div className="border-t border-white/20 pt-8 mt-8 text-center text-gray-200">
           <p>
-            &copy; {new Date().getFullYear()} Joy AC Hall &amp; Rooms. All
-            rights reserved. | Budget Dormitory in Rameswaram near
+            &copy; {new Date().getFullYear()} Joy AC Hall. All rights reserved.
+            | AC Rooms, Group Stay &amp; Wedding Hall in Rameswaram near
             Ramanathaswamy Temple &amp; Pamban Bridge.
           </p>
         </div>
