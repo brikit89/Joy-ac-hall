@@ -1,0 +1,56 @@
+{
+  "id": 3,
+  "order": 2,
+  "name": "Double Room",
+  "slug": "double-room",
+  "capacity": "4 persons",
+  "occupancy": { "value": 4 },
+  "price": "Rs. 2,000",
+  "priceNumeric": 2000,
+  "priceType": "per room",
+  "priceTypeNote": "AC",
+  "description": "Comfortable AC / Non-AC double room for up to 4 persons. Ideal for couples and small families with electric kettle, wardrobe and hot water.",
+  "features": [
+    "AC / Non-AC available",
+    "Electric kettle",
+    "Wardrobe",
+    "Hot water"
+  ],
+  "image": "/RoomsImage/DoubleRoom/Double%20room%20Hero%20banner.png",
+  "sliderImages": [
+    "/RoomsImage/DoubleRoom/Double%20room%20Hero%20banner.png",
+    "/RoomsImage/DoubleRoom/Double%20room%20ac.png",
+    "/RoomsImage/DoubleRoom/Double%20room%20bed%202%20.png",
+    "/RoomsImage/DoubleRoom/double%20room%20bathroom.png",
+    "/RoomsImage/DoubleRoom/Heater%20%20in%20Bathroom.jpg.jpeg",
+    "/RoomsImage/DoubleRoom/covered%20parking%20.png"
+  ],
+  "sliderVideos": [
+    "https://cdn.builder.io/o/assets%2F9ab187ea44d746dabf821e39227b5937%2F7443dbf4ae5649ec834da0899d60ae16%2Fcompressed?apiKey=9ab187ea44d746dabf821e39227b5937&token=7443dbf4ae5649ec834da0899d60ae16&alt=media&optimized=true"
+  ],
+  "roomTypes": ["AC Double Room", "Non-AC Double Room"],
+  "amenityFeatures": [
+    "AC / Non-AC",
+    "Electric Kettle",
+    "Wardrobe",
+    "Hot Water"
+  ],
+  "faqs": [
+    {
+      "question": "How many people can stay in a Double Room?",
+      "answer": "The Double Room can comfortably accommodate up to 4 persons."
+    },
+    {
+      "question": "What amenities are included in the room?",
+      "answer": "AC, electric kettle, wardrobe, WiFi, hot water and comfortable bedding."
+    },
+    {
+      "question": "Is breakfast included?",
+      "answer": "Breakfast is not included, but we have a dining area available for guests."
+    },
+    {
+      "question": "How far is the room from Ramanathaswamy Temple?",
+      "answer": "Just 8.4 km away, approximately 15–16 minutes by car from our property."
+    }
+  ]
+}

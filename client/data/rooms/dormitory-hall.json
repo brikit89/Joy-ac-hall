@@ -1,0 +1,52 @@
+{
+  "id": 1,
+  "order": 3,
+  "name": "Dormitory Hall",
+  "slug": "dormitory-hall",
+  "capacity": "30–50 persons",
+  "occupancy": { "minValue": 30, "maxValue": 50 },
+  "price": "Rs. 250",
+  "priceNumeric": 250,
+  "priceType": "per person",
+  "priceTypeNote": "Non AC",
+  "description": "Spacious AC dormitory hall accommodating 30–50 persons, ideal for pilgrimage groups, school tours and large travel parties. Comes with shared bathrooms, hot water, dining area and bus parking.",
+  "features": [
+    "AC / Non-AC available",
+    "4 Shared Bathrooms",
+    "Best for pilgrimage groups",
+    "Bus parking on-site"
+  ],
+  "image": "/RoomsImage/Dormitoryhall/Dormitory%20Hall%20hero%20banner.png",
+  "sliderImages": [
+    "/RoomsImage/Dormitoryhall/Dormitory%20Hall%20hero%20banner.png",
+    "/RoomsImage/Dormitoryhall/Dorm%20Refresh%20area.png",
+    "/RoomsImage/Dormitoryhall/Dorm%20Shared%20Bathrooms.jpeg",
+    "/RoomsImage/Dormitoryhall/coveredparking%20.png"
+  ],
+  "sliderVideos": [],
+  "roomTypes": ["AC Dormitory", "Non-AC Dormitory"],
+  "amenityFeatures": [
+    "AC / Non-AC",
+    "4 Shared Bathrooms",
+    "Hot Water",
+    "Bus Parking"
+  ],
+  "faqs": [
+    {
+      "question": "How many people can the Dormitory Hall accommodate?",
+      "answer": "The Dormitory Hall can comfortably accommodate 30–50 persons depending on group size."
+    },
+    {
+      "question": "What amenities are included?",
+      "answer": "AC, 4 shared bathrooms, WiFi, hot water, dining area, and kitchen facilities for cooking."
+    },
+    {
+      "question": "Is it suitable for pilgrimage groups?",
+      "answer": "Yes, the dormitory is ideal for pilgrimage groups, school tours, and large tourist groups."
+    },
+    {
+      "question": "How far is the dormitory from Ramanathaswamy Temple?",
+      "answer": "Just 8.4 km away, approximately 15–16 minutes by car from our property."
+    }
+  ]
+}

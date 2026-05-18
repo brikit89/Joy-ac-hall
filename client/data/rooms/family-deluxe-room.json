@@ -1,0 +1,57 @@
+{
+  "id": 2,
+  "order": 1,
+  "name": "Family Deluxe Room",
+  "slug": "family-deluxe-room",
+  "capacity": "8 persons",
+  "occupancy": { "value": 8 },
+  "price": "Rs. 3,800",
+  "priceNumeric": 3800,
+  "priceType": "per room",
+  "priceTypeNote": "AC",
+  "description": "Premium family deluxe room for up to 8 persons with attached bathroom. Perfect for families visiting Rameswaram with AC, hot water and all modern amenities.",
+  "features": [
+    "AC / Non-AC available",
+    "Attached bathroom",
+    "Family comfort",
+    "Hot water"
+  ],
+  "image": "/RoomsImage/FamilyDeluxeRoom/Family%20Deluxe%20hero%20banner.png",
+  "sliderImages": [
+    "/RoomsImage/FamilyDeluxeRoom/Family%20Deluxe%20hero%20banner.png",
+    "/RoomsImage/FamilyDeluxeRoom/Duplex%20room%20bed%203.png",
+    "/RoomsImage/FamilyDeluxeRoom/Duplex%20room%20bed%204.png",
+    "/RoomsImage/FamilyDeluxeRoom/Duplex%20family%20room%20bathroom.png",
+    "/RoomsImage/FamilyDeluxeRoom/Family%20room%20Heater.png",
+    "/RoomsImage/FamilyDeluxeRoom/covered%20parking%20.png"
+  ],
+  "sliderVideos": [
+    "https://cdn.builder.io/o/assets%2F9ab187ea44d746dabf821e39227b5937%2Fbf0bf71d75da4c7f921170e18da96927%2Fcompressed?apiKey=9ab187ea44d746dabf821e39227b5937&token=bf0bf71d75da4c7f921170e18da96927&alt=media&optimized=true",
+    "https://cdn.builder.io/o/assets%2F9ab187ea44d746dabf821e39227b5937%2Fc5ed09529210485fa74fbb8528e046f9%2Fcompressed?apiKey=9ab187ea44d746dabf821e39227b5937&token=c5ed09529210485fa74fbb8528e046f9&alt=media&optimized=true"
+  ],
+  "roomTypes": ["AC Family Room", "Non-AC Family Room"],
+  "amenityFeatures": [
+    "AC / Non-AC",
+    "Attached Bathroom",
+    "Hot Water",
+    "Family Comfort"
+  ],
+  "faqs": [
+    {
+      "question": "How many people can stay in a Family Deluxe Room?",
+      "answer": "The Family Deluxe Room can comfortably accommodate up to 8 persons."
+    },
+    {
+      "question": "Does the room have an attached bathroom?",
+      "answer": "Yes, the Family Deluxe Room comes with a private attached bathroom."
+    },
+    {
+      "question": "Are AC and Non-AC variants available?",
+      "answer": "Yes, both AC and Non-AC variants of the Family Deluxe Room are available."
+    },
+    {
+      "question": "How far is the room from Ramanathaswamy Temple?",
+      "answer": "Just 8.4 km away, approximately 15–16 minutes by car from our property."
+    }
+  ]
+}

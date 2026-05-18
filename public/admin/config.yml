@@ -59,21 +59,40 @@ collections:
     identifier_field: name
     fields:
       - { name: id, label: "ID (do not change)", widget: number }
+      - {
+          name: order,
+          label: "Display order on homepage (lowest first)",
+          widget: number,
+          default: 99,
+        }
       - { name: name, label: "Name", widget: string }
-      - { name: slug, label: "URL slug (e.g. dormitory-hall)", widget: string }
-      - { name: capacity, label: "Capacity", widget: string }
-      - { name: price, label: "Price (e.g. Rs. 250)", widget: string }
-      - { name: priceType, label: "Price type (per room / per person)", widget: string }
+      - { name: slug, label: "URL slug (e.g. dormitory-hall)", widget: string, hint: "Used in the URL: /rooms/<slug>. Lowercase, hyphens only." }
+      - { name: capacity, label: "Capacity (display text, e.g. '8 persons')", widget: string }
+      - {
+          name: occupancy,
+          label: "Occupancy (for schema.org)",
+          widget: object,
+          hint: "Fill 'value' for a fixed count, OR 'minValue' + 'maxValue' for a range. Used in JSON-LD only.",
+          fields:
+            - { name: value, label: "Exact occupancy", widget: number, required: false }
+            - { name: minValue, label: "Min occupancy (range)", widget: number, required: false }
+            - { name: maxValue, label: "Max occupancy (range)", widget: number, required: false }
+        }
+      - { name: price, label: "Price (display, e.g. 'Rs. 250')", widget: string }
+      - { name: priceNumeric, label: "Price (number, e.g. 250)", widget: number, hint: "Used in JSON-LD Offer schema." }
+      - { name: priceType, label: "Price type ('per room' or 'per person')", widget: string }
+      - { name: priceTypeNote, label: "Price type note (e.g. 'AC' / 'Non AC')", widget: string, required: false, hint: "Shown in parentheses next to the price type on the card and detail page. Leave blank to omit." }
+      - { name: description, label: "Hero description (appears on detail page)", widget: text }
       - {
           name: features,
-          label: "Features",
+          label: "Features (shown on homepage card + detail page)",
           widget: list,
           field: { name: feature, label: "Feature", widget: string },
         }
-      - { name: image, label: "Card image URL", widget: string }
+      - { name: image, label: "Card image URL (homepage thumbnail)", widget: string }
       - {
           name: sliderImages,
-          label: "Slider image URLs",
+          label: "Slider image URLs (detail page gallery)",
           widget: list,
           field: { name: url, label: "URL", widget: string },
         }
@@ -86,11 +105,25 @@ collections:
         }
       - {
           name: roomTypes,
-          label: "Room types (e.g. AC / Non-AC)",
+          label: "Room types (e.g. AC Dormitory / Non-AC Dormitory)",
           widget: list,
           field: { name: type, label: "Type", widget: string },
         }
-      - { name: description, label: "Hero description", widget: text }
+      - {
+          name: amenityFeatures,
+          label: "Schema.org amenity tags",
+          widget: list,
+          hint: "Used in JSON-LD only — short canonical names like 'AC / Non-AC', 'Hot Water'.",
+          field: { name: amenity, label: "Amenity", widget: string },
+        }
+      - {
+          name: faqs,
+          label: "FAQs (shown on this room's detail page)",
+          widget: list,
+          fields:
+            - { name: question, label: Question, widget: string }
+            - { name: answer, label: Answer, widget: text }
+        }
 
   # ── 3. Attractions (home page) ───────────────────
   - name: attractions

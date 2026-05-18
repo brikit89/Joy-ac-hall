@@ -36,6 +36,33 @@ import { SiteFooter } from "@/components/SiteFooter";
 import faqsData from "@/data/faqs.json";
 import attractionsData from "@/data/attractions.json";
 import siteConfig from "@/data/site.json";
+import routesMeta from "@/data/routesMeta.json";
+
+interface RoomCard {
+  id: number;
+  order: number;
+  name: string;
+  slug: string;
+  capacity: string;
+  price: string;
+  priceType: string;
+  priceTypeNote?: string;
+  features: string[];
+  image: string;
+  sliderImages: string[];
+  sliderVideos?: string[];
+  roomTypes: string[];
+  route: string;
+}
+
+const roomModules = import.meta.glob<{ default: Omit<RoomCard, "route"> }>(
+  "@/data/rooms/*.json",
+  { eager: true },
+);
+
+const cmsRooms: RoomCard[] = Object.values(roomModules)
+  .map((m) => ({ ...m.default, route: `/rooms/${m.default.slug}` }))
+  .sort((a, b) => a.order - b.order);
 
 interface NavLink {
   id: string;
@@ -109,76 +136,7 @@ const Index = () => {
     setCurrentRoomImageIndex(0);
   }, [selectedRoom]);
 
-  // Rooms data
-  const rooms = [
-    {
-      id: 2,
-      name: "Family Deluxe Room",
-      route: "/rooms/family-deluxe-room",
-      capacity: "8 persons",
-      price: "Rs. 3,600",
-      priceType: "per room",
-      features: ["AC / Non-AC available", "Attached bathroom", "Family comfort"],
-      image: "/RoomsImage/FamilyDeluxeRoom/Family%20Deluxe%20hero%20banner.png",
-      sliderImages: [
-        "/RoomsImage/FamilyDeluxeRoom/Family%20Deluxe%20hero%20banner.png",
-        "/RoomsImage/FamilyDeluxeRoom/Duplex%20room%20bed%203.png",
-        "/RoomsImage/FamilyDeluxeRoom/Duplex%20room%20bed%204.png",
-        "/RoomsImage/FamilyDeluxeRoom/Duplex%20family%20room%20bathroom.png",
-        "/RoomsImage/FamilyDeluxeRoom/Family%20room%20Heater.png",
-        "/RoomsImage/FamilyDeluxeRoom/covered%20parking%20.png",
-      ],
-      sliderVideos: [
-        "https://cdn.builder.io/o/assets%2F9ab187ea44d746dabf821e39227b5937%2Fbf0bf71d75da4c7f921170e18da96927%2Fcompressed?apiKey=9ab187ea44d746dabf821e39227b5937&token=bf0bf71d75da4c7f921170e18da96927&alt=media&optimized=true",
-        "https://cdn.builder.io/o/assets%2F9ab187ea44d746dabf821e39227b5937%2Fc5ed09529210485fa74fbb8528e046f9%2Fcompressed?apiKey=9ab187ea44d746dabf821e39227b5937&token=c5ed09529210485fa74fbb8528e046f9&alt=media&optimized=true",
-      ],
-      roomTypes: ["AC Family Room", "Non-AC Family Room"],
-    },
-    {
-      id: 3,
-      name: "Double Room",
-      route: "/rooms/double-room",
-      capacity: "4 persons",
-      price: "Rs. 2,000",
-      priceType: "per room",
-      features: ["AC / Non-AC available", "Electric kettle", "Wardrobe"],
-      image: "/RoomsImage/DoubleRoom/Double%20room%20Hero%20banner.png",
-      sliderImages: [
-        "/RoomsImage/DoubleRoom/Double%20room%20Hero%20banner.png",
-        "/RoomsImage/DoubleRoom/Double%20room%20ac.png",
-        "/RoomsImage/DoubleRoom/Double%20room%20bed%202%20.png",
-        "/RoomsImage/DoubleRoom/double%20room%20bathroom.png",
-        "/RoomsImage/DoubleRoom/Heater%20%20in%20Bathroom.jpg.jpeg",
-        "/RoomsImage/DoubleRoom/covered%20parking%20.png",
-      ],
-      sliderVideos: [
-        "https://cdn.builder.io/o/assets%2F9ab187ea44d746dabf821e39227b5937%2F7443dbf4ae5649ec834da0899d60ae16%2Fcompressed?apiKey=9ab187ea44d746dabf821e39227b5937&token=7443dbf4ae5649ec834da0899d60ae16&alt=media&optimized=true",
-      ],
-      roomTypes: ["AC Double Room", "Non-AC Double Room"],
-    },
-    {
-      id: 1,
-      name: "Dormitory Hall",
-      route: "/rooms/dormitory-hall",
-      capacity: "30–50 persons",
-      price: "Rs. 250",
-      priceType: "per person",
-      features: [
-        "AC / Non-AC available",
-        "4 Shared Bathrooms",
-        "Best for pilgrimage groups",
-      ],
-      image: "/RoomsImage/Dormitoryhall/Dormitory%20Hall%20hero%20banner.png",
-      sliderImages: [
-        "/RoomsImage/Dormitoryhall/Dormitory%20Hall%20hero%20banner.png",
-        "/RoomsImage/Dormitoryhall/Dorm%20Refresh%20area.png",
-        "/RoomsImage/Dormitoryhall/Dorm%20Shared%20Bathrooms.jpeg",
-        "/RoomsImage/Dormitoryhall/coveredparking%20.png",
-      ],
-      sliderVideos: [],
-      roomTypes: ["AC Dormitory", "Non-AC Dormitory"],
-    },
-  ];
+  const rooms = cmsRooms;
 
   // Amenities data
   const amenities = [
@@ -276,14 +234,7 @@ const Index = () => {
   };
 
   useDocumentMeta({
-    title: "Joy AC Hall – AC Rooms, Group Stay & Event Hall in Rameswaram",
-    description:
-      "Joy AC Hall offers AC rooms, family stay, group accommodation, wedding hall and event facilities in Rameswaram, Tamil Nadu. Near Ramanathaswamy Temple & Pamban Bridge. Book: +91 81224 45538.",
-    canonical: "https://joyachall.com/",
-    ogImage:
-      "https://cdn.builder.io/api/v1/image/assets%2F9ab187ea44d746dabf821e39227b5937%2F6cb03dfcf88d421e94c4b20dd13e32b3?format=webp&width=1200",
-    keywords:
-      "Joy AC Hall, AC Rooms in Rameswaram, Group Stay in Rameswaram, Wedding Hall in Rameswaram, Family Stay Rameswaram, dormitory in Rameswaram, event hall Rameswaram, accommodation near Ramanathaswamy Temple, lodge near Pamban Bridge, pilgrimage stay Rameswaram, budget hotel Rameswaram",
+    ...routesMeta["/"],
     jsonLd: [faqSchema],
   });
 
@@ -550,6 +501,7 @@ const Index = () => {
                     <span className="text-2xl font-bold text-accent">{room.price}</span>{" "}
                     <span className="text-sm font-normal text-gray-600">
                       {room.priceType}
+                      {room.priceTypeNote ? ` (${room.priceTypeNote})` : ""}
                     </span>
                   </p>
                   <ul className="space-y-2 mb-6">

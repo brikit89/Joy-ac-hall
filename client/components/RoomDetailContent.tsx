@@ -24,6 +24,7 @@ export interface RoomData {
   capacity: string;
   price: string;
   priceType: string;
+  priceTypeNote?: string;
   features: string[];
   sliderImages: string[];
   sliderVideos?: string[];
@@ -227,6 +228,7 @@ export const RoomDetailContent = ({
                   </span>
                   <span className="text-lg ml-2 text-gray-600 font-normal">
                     {room.priceType}
+                    {room.priceTypeNote ? ` (${room.priceTypeNote})` : ""}
                   </span>
                 </p>
                 <p className="text-gray-600">Maximum {room.capacity}</p>

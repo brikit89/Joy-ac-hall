@@ -1,0 +1,30 @@
+{
+  "/": {
+    "title": "Joy AC Hall – AC Rooms, Group Stay & Event Hall in Rameswaram",
+    "description": "Joy AC Hall offers AC rooms, family stay, group accommodation, wedding hall and event facilities in Rameswaram, Tamil Nadu. Near Ramanathaswamy Temple & Pamban Bridge. Book: +91 81224 45538.",
+    "canonical": "https://joyachall.com/",
+    "ogImage": "https://cdn.builder.io/api/v1/image/assets%2F9ab187ea44d746dabf821e39227b5937%2F6cb03dfcf88d421e94c4b20dd13e32b3?format=webp&width=1200",
+    "keywords": "Joy AC Hall, AC Rooms in Rameswaram, Group Stay in Rameswaram, Wedding Hall in Rameswaram, Family Stay Rameswaram, dormitory in Rameswaram, event hall Rameswaram, accommodation near Ramanathaswamy Temple, lodge near Pamban Bridge, pilgrimage stay Rameswaram, budget hotel Rameswaram"
+  },
+  "/rooms/family-deluxe-room": {
+    "title": "Family Deluxe Room in Rameswaram (8 Persons) | Joy AC Hall",
+    "description": "AC family deluxe room in Rameswaram for 8 persons, attached bathroom & hot water. ₹3,800/room near Ramanathaswamy Temple. Book Joy AC Hall: +91 81224 45538.",
+    "canonical": "https://joyachall.com/rooms/family-deluxe-room",
+    "ogImage": "https://joyachall.com/RoomsImage/FamilyDeluxeRoom/Family%20Deluxe%20hero%20banner.png",
+    "keywords": "Family Stay Rameswaram, family room Rameswaram, AC family room Rameswaram, 8 person room Rameswaram, family deluxe room near Ramanathaswamy Temple, Joy AC Hall"
+  },
+  "/rooms/double-room": {
+    "title": "AC Double Room in Rameswaram (4 Persons) | Joy AC Hall",
+    "description": "AC double room in Rameswaram for 4 persons — kettle, wardrobe, hot water. ₹2,000/room near Ramanathaswamy Temple. Book Joy AC Hall: +91 81224 45538.",
+    "canonical": "https://joyachall.com/rooms/double-room",
+    "ogImage": "https://joyachall.com/RoomsImage/DoubleRoom/Double%20room%20Hero%20banner.png",
+    "keywords": "AC Rooms in Rameswaram, double room Rameswaram, AC double room near Ramanathaswamy Temple, 4 person room Rameswaram, budget room Rameswaram, Joy AC Hall"
+  },
+  "/rooms/dormitory-hall": {
+    "title": "AC Dormitory Hall in Rameswaram (30–50 Pax) | Joy AC Hall",
+    "description": "AC dormitory hall in Rameswaram for 30–50 person groups, school tours & pilgrimages. ₹250/person, 4 bathrooms, kitchen & bus parking near Ramanathaswamy Temple.",
+    "canonical": "https://joyachall.com/rooms/dormitory-hall",
+    "ogImage": "https://joyachall.com/RoomsImage/Dormitoryhall/Dormitory%20Hall%20hero%20banner.png",
+    "keywords": "Group Stay in Rameswaram, dormitory in Rameswaram, AC dormitory Rameswaram, school tour stay Rameswaram, pilgrimage dormitory hall Rameswaram, Joy AC Hall"
+  }
+}
