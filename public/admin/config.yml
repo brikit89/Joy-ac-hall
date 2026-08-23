@@ -68,16 +68,14 @@ collections:
       - { name: name, label: "Name", widget: string }
       - { name: slug, label: "URL slug (e.g. dormitory-hall)", widget: string, hint: "Used in the URL: /rooms/<slug>. Lowercase, hyphens only." }
       - { name: capacity, label: "Capacity (display text, e.g. '8 persons')", widget: string }
-      - {
-          name: occupancy,
-          label: "Occupancy (for schema.org)",
-          widget: object,
-          hint: "Fill 'value' for a fixed count, OR 'minValue' + 'maxValue' for a range. Used in JSON-LD only.",
-          fields:
-            - { name: value, label: "Exact occupancy", widget: number, required: false }
-            - { name: minValue, label: "Min occupancy (range)", widget: number, required: false }
-            - { name: maxValue, label: "Max occupancy (range)", widget: number, required: false }
-        }
+      - name: occupancy
+        label: "Occupancy (for schema.org)"
+        widget: object
+        hint: "Fill 'value' for a fixed count, OR 'minValue' + 'maxValue' for a range. Used in JSON-LD only."
+        fields:
+          - { name: value, label: "Exact occupancy", widget: number, required: false }
+          - { name: minValue, label: "Min occupancy (range)", widget: number, required: false }
+          - { name: maxValue, label: "Max occupancy (range)", widget: number, required: false }
       - { name: price, label: "Price (display, e.g. 'Rs. 250')", widget: string }
       - { name: priceNumeric, label: "Price (number, e.g. 250)", widget: number, hint: "Used in JSON-LD Offer schema." }
       - { name: priceType, label: "Price type ('per room' or 'per person')", widget: string }
@@ -116,14 +114,12 @@ collections:
           hint: "Used in JSON-LD only — short canonical names like 'AC / Non-AC', 'Hot Water'.",
           field: { name: amenity, label: "Amenity", widget: string },
         }
-      - {
-          name: faqs,
-          label: "FAQs (shown on this room's detail page)",
-          widget: list,
-          fields:
-            - { name: question, label: Question, widget: string }
-            - { name: answer, label: Answer, widget: text }
-        }
+      - name: faqs
+        label: "FAQs (shown on this room's detail page)"
+        widget: list
+        fields:
+          - { name: question, label: Question, widget: string }
+          - { name: answer, label: Answer, widget: text }
 
   # ── 3. Attractions (home page) ───────────────────
   - name: attractions
