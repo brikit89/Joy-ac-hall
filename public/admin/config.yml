@@ -6,9 +6,9 @@
 # The OAuth proxy below is the Cloudflare Worker in cloudflare-worker/.
 backend:
   name: github
-  repo: Ozzitech/Joy-ac-hall
+  repo: brikit89/Joy-ac-hall   # was Ozzitech/Joy-ac-hall
   branch: main
-  base_url: https://joy-ac-hall-cms-oauth.brikit-38a.workers.dev   # ← replace if your Worker URL differs
+  base_url: https://joy-ac-hall-cms-oauth.brikit-38a.workers.dev
   auth_endpoint: auth
 
 # Local proxy for in-development editing without GitHub
