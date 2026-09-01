@@ -52,13 +52,13 @@ collections:
     label_singular: Room
     folder: client/data/rooms
     format: json
-    create: false                 # set true if you want to allow new rooms
+    create: true
     delete: false
     extension: json
     slug: "{{slug}}"
     identifier_field: name
     fields:
-      - { name: id, label: "ID (do not change)", widget: number }
+      - { name: id, label: "ID (unique number — use next free id, e.g. 4)", widget: number }
       - {
           name: order,
           label: "Display order on homepage (lowest first)",

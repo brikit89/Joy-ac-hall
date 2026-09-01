@@ -148,18 +148,51 @@ async function writeRouteHtml(route, html) {
   return outPath;
 }
 
+async function loadRoomRoutes(routesMeta) {
+  const roomsDir = path.join(ROOT, "client/data/rooms");
+  let files = [];
+  try {
+    files = (await fs.readdir(roomsDir)).filter((f) => f.endsWith(".json"));
+  } catch {
+    return {};
+  }
+
+  const SITE = "https://joyachall.com";
+  const toAbsolute = (u) =>
+    !u ? `${SITE}/logo-coloured.png` : u.startsWith("http") ? u : `${SITE}${u}`;
+
+  const fromRooms = {};
+  for (const file of files) {
+    const room = JSON.parse(await fs.readFile(path.join(roomsDir, file), "utf8"));
+    if (!room?.slug) continue;
+    const route = `/rooms/${room.slug}`;
+    // Prefer hand-tuned routesMeta entry when present
+    if (routesMeta[route]) continue;
+    fromRooms[route] = {
+      title: `${room.name} in Rameswaram | Joy AC Hall`,
+      description: room.description || `${room.name} at Joy AC Hall, Rameswaram.`,
+      canonical: `${SITE}${route}`,
+      ogImage: toAbsolute(room.image || room.sliderImages?.[0]),
+      keywords: `${room.name}, Joy AC Hall, Rameswaram, AC rooms Rameswaram`,
+    };
+  }
+  return fromRooms;
+}
+
 async function main() {
   const [templateHtml, metaRaw] = await Promise.all([
     fs.readFile(TEMPLATE, "utf8"),
     fs.readFile(META_FILE, "utf8"),
   ]);
   const routesMeta = JSON.parse(metaRaw);
+  const roomRoutes = await loadRoomRoutes(routesMeta);
+  const allMeta = { ...roomRoutes, ...routesMeta };
 
-  const routes = Object.keys(routesMeta);
+  const routes = Object.keys(allMeta);
   console.log(`[prerender] generating ${routes.length} route(s)`);
 
   for (const route of routes) {
-    const meta = routesMeta[route];
+    const meta = allMeta[route];
     const html = applyMeta(templateHtml, meta);
     const written = await writeRouteHtml(route, html);
     console.log(

@@ -8,9 +8,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
-import DormitoryHall from "./pages/DormitoryHall";
-import DoubleRoom from "./pages/DoubleRoom";
-import FamilyDeluxeRoom from "./pages/FamilyDeluxeRoom";
+import RoomPage from "./pages/RoomPage";
 import { ScrollToTop } from "./components/ScrollToTop";
 
 const queryClient = new QueryClient();
@@ -24,9 +22,7 @@ const App = () => (
         <ScrollToTop />
         <Routes>
           <Route path="/" element={<Index />} />
-          <Route path="/rooms/dormitory-hall" element={<DormitoryHall />} />
-          <Route path="/rooms/double-room" element={<DoubleRoom />} />
-          <Route path="/rooms/family-deluxe-room" element={<FamilyDeluxeRoom />} />
+          <Route path="/rooms/:slug" element={<RoomPage />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
