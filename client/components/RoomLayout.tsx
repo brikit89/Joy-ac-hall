@@ -8,6 +8,7 @@ import {
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { SiteFooter } from "@/components/SiteFooter";
+import siteConfig from "@/data/site.json";
 
 interface NavLink {
   id: string;
@@ -113,16 +114,22 @@ export const RoomLayout = ({ children }: RoomLayoutProps) => {
               ))}
             </nav>
 
-            <Button
-              onClick={() => scrollToSection("contact")}
-              className={`hidden lg:block transition-all ${
-                headerScrolled
-                  ? "bg-primary hover:bg-primary/90"
-                  : "bg-white text-primary hover:bg-gray-100"
-              }`}
+            <a
+              href={siteConfig.bookingUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hidden lg:block"
             >
-              Book Now
-            </Button>
+              <Button
+                className={`transition-all ${
+                  headerScrolled
+                    ? "bg-primary hover:bg-primary/90"
+                    : "bg-white text-primary hover:bg-gray-100"
+                }`}
+              >
+                {siteConfig.bookingCtaLabel || "Book Now"}
+              </Button>
+            </a>
 
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
@@ -168,16 +175,22 @@ export const RoomLayout = ({ children }: RoomLayoutProps) => {
                 </button>
               ))}
               <div className="px-4 mt-4">
-                <Button
-                  onClick={() => scrollToSection("contact")}
-                  className={`w-full h-12 transition-all font-semibold ${
-                    headerScrolled
-                      ? "bg-primary hover:bg-primary/90 text-white"
-                      : "bg-white text-primary hover:bg-gray-100"
-                  }`}
+                <a
+                  href={siteConfig.bookingUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block"
                 >
-                  Book Now
-                </Button>
+                  <Button
+                    className={`w-full h-12 transition-all font-semibold ${
+                      headerScrolled
+                        ? "bg-primary hover:bg-primary/90 text-white"
+                        : "bg-white text-primary hover:bg-gray-100"
+                    }`}
+                  >
+                    {siteConfig.bookingCtaLabel || "Book Now"}
+                  </Button>
+                </a>
               </div>
             </nav>
           )}

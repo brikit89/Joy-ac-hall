@@ -37,6 +37,8 @@ collections:
           - { name: phone, label: "Phone (E.164)", widget: string }
           - { name: phoneDisplay, label: "Phone (display format)", widget: string }
           - { name: whatsapp, label: "WhatsApp number (no spaces)", widget: string }
+          - { name: bookingCtaLabel, label: "Header CTA label", widget: string, default: "Book Now", hint: "Shown on the header button (e.g. Book Now)." }
+          - { name: bookingUrl, label: "Booking link (Header CTA)", widget: string, hint: "Full URL opened by the header Book Now button." }
           - { name: email, label: "Email", widget: string }
           - { name: address, label: "Full address", widget: text }
           - { name: googleMapsUrl, label: "Google Maps place URL", widget: string }

@@ -283,7 +283,7 @@ const Index = () => {
             </nav>
 
             <a
-              href="https://wa.me/918122445538"
+              href={siteConfig.bookingUrl}
               target="_blank"
               rel="noopener noreferrer"
               className="hidden lg:block"
@@ -295,7 +295,7 @@ const Index = () => {
                     : "bg-white text-primary hover:bg-gray-100"
                 }`}
               >
-                +91 81224 45538
+                {siteConfig.bookingCtaLabel || "Book Now"}
               </Button>
             </a>
 
@@ -332,7 +332,7 @@ const Index = () => {
               ))}
               <div className="px-4 mt-4">
                 <a
-                  href="https://wa.me/918122445538"
+                  href={siteConfig.bookingUrl}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="block"
@@ -344,7 +344,7 @@ const Index = () => {
                         : "bg-white text-primary hover:bg-gray-100"
                     }`}
                   >
-                    +91 81224 45538
+                    {siteConfig.bookingCtaLabel || "Book Now"}
                   </Button>
                 </a>
               </div>
