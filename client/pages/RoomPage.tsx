@@ -3,22 +3,26 @@ import { RoomLayout } from "@/components/RoomLayout";
 import { RoomDetailContent } from "@/components/RoomDetailContent";
 import { useDocumentMeta } from "@/hooks/useDocumentMeta";
 import routesMeta from "@/data/routesMeta.json";
-import { roomPageAttractions } from "@/data/roomPageAttractions";
 import { buildRoomJsonLd } from "@/lib/roomJsonLd";
 import { buildRoomMeta, getRoomBySlug } from "@/lib/rooms";
 
 const RoomPage = () => {
   const { slug = "" } = useParams<{ slug: string }>();
+
   const room = getRoomBySlug(slug);
 
   const path = `/rooms/${slug}`;
+
   const meta =
     (routesMeta as Record<string, ReturnType<typeof buildRoomMeta>>)[path] ??
     (room ? buildRoomMeta(room) : null);
 
   useDocumentMeta(
     room && meta
-      ? { ...meta, jsonLd: buildRoomJsonLd(room) }
+      ? {
+          ...meta,
+          jsonLd: buildRoomJsonLd(room),
+        }
       : {
           title: "Room not found | Joy AC Hall",
           description: "This room could not be found.",
@@ -32,11 +36,7 @@ const RoomPage = () => {
 
   return (
     <RoomLayout>
-      <RoomDetailContent
-        room={room}
-        attractions={roomPageAttractions}
-        faqs={room.faqs}
-      />
+      <RoomDetailContent room={room} />
     </RoomLayout>
   );
 };

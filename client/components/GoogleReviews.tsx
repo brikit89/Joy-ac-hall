@@ -8,13 +8,21 @@ const GOOGLE_REVIEWS_URL = siteConfig.googleReviewsUrl;
 interface Props {
   /** Section background — use to keep section rhythm with neighboring sections */
   background?: "white" | "gray";
+  title?: string;
+  subtitle?: string;
+  sectionId?: string;
 }
 
-export const GoogleReviews = ({ background = "gray" }: Props) => {
+export const GoogleReviews = ({
+  background = "gray",
+  sectionId="reviews",
+  subtitle = "Read all reviews on Google",
+  title = "Google Reviews",
+}: Props) => {
   const bg = background === "white" ? "bg-white" : "bg-gray-50";
 
   return (
-    <section className={`py-20 overflow-hidden ${bg}`}>
+    <section id={sectionId} className={`py-20 overflow-hidden ${bg}`}>
       <div className="max-w-6xl mx-auto px-4 mb-12">
         <div className="flex items-center justify-center gap-3 mb-4">
           <svg className="w-9 h-9" viewBox="0 0 48 48" aria-hidden="true">
@@ -36,7 +44,7 @@ export const GoogleReviews = ({ background = "gray" }: Props) => {
             />
           </svg>
           <h2 className="text-4xl md:text-5xl font-bold text-center text-primary">
-            Google Reviews
+            {title}
           </h2>
         </div>
         <div className="w-20 h-1 bg-accent mx-auto rounded-full mb-6" />
@@ -54,7 +62,7 @@ export const GoogleReviews = ({ background = "gray" }: Props) => {
             rel="noopener noreferrer"
             className="text-primary hover:underline font-medium"
           >
-            Read all reviews on Google
+            {subtitle}
           </a>
         </div>
       </div>
@@ -79,11 +87,7 @@ export const GoogleReviews = ({ background = "gray" }: Props) => {
               </div>
               <div className="flex gap-1 mb-3">
                 {[...Array(review.rating)].map((_, i) => (
-                  <Star
-                    key={i}
-                    size={18}
-                    className="fill-accent text-accent"
-                  />
+                  <Star key={i} size={18} className="fill-accent text-accent" />
                 ))}
               </div>
               <p className="text-gray-700 italic">"{review.text}"</p>

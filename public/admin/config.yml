@@ -16,9 +16,9 @@ backend:
 local_backend: true
 
 # ─── PUBLISHING ────────────────────────────────────────────────────────
-publish_mode: simple           # use "editorial_workflow" if you want PR-based drafts
-media_folder: public/uploads   # where uploaded images are stored
-public_folder: /uploads        # path the site uses to reference them
+publish_mode: simple # use "editorial_workflow" if you want PR-based drafts
+media_folder: public/uploads # where uploaded images are stored
+public_folder: /uploads # path the site uses to reference them
 site_url: https://joyachall.com
 display_url: https://joyachall.com
 logo_url: /logo-coloured.png
@@ -26,27 +26,240 @@ logo_url: /logo-coloured.png
 # ─── COLLECTIONS ───────────────────────────────────────────────────────
 collections:
   # ── 1. Site config (hero text, contact info) ───
+
   - name: site
     label: Site Settings
+
     files:
       - file: client/data/site.json
         label: Site Settings
         name: settings
         format: json
+
         fields:
-          - { name: phone, label: "Phone (E.164)", widget: string }
-          - { name: phoneDisplay, label: "Phone (display format)", widget: string }
-          - { name: whatsapp, label: "WhatsApp number (no spaces)", widget: string }
-          - { name: bookingCtaLabel, label: "Header CTA label", widget: string, default: "Book Now", hint: "Shown on the header button (e.g. Book Now)." }
-          - { name: bookingUrl, label: "Booking link (Header CTA)", widget: string, hint: "Full URL opened by the header Book Now button." }
-          - { name: email, label: "Email", widget: string }
-          - { name: address, label: "Full address", widget: text }
-          - { name: googleMapsUrl, label: "Google Maps place URL", widget: string }
-          - { name: googleReviewsUrl, label: "Google reviews URL", widget: string }
-          - { name: heroTitle, label: "Hero title", widget: string }
-          - { name: heroSubtitle, label: "Hero subtitle", widget: text }
-          - { name: aboutTitle, label: "About section title", widget: string }
-          - { name: aboutBody, label: "About section body", widget: markdown }
+          # ─────────────────────────────────
+          # HEADER
+          # ─────────────────────────────────
+
+          - name: header
+            label: Header
+            widget: object
+            fields:
+              - { name: logo, label: Logo URL, widget: string, required: false }
+              - {
+                  name: scrolledLogo,
+                  label: Scrolling Logo URL,
+                  widget: string,
+                  required: false,
+                }
+
+              - {
+                  name: logoAlt,
+                  label: Logo Alt Text,
+                  widget: string,
+                  default: "Joy AC Hall & Rooms",
+                }
+
+              - name: navLinks
+                label: Navigation Links
+                widget: list
+                fields:
+                  - { name: id, label: ID, widget: string }
+                  - { name: label, label: Label, widget: string }
+                  - { name: href, label: Link or ID, widget: string }
+
+              - {
+                  name: bookingLabel,
+                  label: "Header CTA label",
+                  widget: string,
+                  default: "Book Now",
+                  required: false,
+                  hint: "Shown on the header button (e.g. Book Now).",
+                }
+              - {
+                  required: false,
+                  name: bookingUrl,
+                  label: "Booking link (Header CTA)",
+                  widget: string,
+                  hint: "Full URL opened by the header Book Now button.",
+                }
+
+          # ─────────────────────────────────
+          # CONTACT / GLOBAL INFORMATION
+          # ─────────────────────────────────
+
+          - {
+              name: phone,
+              required: false,
+              label: "Phone (E.164)",
+              widget: string,
+            }
+
+          - {
+              name: phoneDisplay,
+              required: false,
+              label: "Phone (display format)",
+              widget: string,
+            }
+
+          - {
+              name: whatsapp,
+              required: false,
+              label: "WhatsApp number (no spaces)",
+              widget: string,
+            }
+          - {
+              name: whatsappURL,
+              required: false,
+              label: "WhatsApp Link",
+              widget: string,
+              default:"https://wa.me/918122445538",
+            }
+          - {
+              name: phoneURL,
+              required: false,
+              label: "Phone call Link",
+              widget: string,
+              default:"tel:+918122445538",
+            }
+
+          - { name: email, required: false, label: Email, widget: string }
+
+          - {
+              name: address,
+              required: false,
+              label: Full Address,
+              widget: text,
+            }
+
+          - {
+              name: googleMapsUrl,
+              required: false,
+              label: Google Maps Place URL,
+              widget: string,
+            }
+
+          - {
+              name: googleReviewsUrl,
+              required: false,
+              label: Google Reviews URL,
+              widget: string,
+            }
+          - {
+              name: bookingUrl,
+              required: false,
+              label: Booking URL,
+              widget: string,
+            }
+          - {
+              name: bookingCtaLabel,
+              required: false,
+              label: bookingCtaLabel,
+              widget: string,
+            }
+
+          # ─────────────────────────────────
+          # FOOTER
+          # ─────────────────────────────────
+
+          - name: footer
+            label: Footer
+            widget: object
+            fields:
+              - {
+                  name: aboutTitle,
+                  label: About Title,
+                  widget: string,
+                  default: "About Joy AC Hall",
+                }
+
+              - { name: aboutText, label: About Text, widget: text }
+
+              - {
+                  name: quickLinksTitle,
+                  label: Quick Links Title,
+                  widget: string,
+                  default: "Quick Links",
+                }
+
+              - name: quickLinks
+                label: Quick Links
+                widget: list
+                fields:
+                  - { name: label, label: Label, widget: string }
+                  - { name: href, label: Link, widget: string }
+                  - {
+                      name: external,
+                      label: External Link,
+                      widget: boolean,
+                      default: false,
+                    }
+
+              - {
+                  name: socialTitle,
+                  label: Social Title,
+                  widget: string,
+                  default: "Follow Us",
+                }
+
+              - name: socialLinks
+                label: Social Links
+                widget: list
+                fields:
+                  - {
+                      name: platform,
+                      label: Platform,
+                      widget: select,
+                      options: [Facebook, Instagram, YouTube],
+                    }
+                  - { name: url, label: URL, widget: string }
+
+              - {
+                  name: mapTitle,
+                  label: Map Title,
+                  widget: string,
+                  default: "Visit Our Location",
+                }
+
+              - {
+                  name: mapEmbedUrl,
+                  label: Google Maps Embed URL,
+                  widget: text,
+                }
+
+              - { name: copyrightText, label: Copyright Text, widget: text }
+
+          # ─────────────────────────────────
+          # SEO / HERO DEFAULT CONTENT
+          # ─────────────────────────────────
+
+          - {
+              name: heroTitle,
+              label: "Legacy Hero Title",
+              widget: string,
+              required: false,
+            }
+
+          - {
+              name: heroSubtitle,
+              label: "Legacy Hero Subtitle",
+              widget: text,
+              required: false,
+            }
+
+          - {
+              name: aboutTitle,
+              label: "Legacy About Title",
+              widget: string,
+              required: false,
+            }
+
+          - {
+              name: aboutBody,
+              label: "Legacy About Body",
+              widget: markdown,
+              required: false,
+            }
 
   # ── 2. Rooms ─────────────────────────────────────
   - name: rooms
@@ -60,7 +273,11 @@ collections:
     slug: "{{slug}}"
     identifier_field: name
     fields:
-      - { name: id, label: "ID (unique number — use next free id, e.g. 4)", widget: number }
+      - {
+          name: id,
+          label: "ID (unique number — use next free id, e.g. 4)",
+          widget: number,
+        }
       - {
           name: order,
           label: "Display order on homepage (lowest first)",
@@ -68,60 +285,391 @@ collections:
           default: 99,
         }
       - { name: name, label: "Name", widget: string }
-      - { name: slug, label: "URL slug (e.g. dormitory-hall)", widget: string, hint: "Used in the URL: /rooms/<slug>. Lowercase, hyphens only." }
-      - { name: capacity, label: "Capacity (display text, e.g. '8 persons')", widget: string }
+      - {
+          name: slug,
+          label: "URL slug (e.g. dormitory-hall)",
+          widget: string,
+          hint: "Used in the URL: /rooms/<slug>. Lowercase, hyphens only.",
+        }
       - name: occupancy
         label: "Occupancy (for schema.org)"
         widget: object
         hint: "Fill 'value' for a fixed count, OR 'minValue' + 'maxValue' for a range. Used in JSON-LD only."
         fields:
-          - { name: value, label: "Exact occupancy", widget: number, required: false }
-          - { name: minValue, label: "Min occupancy (range)", widget: number, required: false }
-          - { name: maxValue, label: "Max occupancy (range)", widget: number, required: false }
-      - { name: price, label: "Price (display, e.g. 'Rs. 250')", widget: string }
-      - { name: priceNumeric, label: "Price (number, e.g. 250)", widget: number, hint: "Used in JSON-LD Offer schema." }
-      - { name: priceType, label: "Price type ('per room' or 'per person')", widget: string }
-      - { name: priceTypeNote, label: "Price type note (e.g. 'AC' / 'Non AC')", widget: string, required: false, hint: "Shown in parentheses next to the price type on the card and detail page. Leave blank to omit." }
-      - { name: description, label: "Hero description (appears on detail page)", widget: text }
-      - {
-          name: features,
-          label: "Features (shown on homepage card + detail page)",
-          widget: list,
-          field: { name: feature, label: "Feature", widget: string },
-        }
-      - { name: image, label: "Card image URL (homepage thumbnail)", widget: string }
-      - {
-          name: sliderImages,
-          label: "Slider image URLs (detail page gallery)",
-          widget: list,
-          field: { name: url, label: "URL", widget: string },
-        }
-      - {
-          name: sliderVideos,
-          label: "Slider video URLs",
-          required: false,
-          widget: list,
-          field: { name: url, label: "URL", widget: string },
-        }
-      - {
-          name: roomTypes,
-          label: "Room types (e.g. AC Dormitory / Non-AC Dormitory)",
-          widget: list,
-          field: { name: type, label: "Type", widget: string },
-        }
-      - {
-          name: amenityFeatures,
-          label: "Schema.org amenity tags",
-          widget: list,
-          hint: "Used in JSON-LD only — short canonical names like 'AC / Non-AC', 'Hot Water'.",
-          field: { name: amenity, label: "Amenity", widget: string },
-        }
-      - name: faqs
-        label: "FAQs (shown on this room's detail page)"
+          - {
+              name: value,
+              label: "Exact occupancy",
+              widget: number,
+              required: false,
+            }
+          - {
+              name: minValue,
+              label: "Min occupancy (range)",
+              widget: number,
+              required: false,
+            }
+          - {
+              name: maxValue,
+              label: "Max occupancy (range)",
+              widget: number,
+              required: false,
+            }
+
+      # ───────────── ROOM SECTIONS ─────────────
+
+      - name: sections
+        label: "Room Sections"
         widget: list
-        fields:
-          - { name: question, label: Question, widget: string }
-          - { name: answer, label: Answer, widget: text }
+        summary: "{{fields.type}} — {{fields.title}}"
+        types:
+          # ═══════════════════════════════════════
+          # HERO
+          # ═══════════════════════════════════════
+
+          - name: hero
+            label: "Hero Section"
+            widget: object
+            fields:
+              - name: type
+                widget: hidden
+                default: hero
+
+              - name: roomName
+                label: "Title"
+                widget: string
+
+              - name: sectionID
+                required: false
+                label: "Section ID"
+                widget: string
+                default: "home"
+
+              - name: description
+                label: "Description"
+                widget: text
+
+              - name: image
+                label: "Hero Image"
+                widget: image
+
+              - name: bookButtonText
+                label: "Book Button Text"
+                widget: string
+                default: "Book Now"
+
+              - name: detailsButtonText
+                label: "Details Button Text"
+                widget: string
+                default: "View Details"
+
+          # ═══════════════════════════════════════
+          # GALLERY
+          # ═══════════════════════════════════════
+
+          - name: gallery
+            label: "Gallery Section"
+            widget: object
+            fields:
+              - name: type
+                widget: hidden
+                default: gallery
+
+              - name: sectionID
+                required: false
+                label: "Section ID"
+                widget: string
+                default: "gallery"
+
+              - name: title
+                label: "Section Title"
+                widget: string
+                default: "Room Gallery"
+
+              - name: sliderImages
+                label: "Slider Images"
+                widget: list
+                field:
+                  name: image
+                  label: "Image"
+                  widget: image
+
+              - name: sliderVideos
+                label: "Slider Videos"
+                required: false
+                widget: list
+                field:
+                  name: video
+                  label: "Video"
+                  widget: file
+
+          # ═══════════════════════════════════════
+          # FEATURES & PRICING
+          # ═══════════════════════════════════════
+
+          - name: features
+            label: "Features & Pricing"
+            widget: object
+            fields:
+              - name: type
+                widget: hidden
+                default: features
+
+              - name: sectionID
+                required: false
+                label: "Section ID"
+                widget: string
+                default: "features"
+
+              - name: title
+                label: "Section Title"
+                widget: string
+                default: "Room Features & Pricing"
+
+              - name: price
+                label: "Price (display, e.g. 'Rs. 250')"
+                widget: string
+
+              - name: priceNumeric
+                label: "Price (number, e.g. 250)"
+                widget: number
+
+              - name: priceType
+                label: "Price type ('per room' or 'per person')"
+                widget: string
+
+              - name: priceTypeNote
+                label: "Price type note (e.g. 'AC' / 'Non AC')"
+                widget: string
+                required: false
+                hint: "Shown in parentheses next to the price type on the card and detail page. Leave blank to omit."
+
+              - name: capacity
+                label: "Capacity (display text, e.g. '8 persons')"
+                widget: string
+
+              - name: roomTypes
+                label: "Room types (e.g. AC Dormitory / Non-AC Dormitory)"
+                widget: list
+                field:
+                  name: roomTypes
+                  widget: string
+
+              - name: features
+                label: "Features (shown on homepage card + detail page)"
+                widget: list
+                field:
+                  name: features
+                  widget: string
+
+              - name: image
+                label: "Section Image"
+                widget: image
+                required: false
+
+          # ═══════════════════════════════════════
+          # AMENITIES
+          # ═══════════════════════════════════════
+
+          - name: amenities
+            label: "Amenities"
+            widget: object
+            fields:
+              - name: type
+                widget: hidden
+                default: amenities
+
+              - name: sectionID
+                required: false
+                label: "Section ID"
+                widget: string
+                default: "amenities"
+
+              - name: title
+                label: "Section Title"
+                widget: string
+                default: "Facilities & Amenities"
+
+              - name: amenities
+                label: "Amenities"
+                widget: list
+                fields:
+                  - name: icon
+                    label: "Icon"
+                    widget: select
+                    options:
+                      [
+                        Wifi,
+                        Wind,
+                        Droplets,
+                        Shield,
+                        ParkingSquare,
+                        UtensilsCrossed,
+                        Coffee,
+                        Tv,
+                        Mic2,
+                        Thermometer,
+                        Bus,
+                        Users,
+                        CheckCircle,
+                      ]
+
+                  - name: label
+                    label: "Label"
+                    widget: string
+              - name: amenityFeatures
+                label: "Schema.org Amenity Tags"
+                widget: list
+                required: false
+                hint: "Used in JSON-LD only — short canonical names like 'AC / Non-AC', 'Hot Water'."
+                field:
+                  name: amenity
+                  label: "Amenity"
+                  widget: string
+          # ═══════════════════════════════════════
+          # ATTRACTIONS
+          # ═══════════════════════════════════════
+
+          - name: attractions
+            label: "Nearby Attractions"
+            widget: object
+            fields:
+              - name: type
+                widget: hidden
+                default: attractions
+
+              - name: sectionID
+                required: false
+                label: "Section ID"
+                widget: string
+                default: "attractions"
+
+              - name: title
+                label: "Section Title"
+                widget: string
+                default: "Nearby Attractions"
+
+              - name: attractions
+                label: "Attractions"
+                widget: list
+                fields:
+                  - name: name
+                    label: "Name"
+                    widget: string
+
+                  - name: distance
+                    label: "Distance"
+                    widget: string
+
+                  - name: travelTime
+                    label: "Travel Time"
+                    widget: string
+
+                  - name: description
+                    label: "Description"
+                    widget: text
+
+          # ═══════════════════════════════════════
+          # FAQ
+          # ═══════════════════════════════════════
+
+          - name: faq
+            label: "FAQ"
+            widget: object
+            fields:
+              - name: type
+                widget: hidden
+                default: faq
+
+              - name: sectionID
+                required: false
+                label: "Section ID"
+                widget: string
+                default: "faq"
+
+              - name: title
+                label: "Section Title"
+                widget: string
+                default: "Frequently Asked Questions"
+
+              - name: faqs
+                label: "FAQs (shown on this room's detail page)"
+                widget: list
+                fields:
+                  - name: question
+                    label: "Question"
+                    widget: string
+
+                  - name: answer
+                    label: "Answer"
+                    widget: text
+
+              # ═══════════════════════════════════════
+              # GOOGLE REVIEWS
+              # ═══════════════════════════════════════
+
+              - name: reviews
+                label: Google Reviews Section
+                widget: object
+                fields:
+                  - name: type
+                    widget: hidden
+                    default: reviews
+                  - {
+                      name: title,
+                      label: Title,
+                      widget: string,
+                      default: "Google Reviews",
+                    }
+                  - name: sectionID
+                      required:false
+                    label: "Section ID"
+                    widget: string
+                    default: "reviews"
+                  - {
+                      name: subtitle,
+                      label: Subtitle,
+                      widget: text,
+                      required: false,
+                    }
+
+                  - {
+                      name: background,
+                      label: Background,
+                      widget: select,
+                      options: [white, gray],
+                      default: gray,
+                    }
+
+          # ═══════════════════════════════════════
+          # BOOKING
+          # ═══════════════════════════════════════
+
+          - name: booking
+            label: "Booking / Contact"
+            widget: object
+            fields:
+              - name: type
+                widget: hidden
+                default: booking
+
+              - name: sectionID
+                required: false
+                label: "Section ID"
+                widget: string
+                default: "contact"
+
+              - name: title
+                label: "Section Title"
+                widget: string
+                default: "Book Your Stay"
+
+              - name: phone
+                label: "Phone Number"
+                widget: string
+
+              - name: whatsappUrl
+                label: "WhatsApp URL"
+                widget: string
 
   # ── 3. Attractions (home page) ───────────────────
   - name: attractions
@@ -174,5 +722,409 @@ collections:
             fields:
               - { name: author, label: Author, widget: string }
               - { name: time, label: "Time (e.g. a week ago)", widget: string }
-              - { name: rating, label: "Rating (1-5)", widget: number, min: 1, max: 5 }
+              - {
+                  name: rating,
+                  label: "Rating (1-5)",
+                  widget: number,
+                  min: 1,
+                  max: 5,
+                }
               - { name: text, label: Review text, widget: text }
+
+  # ── 6. Homepage Sections ─────────────────────────
+  - name: homepage
+    label: Homepage
+    files:
+      - file: client/data/homepage.json
+        label: Homepage Sections
+        name: sections
+        format: json
+
+        fields:
+          - name: sections
+            label: Sections
+            widget: list
+            summary: "{{fields.type}} — {{fields.title}}"
+
+            types:
+              # ─────────────────────────────────────
+              # HERO
+              # ─────────────────────────────────────
+
+              - name: hero
+                label: Hero Section
+                widget: object
+                fields:
+                  - name: type
+                    widget: hidden
+                    default: hero
+                  - { name: title, label: Title, widget: string }
+
+                  - { name: subtitle, label: Subtitle, widget: text }
+                  - {
+                      name: sectionId,
+                      required: false,
+                      label: sectionId,
+                      widget: string,
+                    }
+                  - {
+                      name: video,
+                      label: Background Video URL,
+                      widget: file,
+                      required: false,
+                      hint: "Optional MP4/video URL. Leave empty to use an image.",
+                    }
+
+                  - {
+                      name: posterImage,
+                      label: Video Poster Image,
+                      widget: image,
+                      required: false,
+                      hint: "Image shown while the background video loads.",
+                    }
+
+                  - {
+                      name: primaryButtonLabel,
+                      label: Primary Button Label,
+                      widget: string,
+                      default: "Check Group Rates",
+                    }
+
+                  - {
+                      name: primaryButtonUrl,
+                      label: Primary Button URL,
+                      widget: string,
+                    }
+
+                  - {
+                      name: secondaryButtonLabel,
+                      label: Secondary Button Label,
+                      widget: string,
+                      default: "Explore Stay Options",
+                    }
+
+                  - {
+                      name: secondaryButtonUrl,
+                      label: Secondary Button URL,
+                      widget: string,
+                      default: "#rooms",
+                    }
+
+                  - {
+                      name: showScrollIndicator,
+                      label: Show Scroll Indicator,
+                      widget: boolean,
+                      default: true,
+                    }
+
+              # ─────────────────────────────────────
+              # ABOUT
+              # ─────────────────────────────────────
+
+              - name: about
+                label: About Section
+                widget: object
+                fields:
+                  - name: type
+                    widget: hidden
+                    default: about
+                  - { name: title, label: Title, widget: string }
+                  - {
+                      name: sectionId,
+                      required: false,
+                      label: sectionId,
+                      widget: string,
+                    }
+
+                  - {
+                      name: image,
+                      label: Image,
+                      widget: image,
+                      required: false,
+                    }
+
+                  - {
+                      name: imageAlt,
+                      label: Image Alt Text,
+                      widget: string,
+                      required: false,
+                    }
+
+                  - { name: description, label: Description, widget: markdown }
+
+                  - name: highlights
+                    label: Highlights
+                    widget: list
+                    fields:
+                      - { name: title, label: Title, widget: string }
+
+                      - {
+                          name: description,
+                          label: Description,
+                          widget: text,
+                          required: false,
+                        }
+
+              # ─────────────────────────────────────
+              # ROOMS
+              # ─────────────────────────────────────
+
+              - name: rooms
+                label: Rooms Section
+                widget: object
+                fields:
+                  - name: type
+                    widget: hidden
+                    default: rooms
+                  - {
+                      name: title,
+                      label: Title,
+                      widget: string,
+                      default: "Accommodation Options",
+                    }
+                  - {
+                      name: sectionId,
+                      required: false,
+                      label: sectionId,
+                      widget: string,
+                    }
+
+                  - { name: description, label: Description, widget: text }
+
+                  - {
+                      name: buttonText,
+                      label: Button Label,
+                      widget: string,
+                      default: "View Room Details",
+                    }
+
+              # ─────────────────────────────────────
+              # AMENITIES
+              # ─────────────────────────────────────
+
+              - name: amenities
+                label: Amenities Section
+                widget: object
+                fields:
+                  - name: type
+                    widget: hidden
+                    default: amenities
+                  - {
+                      name: title,
+                      label: Title,
+                      widget: string,
+                      default: "Facilities & Amenities",
+                    }
+
+                  - { name: description, label: Description, widget: text }
+                  - {
+                      name: sectionId,
+                      required: false,
+                      label: sectionId,
+                      widget: string,
+                    }
+
+                  - name: amenities
+                    label: Amenities
+                    widget: list
+                    fields:
+                      - { name: label, label: Name, widget: string }
+
+                      - {
+                          name: icon,
+                          label: Icon,
+                          widget: select,
+                          options:
+                            [
+                              Wifi,
+                              Wind,
+                              Droplets,
+                              Shield,
+                              ParkingSquare,
+                              UtensilsCrossed,
+                              Coffee,
+                              Tv,
+                              Mic2,
+                              Thermometer,
+                              Bus,
+                              Users,
+                              CheckCircle,
+                            ],
+                          default: check,
+                        }
+
+              # ─────────────────────────────────────
+              # ATTRACTIONS
+              # ─────────────────────────────────────
+
+              - name: attractions
+                label: Attractions Section
+                widget: object
+                fields:
+                  - name: type
+                    widget: hidden
+                    default: attractions
+                  - {
+                      name: title,
+                      label: Title,
+                      widget: string,
+                      default: "Explore Rameswaram Island",
+                    }
+
+                  - {
+                      name: sectionId,
+                      required: false,
+                      label: sectionId,
+                      widget: string,
+                    }
+
+                  - { name: description, label: Description, widget: text }
+
+              # ─────────────────────────────────────
+              # TRUST
+              # ─────────────────────────────────────
+
+              - name: trust
+                label: Trust / Why Choose Us
+                widget: object
+                fields:
+                  - name: type
+                    widget: hidden
+                    default: trust
+                  - {
+                      name: title,
+                      label: Title,
+                      widget: string,
+                      default: "Why Guests Choose Joy AC Hall & Rooms",
+                    }
+                  - {
+                      name: sectionId,
+                      required: false,
+                      label: sectionId,
+                      widget: string,
+                    }
+
+                  - {
+                      name: subtitle,
+                      label: Subtitle,
+                      widget: text,
+                      required: false,
+                    }
+
+                  - {
+                      name: description,
+                      label: Description,
+                      widget: text,
+                      required: false,
+                    }
+
+                  - name: items
+                    label: Trust Items
+                    widget: list
+                    fields:
+                      - { name: title, label: Title, widget: string }
+
+                      - { name: description, label: Description, widget: text }
+
+                      - {
+                          name: icon,
+                          label: Icon,
+                          widget: select,
+                          options: [Users, MapPin, CheckCircle, Shield],
+                          default: CheckCircle,
+                        }
+
+              # ─────────────────────────────────────
+              # REVIEWS
+              # ─────────────────────────────────────
+
+              - name: reviews
+                label: Google Reviews Section
+                widget: object
+                fields:
+                  - name: type
+                    widget: hidden
+                    default: reviews
+                  - {
+                      name: title,
+                      label: Title,
+                      widget: string,
+                      default: "Google Reviews",
+                    }
+                  - {
+                      name: sectionId,
+                      required: false,
+                      label: sectionId,
+                      widget: string,
+                    }
+                  - {
+                      name: subtitle,
+                      label: Subtitle,
+                      widget: text,
+                      required: false,
+                    }
+
+                  - {
+                      name: background,
+                      label: Background,
+                      widget: select,
+                      options: [white, gray],
+                      default: gray,
+                    }
+
+              # ─────────────────────────────────────
+              # LANDMARKS
+              # ─────────────────────────────────────
+
+              - name: landmarks
+                label: Nearby Landmarks Section
+                widget: object
+                fields:
+                  - name: type
+                    widget: hidden
+                    default: landmarks
+                  - {
+                      name: title,
+                      label: Title,
+                      widget: string,
+                      default: "Stay Near Major Landmarks in Rameswaram",
+                    }
+
+                  - {
+                      name: sectionId,
+                      required: false,
+                      label: sectionId,
+                      widget: string,
+                    }
+                  - name: landmarks
+                    label: Landmarks
+                    widget: list
+                    fields:
+                      - { name: title, label: tile, widget: string }
+
+                      - { name: description, label: Description, widget: text }
+
+              # ─────────────────────────────────────
+              # FAQ
+              # ─────────────────────────────────────
+
+              - name: faq
+                label: FAQ Section
+                widget: object
+                fields:
+                  - name: type
+                    widget: hidden
+                    default: faq
+                  - {
+                      name: title,
+                      label: Title,
+                      widget: string,
+                      default: "Frequently Asked Questions",
+                    }
+
+                  - {
+                      name: sectionId,
+                      required: false,
+                      label: sectionId,
+                      widget: string,
+                    }
