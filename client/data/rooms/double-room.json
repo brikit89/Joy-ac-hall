@@ -3,54 +3,169 @@
   "order": 2,
   "name": "Double Room",
   "slug": "double-room",
-  "capacity": "4 persons",
-  "occupancy": { "value": 4 },
-  "price": "Rs. 2,000",
-  "priceNumeric": 2000,
-  "priceType": "per room",
-  "priceTypeNote": "AC",
-  "description": "Comfortable AC / Non-AC double room for up to 4 persons. Ideal for couples and small families with electric kettle, wardrobe and hot water.",
-  "features": [
-    "AC / Non-AC available",
-    "Electric kettle",
-    "Wardrobe",
-    "Hot water"
-  ],
-  "image": "/RoomsImage/DoubleRoom/Double%20room%20Hero%20banner.png",
-  "sliderImages": [
-    "/RoomsImage/DoubleRoom/Double%20room%20Hero%20banner.png",
-    "/RoomsImage/DoubleRoom/Double%20room%20ac.png",
-    "/RoomsImage/DoubleRoom/Double%20room%20bed%202%20.png",
-    "/RoomsImage/DoubleRoom/double%20room%20bathroom.png",
-    "/RoomsImage/DoubleRoom/Heater%20%20in%20Bathroom.jpg.jpeg",
-    "/RoomsImage/DoubleRoom/covered%20parking%20.png"
-  ],
-  "sliderVideos": [
-    "https://cdn.builder.io/o/assets%2F9ab187ea44d746dabf821e39227b5937%2F7443dbf4ae5649ec834da0899d60ae16%2Fcompressed?apiKey=9ab187ea44d746dabf821e39227b5937&token=7443dbf4ae5649ec834da0899d60ae16&alt=media&optimized=true"
-  ],
-  "roomTypes": ["AC Double Room", "Non-AC Double Room"],
-  "amenityFeatures": [
-    "AC / Non-AC",
-    "Electric Kettle",
-    "Wardrobe",
-    "Hot Water"
-  ],
-  "faqs": [
+  "occupancy": {
+    "value": 4
+  },
+  "sections": [
     {
-      "question": "How many people can stay in a Double Room?",
-      "answer": "The Double Room can comfortably accommodate up to 4 persons."
+      "type": "hero",
+      "roomName": "Double Room",
+      "description": "Comfortable AC / Non-AC double room for up to 4 persons. Ideal for couples and small families with electric kettle, wardrobe and hot water.",
+      "image": "/RoomsImage/DoubleRoom/Double%20room%20Hero%20banner.png",
+      "bookButtonText": "Book Now",
+      "detailsButtonText": "View Details"
     },
     {
-      "question": "What amenities are included in the room?",
-      "answer": "AC, electric kettle, wardrobe, WiFi, hot water and comfortable bedding."
+      "type": "gallery",
+      "title": "Room Gallery",
+      "sliderImages": [
+        "/RoomsImage/DoubleRoom/Double%20room%20Hero%20banner.png",
+        "/RoomsImage/DoubleRoom/Double%20room%20ac.png",
+        "/RoomsImage/DoubleRoom/Double%20room%20bed%202%20.png",
+        "/RoomsImage/DoubleRoom/double%20room%20bathroom.png",
+        "/RoomsImage/DoubleRoom/Heater%20%20in%20Bathroom.jpg.jpeg",
+        "/RoomsImage/DoubleRoom/covered%20parking%20.png"
+      ],
+      "sliderVideos": [
+        "https://cdn.builder.io/o/assets%2F9ab187ea44d746dabf821e39227b5937%2F7443dbf4ae5649ec834da0899d60ae16%2Fcompressed?apiKey=9ab187ea44d746dabf821e39227b5937&token=7443dbf4ae5649ec834da0899d60ae16&alt=media&optimized=true"
+      ]
     },
     {
-      "question": "Is breakfast included?",
-      "answer": "Breakfast is not included, but we have a dining area available for guests."
+      "type": "features",
+      "title": "Room Features & Pricing",
+      "price": "Rs. 2,000",
+      "priceNumeric": 2000,
+      "priceType": "per room",
+      "priceTypeNote": "AC",
+      "capacity": "4 persons",
+      "roomTypes": [
+        "AC Double Room",
+        "Non-AC Double Room"
+      ],
+      "features": [
+        "AC / Non-AC available",
+        "Electric kettle",
+        "Wardrobe",
+        "Hot water"
+      ],
+      "image": "/RoomsImage/DoubleRoom/Double%20room%20Hero%20banner.png"
     },
     {
-      "question": "How far is the room from Ramanathaswamy Temple?",
-      "answer": "Just 8.4 km away, approximately 15–16 minutes by car from our property."
+      "type": "amenities",
+      "title": "Facilities & Amenities",
+      "amenities": [
+        {
+          "icon": "Wifi",
+          "label": "WiFi"
+        },
+        {
+          "icon": "Wind",
+          "label": "AC Rooms"
+        },
+        {
+          "icon": "Droplets",
+          "label": "RO Water"
+        },
+        {
+          "icon": "Shield",
+          "label": "24/7 Security"
+        },
+        {
+          "icon": "ParkingSquare",
+          "label": "Free Parking"
+        },
+        {
+          "icon": "Thermometer",
+          "label": "Hot Water"
+        },
+        {
+          "icon": "UtensilsCrossed",
+          "label": "Dining Area"
+        },
+        {
+          "icon": "Coffee",
+          "label": "Kitchen Space"
+        }
+      ],
+      "amenityFeatures": [
+        {
+          "amenity": "AC / Non-AC"
+        },
+        {
+          "amenity": "Electric Kettle"
+        },
+        {
+          "amenity": "Wardrobe"
+        },
+        {
+          "amenity": "Hot Water"
+        }
+      ]
+    },
+    {
+      "type": "attractions",
+      "title": "Nearby Attractions",
+      "attractions": [
+        {
+          "name": "Ramanathaswamy Temple",
+          "distance": "8.4 km",
+          "travelTime": "15–16 min drive",
+          "description": "One of the 12 Jyotirlingas of India"
+        },
+        {
+          "name": "Pamban Bridge",
+          "distance": "5.7 km",
+          "travelTime": "10 min drive",
+          "description": "Historic railway bridge connecting Rameswaram to mainland"
+        },
+        {
+          "name": "Dr APJ Abdul Kalam Memorial",
+          "distance": "2.8 km",
+          "travelTime": "6 min drive",
+          "description": "Memorial dedicated to India's former President"
+        },
+        {
+          "name": "Dhanushkodi Beach",
+          "distance": "19 km",
+          "travelTime": "35 min drive",
+          "description": "Beautiful beach at the southern tip of India"
+        }
+      ]
+    },
+    {
+      "type": "faq",
+      "title": "Frequently Asked Questions",
+      "faqs": [
+        {
+          "question": "How many people can stay in a Double Room?",
+          "answer": "The Double Room can comfortably accommodate up to 4 persons."
+        },
+        {
+          "question": "What amenities are included in the room?",
+          "answer": "AC, electric kettle, wardrobe, WiFi, hot water and comfortable bedding."
+        },
+        {
+          "question": "Is breakfast included?",
+          "answer": "Breakfast is not included, but we have a dining area available for guests."
+        },
+        {
+          "question": "How far is the room from Ramanathaswamy Temple?",
+          "answer": "Just 8.4 km away, approximately 15–16 minutes by car from our property."
+        }
+      ]
+    },
+    {
+      "type": "reviews",
+      "title": "Google Reviews",
+      "subtitle": "Read all reviews on Google",
+      "sectionId": "reviews",
+      "background": "gray"
+    },
+    {
+      "type": "booking",
+      "title": "Book Your Stay",
+      "phone": "+918122445538",
+      "whatsappUrl": "https://wa.me/918122445538"
     }
   ]
 }

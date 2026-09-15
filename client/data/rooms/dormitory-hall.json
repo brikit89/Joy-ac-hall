@@ -3,50 +3,158 @@
   "order": 3,
   "name": "Dormitory Hall",
   "slug": "dormitory-hall",
-  "capacity": "30–50 persons",
-  "occupancy": { "minValue": 30, "maxValue": 50 },
-  "price": "Rs. 250",
-  "priceNumeric": 250,
-  "priceType": "per person",
-  "priceTypeNote": "Non AC",
-  "description": "Spacious AC dormitory hall accommodating 30–50 persons, ideal for pilgrimage groups, school tours and large travel parties. Comes with shared bathrooms, hot water, dining area and bus parking.",
-  "features": [
-    "AC / Non-AC available",
-    "4 Shared Bathrooms",
-    "Best for pilgrimage groups",
-    "Bus parking on-site"
-  ],
-  "image": "/RoomsImage/Dormitoryhall/Dormitory%20Hall%20hero%20banner.png",
-  "sliderImages": [
-    "/RoomsImage/Dormitoryhall/Dormitory%20Hall%20hero%20banner.png",
-    "/RoomsImage/Dormitoryhall/Dorm%20Refresh%20area.png",
-    "/RoomsImage/Dormitoryhall/Dorm%20Shared%20Bathrooms.jpeg",
-    "/RoomsImage/Dormitoryhall/coveredparking%20.png"
-  ],
-  "sliderVideos": [],
-  "roomTypes": ["AC Dormitory", "Non-AC Dormitory"],
-  "amenityFeatures": [
-    "AC / Non-AC",
-    "4 Shared Bathrooms",
-    "Hot Water",
-    "Bus Parking"
-  ],
-  "faqs": [
+  "occupancy": {
+    "minValue": 30,
+    "maxValue": 50
+  },
+  "sections": [
     {
-      "question": "How many people can the Dormitory Hall accommodate?",
-      "answer": "The Dormitory Hall can comfortably accommodate 30–50 persons depending on group size."
+      "type": "hero",
+      "roomName": "Dormitory Hall",
+      "description": "Spacious AC dormitory hall accommodating 30–50 persons, ideal for pilgrimage groups, school tours and large travel parties. Comes with shared bathrooms, hot water, dining area and bus parking.",
+      "image": "/RoomsImage/Dormitoryhall/Dormitory%20Hall%20hero%20banner.png",
+      "bookButtonText": "Book Now",
+      "detailsButtonText": "View Details"
     },
     {
-      "question": "What amenities are included?",
-      "answer": "AC, 4 shared bathrooms, WiFi, hot water, dining area, and kitchen facilities for cooking."
+      "type": "gallery",
+      "title": "Room Gallery",
+      "sliderImages": [
+        "/RoomsImage/Dormitoryhall/Dormitory%20Hall%20hero%20banner.png",
+        "/RoomsImage/Dormitoryhall/Dorm%20Refresh%20area.png",
+        "/RoomsImage/Dormitoryhall/Dorm%20Shared%20Bathrooms.jpeg",
+        "/RoomsImage/Dormitoryhall/coveredparking%20.png"
+      ],
+      "sliderVideos": []
     },
     {
-      "question": "Is it suitable for pilgrimage groups?",
-      "answer": "Yes, the dormitory is ideal for pilgrimage groups, school tours, and large tourist groups."
+      "type": "features",
+      "title": "Room Features & Pricing",
+      "price": "Rs. 250",
+      "priceNumeric": 250,
+      "priceType": "per person",
+      "priceTypeNote": "Non AC",
+      "capacity": "30–50 persons",
+      "roomTypes": [
+        "AC Dormitory",
+        "Non-AC Dormitory"
+      ],
+      "features": [
+        "AC / Non-AC available",
+        "4 Shared Bathrooms",
+        "Best for pilgrimage groups",
+        "Bus parking on-site"
+      ],
+      "image": "/RoomsImage/Dormitoryhall/Dormitory%20Hall%20hero%20banner.png"
     },
     {
-      "question": "How far is the dormitory from Ramanathaswamy Temple?",
-      "answer": "Just 8.4 km away, approximately 15–16 minutes by car from our property."
+      "type": "amenities",
+      "title": "Facilities & Amenities",
+      "amenities": [
+        {
+          "icon": "Wifi",
+          "label": "WiFi"
+        },
+        {
+          "icon": "Wind",
+          "label": "AC Rooms"
+        },
+        {
+          "icon": "Droplets",
+          "label": "RO Water"
+        },
+        {
+          "icon": "Shield",
+          "label": "24/7 Security"
+        },
+        {
+          "icon": "ParkingSquare",
+          "label": "Free Parking"
+        },
+        {
+          "icon": "Thermometer",
+          "label": "Hot Water"
+        },
+        {
+          "icon": "UtensilsCrossed",
+          "label": "Dining Area"
+        },
+        {
+          "icon": "Coffee",
+          "label": "Kitchen Space"
+        }
+      ],
+      "amenityFeatures": [
+        "AC / Non-AC",
+        "4 Shared Bathrooms",
+        "Hot Water",
+        "Bus Parking"
+      ]
+    },
+    {
+      "type": "attractions",
+      "title": "Nearby Attractions",
+      "attractions": [
+        {
+          "name": "Ramanathaswamy Temple",
+          "distance": "8.4 km",
+          "travelTime": "15–16 min drive",
+          "description": "One of the 12 Jyotirlingas of India"
+        },
+        {
+          "name": "Pamban Bridge",
+          "distance": "5.7 km",
+          "travelTime": "10 min drive",
+          "description": "Historic railway bridge connecting Rameswaram to mainland"
+        },
+        {
+          "name": "Dr APJ Abdul Kalam Memorial",
+          "distance": "2.8 km",
+          "travelTime": "6 min drive",
+          "description": "Memorial dedicated to India's former President"
+        },
+        {
+          "name": "Dhanushkodi Beach",
+          "distance": "19 km",
+          "travelTime": "35 min drive",
+          "description": "Beautiful beach at the southern tip of India"
+        }
+      ]
+    },
+    {
+      "type": "faq",
+      "title": "Frequently Asked Questions",
+      "faqs": [
+        {
+          "question": "How many people can the Dormitory Hall accommodate?",
+          "answer": "The Dormitory Hall can comfortably accommodate 30–50 persons depending on group size."
+        },
+        {
+          "question": "What amenities are included?",
+          "answer": "AC, 4 shared bathrooms, WiFi, hot water, dining area, and kitchen facilities for cooking."
+        },
+        {
+          "question": "Is it suitable for pilgrimage groups?",
+          "answer": "Yes, the dormitory is ideal for pilgrimage groups, school tours, and large tourist groups."
+        },
+        {
+          "question": "How far is the dormitory from Ramanathaswamy Temple?",
+          "answer": "Just 8.4 km away, approximately 15–16 minutes by car from our property."
+        }
+      ]
+    },
+    {
+      "type": "reviews",
+      "title": "Google Reviews",
+      "subtitle": "Read all reviews on Google",
+      "sectionId": "reviews",
+      "background": "gray"
+    },
+    {
+      "type": "booking",
+      "title": "Book Your Stay",
+      "phone": "+918122445538",
+      "whatsappUrl": "https://wa.me/918122445538"
     }
   ]
 }
