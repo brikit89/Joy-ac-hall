@@ -1,8 +1,8 @@
 {
   "id": 1,
   "order": 3,
-  "name": "Dormitory Hall",
-  "slug": "dormitory-hall",
+  "name": "Private Group Stay",
+  "slug": "/rooms/private-group-stay",
   "occupancy": {
     "minValue": 30,
     "maxValue": 50
@@ -28,24 +28,24 @@
       "sliderVideos": []
     },
     {
-      "type": "features",
-      "title": "Room Features & Pricing",
-      "price": "Rs. 250",
-      "priceNumeric": 250,
       "priceType": "per person",
+      "priceNumeric": 250,
+      "price": "Rs. 250",
       "priceTypeNote": "Non AC",
+      "title": "Room Features & Pricing",
       "capacity": "30–50 persons",
-      "roomTypes": [
-        "AC Dormitory",
-        "Non-AC Dormitory"
-      ],
+      "type": "features",
+      "image": "/RoomsImage/Dormitoryhall/Dormitory%20Hall%20hero%20banner.png",
       "features": [
         "AC / Non-AC available",
         "4 Shared Bathrooms",
         "Best for pilgrimage groups",
         "Bus parking on-site"
       ],
-      "image": "/RoomsImage/Dormitoryhall/Dormitory%20Hall%20hero%20banner.png"
+      "roomTypes": [
+        "AC Dormitory",
+        "Non-AC Dormitory"
+      ]
     },
     {
       "type": "amenities",
@@ -118,28 +118,6 @@
           "distance": "19 km",
           "travelTime": "35 min drive",
           "description": "Beautiful beach at the southern tip of India"
-        }
-      ]
-    },
-    {
-      "type": "faq",
-      "title": "Frequently Asked Questions",
-      "faqs": [
-        {
-          "question": "How many people can the Dormitory Hall accommodate?",
-          "answer": "The Dormitory Hall can comfortably accommodate 30–50 persons depending on group size."
-        },
-        {
-          "question": "What amenities are included?",
-          "answer": "AC, 4 shared bathrooms, WiFi, hot water, dining area, and kitchen facilities for cooking."
-        },
-        {
-          "question": "Is it suitable for pilgrimage groups?",
-          "answer": "Yes, the dormitory is ideal for pilgrimage groups, school tours, and large tourist groups."
-        },
-        {
-          "question": "How far is the dormitory from Ramanathaswamy Temple?",
-          "answer": "Just 8.4 km away, approximately 15–16 minutes by car from our property."
         }
       ]
     },
