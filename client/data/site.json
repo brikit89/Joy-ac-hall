@@ -1,44 +1,5 @@
 {
-  "header": {
-    "logo": "/logo.png",
-    "scrolledLogo": "/logo-coloured.png",
-    "logoAlt": "Joy AC Hall & Rooms",
-    "navLinks": [
-      {
-        "id": "hero",
-        "label": "Home",
-        "href": "#hero"
-      },
-      {
-        "id": "about",
-        "label": "About",
-        "href": "#about"
-      },
-      {
-        "id": "rooms",
-        "label": "Rooms",
-        "href": "#rooms"
-      },
-      {
-        "id": "amenities",
-        "label": "Amenities",
-        "href": "#amenities"
-      },
-      {
-        "id": "attractions",
-        "label": "Attractions",
-        "href": "#attractions"
-      },
-      {
-        "id": "faq",
-        "label": "FAQ",
-        "href": "#faq"
-      }
-    ],
-    "bookingLabel": "Book Now",
-    "bookingUrl": "https://be.aiosell.com/book/2e94839cd4"
-  },
-  
+  "phoneURL": "tel:+918122445538",
   "roomHeader": {
     "logo": "/logo.png",
     "scrolledLogo": "/logo-coloured.png",
@@ -83,25 +44,68 @@
     "bookingLabel": "Book Now",
     "bookingUrl": "https://be.aiosell.com/book/2e94839cd4"
   },
-
-
-  "phoneURL":"tel:+918122445538",
-  "whatsappURL":"https://wa.me/918122445538",
-  "phone": "+91 81224 45538",
-  "phoneDisplay": "+91 81224 45538",
-  "whatsapp": "+918122445538",
-  "email": "admin@joyachall.com",
-  "address": "4/3001, Valasai St, Akkalmadam, Thangachimadam, Rameswaram, Tamil Nadu 623529",
-  "googleMapsUrl": "https://maps.google.com/?q=Joy+AC+Hall+%26+Dormitory+Rameswaram",
   "googleReviewsUrl": "https://www.google.com/maps/place/Joy+AC+Hall+%26+Dormitory",
-  "bookingUrl":"https://be.aiosell.com/book/2e94839cd4/",
-  "bookingCtaLabel":"Book Now",
-  
+  "header": {
+    "logo": "/logo.png",
+    "scrolledLogo": "/logo-coloured.png",
+    "logoAlt": "Joy AC Hall & Rooms",
+    "navLinks": [
+      {
+        "id": "hero",
+        "label": "Home",
+        "href": "#hero"
+      },
+      {
+        "id": "about",
+        "label": "About",
+        "href": "#about"
+      },
+      {
+        "id": "rooms",
+        "label": "Rooms",
+        "href": "#rooms"
+      },
+      {
+        "id": "amenities",
+        "label": "Amenities",
+        "href": "#amenities"
+      },
+      {
+        "id": "attractions",
+        "label": "Attractions",
+        "href": "#attractions"
+      },
+      {
+        "id": "faq",
+        "label": "FAQ",
+        "href": "#faq"
+      }
+    ],
+    "bookingLabel": "Book Now",
+    "bookingUrl": "https://be.aiosell.com/book/2e94839cd4"
+  },
+  "phone": "+91 81224 45538",
+  "whatsapp": "+918122445538",
+  "phoneDisplay": "+91 81224 45538",
+  "address": "4/3001, Valasai St, Akkalmadam, Thangachimadam, Rameswaram, Tamil Nadu 623529",
+  "bookingUrl": "https://be.aiosell.com/book/2e94839cd4/",
   "footer": {
     "aboutTitle": "About Joy AC Hall & Rooms",
-    "aboutText": "Joy AC Hall offers AC rooms, family stay, group accommodation, wedding hall and event facilities in Rameswaram, Tamil Nadu. Located near Ramanathaswamy Temple, Pamban Bridge and Dr APJ Abdul Kalam Memorial.",
-
-    "quickLinksTitle": "Quick Links",
+    "socialTitle": "Follow Us",
+    "socialLinks": [
+      {
+        "platform": "Facebook",
+        "url": "https://www.facebook.com"
+      },
+      {
+        "platform": "Instagram",
+        "url": "https://www.instagram.com"
+      },
+      {
+        "platform": "YouTube",
+        "url": "https://www.youtube.com"
+      }
+    ],
     "quickLinks": [
       {
         "label": "Our Rooms",
@@ -129,27 +133,14 @@
         "external": true
       }
     ],
-
-    "socialTitle": "Follow Us",
-    "socialLinks": [
-      {
-        "platform": "Facebook",
-        "url": "https://www.facebook.com"
-      },
-      {
-        "platform": "Instagram",
-        "url": "https://www.instagram.com"
-      },
-      {
-        "platform": "YouTube",
-        "url": "https://www.youtube.com"
-      }
-    ],
-
-    "mapTitle": "Visit Our Location",
+    "quickLinksTitle": "Quick Links",
     "mapEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3937.54552272344!2d79.24418387508052!3d9.284836190787066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b01e57b84786dc5%3A0x36f1e2f3e163a4e8!2sJoy%20AC%20Hall%20%26%20Dormitory!5e0!3m2!1sen!2sin!4v1773055304001!5m2!1sen!2sin",
-
-    "copyrightText": "© 2026 Joy AC Hall & Rooms. All rights reserved. | AC Rooms, Group Stay & Wedding Hall in Rameswaram near Ramanathaswamy Temple & Pamban Bridge."
-  }
-
+    "copyrightText": "© 2026 Joy AC Hall & Rooms. All rights reserved. | AC Rooms, Group Stay & Wedding Hall in Rameswaram near Ramanathaswamy Temple & Pamban Bridge.",
+    "aboutText": "Joy AC Hall & Rooms offers affordable AC family rooms and private group accommodation in Rameswaram, Tamil Nadu. Ideal for families, pilgrims and tour groups, with rooms for 4–10 guests and private group stays for 15–70 guests. Located in Thangachimadam near Pamban Bridge, Ramanathaswamy Temple and Dr. APJ Abdul Kalam Memorial.",
+    "mapTitle": "Visit Our Location"
+  },
+  "email": "admin@joyachall.com",
+  "bookingCtaLabel": "Book Now",
+  "whatsappURL": "https://wa.me/918122445538",
+  "googleMapsUrl": "https://maps.google.com/?q=Joy+AC+Hall+%26+Dormitory+Rameswaram"
 }
