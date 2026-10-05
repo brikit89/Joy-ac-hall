@@ -1,43 +1,43 @@
 {
   "sections": [
     {
-      "type": "hero",
-      "title": "Joy AC Hall — Affordable Family Rooms & Private Group Stay in Rameswaram",
-      "subtitle": "Comfortable private stays for families and groups of 4–60 guests in Thangachimadam, conveniently located for exploring Rameswaram, Pamban Bridge and the Dr. A.P.J. Abdul Kalam Memorial.",
-      "video": "https://cdn.builder.io/o/assets%2F9ab187ea44d746dabf821e39227b5937%2Fa1335934641e4b4ebce173b7ca108902?alt=media&token=66214e13-9c6d-4e26-806c-c914f6ce775b&apiKey=9ab187ea44d746dabf821e39227b5937",
-      "posterImage": "",
       "primaryButtonLabel": "Check Group Rates",
-      "primaryButtonUrl": "https://wa.me/918122445538",
-      "secondaryButtonLabel": "Explore Stay Options",
+      "showScrollIndicator": true,
       "secondaryButtonUrl": "#rooms",
-      "showScrollIndicator": true
+      "posterImage": "",
+      "secondaryButtonLabel": "Explore Stay Options",
+      "subtitle": "Comfortable AC family rooms for 4–10 guests and private group accommodation for 15–70 guests in Thangachimadam, near Pamban Bridge and Rameswaram's major attractions.",
+      "title": "Joy AC Hall & Rooms — Family Rooms & Private Group Stay in Rameswaram",
+      "type": "hero",
+      "video": "https://cdn.builder.io/o/assets%2F9ab187ea44d746dabf821e39227b5937%2Fa1335934641e4b4ebce173b7ca108902?alt=media&token=66214e13-9c6d-4e26-806c-c914f6ce775b&apiKey=9ab187ea44d746dabf821e39227b5937",
+      "primaryButtonUrl": "https://wa.me/918122445538"
     },
     {
       "type": "about",
       "sectionId": "about",
-      "title": "Welcome to Joy AC Hall & Rooms",
+      "title": "Family Rooms & Private Group Stay in Rameswaram",
       "image": "https://cdn.builder.io/api/v1/image/assets%2F9ab187ea44d746dabf821e39227b5937%2F6cb03dfcf88d421e94c4b20dd13e32b3",
       "imageAlt": "Joy AC Hall & Rooms in Rameswaram",
-      "description": "Joy AC Hall & Rooms offers spacious dormitory and room  accommodation for travelers visiting the sacred island of  Rameswaram. Perfect **dormitory in Rameswaram** for pilgrimage groups, school tours, family travelers, and tourist groups exploring Pamban Bridge and Dhanushkodi.",
+      "description": "**Joy AC Hall & Rooms** offers comfortable **AC family rooms and private group accommodation in Rameswaram**, located in Thangachimadam near Pamban Bridge. Our rooms are suitable for families and small groups of **4–10 guests**, while our private group stay is designed for larger groups of **15–70 guests**.\n\nWhether you're visiting Rameswaram for a family trip, pilgrimage, or group tour, we provide a convenient and comfortable base for exploring **Pamban Bridge, Ramanathaswamy Temple, Dr. A.P.J. Abdul Kalam Memorial, Dhanushkodi** and other popular attractions.",
       "highlights": [
         {
-          "title": "Dormitory in Rameswaram",
-          "description": "Perfect for groups and pilgrims."
+          "title": "Family Rooms in Rameswaram",
+          "description": "— AC accommodation for 4–10 guests."
         },
         {
-          "title": "Group stay in Rameswaram",
-          "description": "Specialized group accommodations"
+          "title": "Private Group Stay in Rameswaram ",
+          "description": "— Accommodation for groups of 15–70 guests."
         },
         {
-          "title": "Accommodation near Ramanathaswamy Temple",
-          "description": "Just 8.4 km away"
+          "title": "- Near Rameswaram Attractions ",
+          "description": "— Easy access to Ramanathaswamy Temple, APJ Abdul Kalam Memorial and Dhanushkodi."
         }
       ]
     },
     {
       "type": "rooms",
       "title": "Accommodation Options",
-      "description": "Choose from budget-friendly dormitory rooms or comfortable family and double rooms near Ramanathaswamy Temple and Pamban Bridge.",
+      "description": "Choose from comfortable AC family rooms for 4–10 guests or private group accommodation for 15–70 guests, conveniently located in Thangachimadam near Pamban Bridge and Rameswaram’s major attractions.",
       "buttonText": "View Room Details"
     },
     {
@@ -172,8 +172,6 @@
     {
       "type": "faq",
       "title": "Frequently Asked Questions"
-
     }
-
   ]
 }
