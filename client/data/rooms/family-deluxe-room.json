@@ -1,7 +1,7 @@
 {
   "id": 2,
   "order": 1,
-  "name": "Family Deluxe Room",
+  "name": " Deluxe Family Room",
   "slug": "family-deluxe-room",
   "occupancy": {
     "value": 8
@@ -32,24 +32,24 @@
       ]
     },
     {
-      "type": "features",
-      "title": "Room Features & Pricing",
-      "price": "Rs. 3,800",
-      "priceNumeric": 3800,
       "priceType": "per room",
+      "priceNumeric": 3800,
+      "price": "Rs. 3,800",
       "priceTypeNote": "AC",
+      "title": "Room Features & Pricing",
       "capacity": "8 persons",
-      "roomTypes": [
-        "AC Family Room",
-        "Non-AC Family Room"
-      ],
+      "type": "features",
+      "image": "/RoomsImage/FamilyDeluxeRoom/Family%20Deluxe%20hero%20banner.png",
       "features": [
         "AC / Non-AC available",
         "Attached bathroom",
         "Family comfort",
         "Hot water"
       ],
-      "image": "/RoomsImage/FamilyDeluxeRoom/Family%20Deluxe%20hero%20banner.png"
+      "roomTypes": [
+        "AC Family Room",
+        "Non-AC Family Room"
+      ]
     },
     {
       "type": "amenities",
@@ -122,28 +122,6 @@
           "distance": "19 km",
           "travelTime": "35 min drive",
           "description": "Beautiful beach at the southern tip of India"
-        }
-      ]
-    },
-    {
-      "type": "faq",
-      "title": "Frequently Asked Questions",
-      "faqs": [
-        {
-          "question": "How many people can stay in a Family Deluxe Room?",
-          "answer": "The Family Deluxe Room can comfortably accommodate up to 8 persons."
-        },
-        {
-          "question": "Does the room have an attached bathroom?",
-          "answer": "Yes, the Family Deluxe Room comes with a private attached bathroom."
-        },
-        {
-          "question": "Are AC and Non-AC variants available?",
-          "answer": "Yes, both AC and Non-AC variants of the Family Deluxe Room are available."
-        },
-        {
-          "question": "How far is the room from Ramanathaswamy Temple?",
-          "answer": "Just 8.4 km away, approximately 15–16 minutes by car from our property."
         }
       ]
     },
