@@ -2,7 +2,7 @@
   "id": 1,
   "order": 5,
   "name": "Private Group Stay",
-  "slug": "/rooms/private-group-stay",
+  "slug": "private-group-stay",
   "occupancy": {
     "minValue": 30,
     "maxValue": 50
