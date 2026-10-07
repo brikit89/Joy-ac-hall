@@ -93,6 +93,13 @@
           "label": "Hot Water"
         }
       ]
+    },
+    {
+      "type": "booking",
+      "sectionID": "contact",
+      "title": "Book Your Stay",
+      "phone": "+918122445538",
+      "whatsappUrl": "https://wa.me/918122445538"
     }
   ]
 }
