@@ -1,7 +1,7 @@
 {
   "id": 3,
   "order": 4,
-  "name": "Double Room",
+  "name": "Double Room with Private Bathroom",
   "slug": "double-room",
   "occupancy": {
     "value": 4
