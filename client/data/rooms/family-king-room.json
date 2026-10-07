@@ -54,6 +54,45 @@
       "roomTypes": [
         "AC Family Room"
       ]
+    },
+    {
+      "type": "amenities",
+      "sectionID": "amenities",
+      "title": "Facilities & Amenities",
+      "amenities": [
+        {
+          "icon": "Wifi",
+          "label": "Wifi"
+        },
+        {
+          "icon": "Wind",
+          "label": "Ac Rooms"
+        },
+        {
+          "icon": "Droplets",
+          "label": "RO Water"
+        },
+        {
+          "icon": "Shield",
+          "label": "24/7 Security"
+        },
+        {
+          "icon": "ParkingSquare",
+          "label": "Free Parking"
+        },
+        {
+          "icon": "UtensilsCrossed",
+          "label": "Dining Area"
+        },
+        {
+          "icon": "Coffee",
+          "label": "Kitchen Space"
+        },
+        {
+          "icon": "Thermometer",
+          "label": "Hot Water"
+        }
+      ]
     }
   ]
 }
