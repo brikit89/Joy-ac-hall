@@ -2,7 +2,7 @@
   "order": 3,
   "id": 5,
   "name": "Family  Room with Private Bathroom ( King  )",
-  "slug": "family-king-room/",
+  "slug": "family-king-room",
   "occupancy": {
     "value": 3,
     "maxValue": 5
