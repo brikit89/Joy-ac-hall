@@ -55,6 +55,14 @@
       "visitorTime": "6:00 AM – 6:00 PM",
       "description": "Scenic and historic spot at the Land's End of India. Featuring Arichal Munai with coastal views and Ram Setu mythic legacy.",
       "image": "https://cdn.builder.io/api/v1/image/assets%2F9ab187ea44d746dabf821e39227b5937%2Fd796ef0299344666a959286e67f90e87"
+    },
+    {
+      "image": "public/uploads/kurusadai-island-boating.png",
+      "description": "\nDiscover the Wonders of Kurusadai Island\n\nEmbark on an eco-adventure to Kurusadai Island, one of the hidden gems of the Gulf of Mannar Marine National Park. Your journey begins with a scenic 30-minute boat ride from Kunthukal Beach, where you can take in pristine coastal views and spot vibrant marine life.\nOnce you land, a guided exploration reveals a protected ecological paradise teeming with coral reefs, seagrass meadows, and exotic marine species. Perfect for nature enthusiasts and eco-tourists, this unforgettable trip offers a rare, up-close look at India’s rich underwater heritage.",
+      "visitorTime": "7:00 AM to 2:00 PM (Closed on Tuesdays)",
+      "travelTime": "12 Mins ",
+      "distance": "6 Km ",
+      "name": "Kurusadai Island Boating"
     }
   ]
 }
