@@ -1,0 +1,21 @@
+{
+  "order": 3,
+  "id": 5,
+  "name": "Family King Room ",
+  "slug": "/rooms/family-king-room/",
+  "occupancy": {
+    "value": 3,
+    "maxValue": 5
+  },
+  "sections": [
+    {
+      "type": "hero",
+      "sectionID": "home",
+      "bookButtonText": "Book Now",
+      "detailsButtonText": "View Details",
+      "roomName": "Family King Room in Rameswaram – Sleeps 4 Adults",
+      "description": "Enjoy a comfortable stay in our Family King Room, designed for families and small groups visiting Rameswaram. The room features a spacious King-size mattress, comfortably accommodating up to 3 adults. With additional mattresses, the room can accommodate up to 5 adults, making it a practical option for families travelling together.\nThe room is air-conditioned and equipped with a table, mirror and essential guest facilities. It also includes a private bathroom with a Western-style toilet and wash basin, providing guests with convenient private accommodation.",
+      "image": "/uploads/family-king-room.jpeg"
+    }
+  ]
+}
