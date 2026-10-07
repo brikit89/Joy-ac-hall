@@ -30,6 +30,30 @@
         "/uploads/family-king-heater.jpeg",
         "/uploads/covered-parking-joy-ac-hall-rameswaram.png"
       ]
+    },
+    {
+      "sectionID": "features",
+      "priceType": "Per room ",
+      "priceNumeric": 2500,
+      "price": "Rs,2500",
+      "priceTypeNote": "AC",
+      "title": "Room Features & Pricing",
+      "capacity": "3 + 2",
+      "type": "features",
+      "features": [
+        "🛏️ 1 King  Bed ",
+        "🛏️ 1 Double Bed extra",
+        "👨‍👩‍👧‍👦 4 Adults + 1 Child",
+        "❄️ Air Conditioned",
+        "🚿 Private Attached Bathroom",
+        "🚿 Shower",
+        "🚽 Western Toilet",
+        "🪞 Mirror",
+        "📶 Free Wi-Fi"
+      ],
+      "roomTypes": [
+        "AC Family Room"
+      ]
     }
   ]
 }
