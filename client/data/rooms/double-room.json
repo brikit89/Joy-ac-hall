@@ -1,6 +1,6 @@
 {
   "id": 3,
-  "order": 2,
+  "order": 4,
   "name": "Double Room",
   "slug": "double-room",
   "occupancy": {
@@ -31,24 +31,24 @@
       ]
     },
     {
-      "type": "features",
-      "title": "Room Features & Pricing",
-      "price": "Rs. 2,000",
-      "priceNumeric": 2000,
       "priceType": "per room",
+      "priceNumeric": 2000,
+      "price": "Rs. 2,000",
       "priceTypeNote": "AC",
+      "title": "Room Features & Pricing",
       "capacity": "4 persons",
-      "roomTypes": [
-        "AC Double Room",
-        "Non-AC Double Room"
-      ],
+      "type": "features",
+      "image": "/RoomsImage/DoubleRoom/Double%20room%20Hero%20banner.png",
       "features": [
         "AC / Non-AC available",
         "Electric kettle",
         "Wardrobe",
         "Hot water"
       ],
-      "image": "/RoomsImage/DoubleRoom/Double%20room%20Hero%20banner.png"
+      "roomTypes": [
+        "AC Double Room",
+        "Non-AC Double Room"
+      ]
     },
     {
       "type": "amenities",
@@ -129,28 +129,6 @@
           "distance": "19 km",
           "travelTime": "35 min drive",
           "description": "Beautiful beach at the southern tip of India"
-        }
-      ]
-    },
-    {
-      "type": "faq",
-      "title": "Frequently Asked Questions",
-      "faqs": [
-        {
-          "question": "How many people can stay in a Double Room?",
-          "answer": "The Double Room can comfortably accommodate up to 4 persons."
-        },
-        {
-          "question": "What amenities are included in the room?",
-          "answer": "AC, electric kettle, wardrobe, WiFi, hot water and comfortable bedding."
-        },
-        {
-          "question": "Is breakfast included?",
-          "answer": "Breakfast is not included, but we have a dining area available for guests."
-        },
-        {
-          "question": "How far is the room from Ramanathaswamy Temple?",
-          "answer": "Just 8.4 km away, approximately 15–16 minutes by car from our property."
         }
       ]
     },
