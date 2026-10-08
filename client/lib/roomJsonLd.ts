@@ -52,7 +52,6 @@ export function buildRoomJsonLd(room: RoomData) {
           maxValue: room.occupancy.maxValue,
         };
 
-  const amenityFeatures = amenities?.amenityFeatures ?? [];
 
   const accommodation: Record<string, unknown> = {
     "@context": "https://schema.org",
@@ -68,11 +67,7 @@ export function buildRoomJsonLd(room: RoomData) {
 
     occupancy,
 
-    amenityFeature: amenityFeatures.map((name) => ({
-      "@type": "LocationFeatureSpecification",
-      name,
-      value: true,
-    })),
+    
   };
 
   // Only add Offer when pricing information exists.

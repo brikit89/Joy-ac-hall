@@ -49,8 +49,7 @@ const RoomsSection = ({
           {rooms.map((room) => (
             <div
               key={room.id}
-              className="card-hover rounded-lg overflow-hidden shadow-md border border-gray-100 bg-white"
-            >
+              className="card-hover rounded-lg overflow-hidden shadow-md border border-gray-100 bg-white flex flex-col  h-full"            >
               <div className="relative h-48 overflow-hidden">
                 <img
                   src={room.image}
@@ -61,7 +60,7 @@ const RoomsSection = ({
                 />
               </div>
 
-              <div className="p-6">
+              <div className="p-6 flex flex-col  h-full">
                 <h3 className="text-2xl font-bold text-primary mb-2">
                   {room.name}
                 </h3>
@@ -94,8 +93,8 @@ const RoomsSection = ({
                   ))}
                 </ul>
 
-                <Link to={room.route} className="block">
-                  <Button className="w-full bg-primary hover:bg-primary/90">
+                <Link to={room.route} className=" mt-auto block">
+                  <Button className="w-full  bg-primary  hover:bg-primary/90">
                     {buttonText}
                   </Button>
                 </Link>

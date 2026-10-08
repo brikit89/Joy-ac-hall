@@ -5,11 +5,12 @@
 # GitHub backend — content commits go to your repo's main branch.
 # The OAuth proxy below is the Cloudflare Worker in cloudflare-worker/.
 backend:
-  name: github
-  repo: brikit89/Joy-ac-hall   # was Ozzitech/Joy-ac-hall
-  branch: main
-  base_url: https://joy-ac-hall-cms-oauth.brikit-38a.workers.dev
-  auth_endpoint: auth
+  name: test-repo
+  # name: github
+  # repo: brikit89/Joy-ac-hall   # was Ozzitech/Joy-ac-hall
+  # branch: main
+  # base_url: https://joy-ac-hall-cms-oauth.brikit-38a.workers.dev
+  # auth_endpoint: auth
 
 # Local proxy for in-development editing without GitHub
 # Run with: npm run cms:proxy
@@ -275,7 +276,7 @@ collections:
     fields:
       - {
           name: id,
-          label: "ID (unique number — use next free id, e.g. 4)",
+          label: "ID (unique number — use next free id, e.g. 6)",
           widget: number,
         }
       - {
@@ -341,7 +342,7 @@ collections:
               - name: sectionID
                 required: false
                 label: "Section ID"
-                widget: string
+                widget: hidden
                 default: "home"
 
               - name: description
@@ -377,7 +378,7 @@ collections:
               - name: sectionID
                 required: false
                 label: "Section ID"
-                widget: string
+                widget: hidden
                 default: "gallery"
 
               - name: title
@@ -417,7 +418,7 @@ collections:
               - name: sectionID
                 required: false
                 label: "Section ID"
-                widget: string
+                widget: hidden
                 default: "features"
 
               - name: title
@@ -464,7 +465,6 @@ collections:
               - name: image
                 label: "Section Image"
                 widget: image
-                required: false
 
           # ═══════════════════════════════════════
           # AMENITIES
@@ -481,7 +481,7 @@ collections:
               - name: sectionID
                 required: false
                 label: "Section ID"
-                widget: string
+                widget: hidden
                 default: "amenities"
 
               - name: title
@@ -492,39 +492,57 @@ collections:
               - name: amenities
                 label: "Amenities"
                 widget: list
+                default:
+                  - icon: Wifi
+                    label: WiFi
+                  - icon: Wind
+                    label: AC Rooms
+                  - icon: Droplets
+                    label: RO Water
+                  - icon: Shield
+                    label: 24/7 Security
+                  - icon: ParkingSquare
+                    label: Free Parking
+                  - icon: Thermometer
+                    label: Hot Water
+                  - icon: UtensilsCrossed
+                    label: Dining Area
+                  - icon: Coffee
+                    label: Kitchen Space
+                  - icon: UtensilsCrossed
+                    label: Dining Area
+                  - icon: Mic2
+                    label: Speakers & Mic
+                  - icon: Thermometer
+                    label: Hot Water
+                  - icon: Coffee
+                    label: Electric Kettle
+                  - icon: Tv
+                    label: TV in Rooms
+                  - icon: Bus
+                    label: Bus Parking
+                  - icon: Shield
+                    label: 24/7 Security
+
                 fields:
                   - name: icon
-                    label: "Icon"
+                    label: Icon
                     widget: select
                     options:
-                      [
-                        Wifi,
-                        Wind,
-                        Droplets,
-                        Shield,
-                        ParkingSquare,
-                        UtensilsCrossed,
-                        Coffee,
-                        Tv,
-                        Mic2,
-                        Thermometer,
-                        Bus,
-                        Users,
-                        CheckCircle,
-                      ]
+                      - Wifi
+                      - Wind
+                      - Droplets
+                      - Shield
+                      - ParkingSquare
+                      - UtensilsCrossed
+                      - Coffee
+                      - Tv
+                      - Mic2
+                      - Thermometer
+                      - Bus
+                      - Users
+                      - CheckCircle
 
-                  - name: label
-                    label: "Label"
-                    widget: string
-              - name: amenityFeatures
-                label: "Schema.org Amenity Tags"
-                widget: list
-                required: false
-                hint: "Used in JSON-LD only — short canonical names like 'AC / Non-AC', 'Hot Water'."
-                field:
-                  name: amenity
-                  label: "Amenity"
-                  widget: string
           # ═══════════════════════════════════════
           # ATTRACTIONS
           # ═══════════════════════════════════════
@@ -540,7 +558,7 @@ collections:
               - name: sectionID
                 required: false
                 label: "Section ID"
-                widget: string
+                widget: hidden
                 default: "attractions"
 
               - name: title
@@ -548,25 +566,6 @@ collections:
                 widget: string
                 default: "Nearby Attractions"
 
-              - name: attractions
-                label: "Attractions"
-                widget: list
-                fields:
-                  - name: name
-                    label: "Name"
-                    widget: string
-
-                  - name: distance
-                    label: "Distance"
-                    widget: string
-
-                  - name: travelTime
-                    label: "Travel Time"
-                    widget: string
-
-                  - name: description
-                    label: "Description"
-                    widget: text
 
           # ═══════════════════════════════════════
           # FAQ
@@ -583,7 +582,7 @@ collections:
               - name: sectionID
                 required: false
                 label: "Section ID"
-                widget: string
+                widget: hidden
                 default: "faq"
 
               - name: title
@@ -607,38 +606,38 @@ collections:
               # GOOGLE REVIEWS
               # ═══════════════════════════════════════
 
-              - name: reviews
-                label: Google Reviews Section
-                widget: object
-                fields:
-                  - name: type
-                    widget: hidden
-                    default: reviews
-                  - {
-                      name: title,
-                      label: Title,
-                      widget: string,
-                      default: "Google Reviews",
-                    }
-                  - name: sectionID
-                      required:false
-                    label: "Section ID"
-                    widget: string
-                    default: "reviews"
-                  - {
-                      name: subtitle,
-                      label: Subtitle,
-                      widget: text,
-                      required: false,
-                    }
+          - name: reviews
+            label: Google Reviews Section
+            widget: object
+            fields:
+              - name: type
+                widget: hidden
+                default: reviews
+              - {
+                  name: title,
+                  label: Title,
+                  widget: string,
+                  default: "Google Reviews",
+                }
+              - name: sectionID
+                  required:false
+                label: "Section ID"
+                widget: hidden
+                default: "reviews"
+              - {
+                  name: subtitle,
+                  label: Subtitle,
+                  widget: text,
+                  required: false,
+                }
 
-                  - {
-                      name: background,
-                      label: Background,
-                      widget: select,
-                      options: [white, gray],
-                      default: gray,
-                    }
+              - {
+                  name: background,
+                  label: Background,
+                  widget: select,
+                  options: [white, gray],
+                  default: gray,
+                }
 
           # ═══════════════════════════════════════
           # BOOKING
@@ -665,11 +664,13 @@ collections:
 
               - name: phone
                 label: "Phone Number"
-                widget: string
+                widget: string,
+                default: "+918122445538"
 
               - name: whatsappUrl
                 label: "WhatsApp URL"
-                widget: string
+                widget: string,
+                default: "https://wa.me/918122445538"
 
   # ── 3. Attractions (home page) ───────────────────
   - name: attractions

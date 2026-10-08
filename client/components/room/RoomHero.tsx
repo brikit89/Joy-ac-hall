@@ -42,11 +42,11 @@ export const RoomHero = ({
 
       <div className="relative h-full flex flex-col items-center justify-center text-center text-white px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto w-full animate-fadeInUp flex flex-col items-center">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 drop-shadow-lg leading-tight max-w-4xl">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 drop-shadow-lg leading-tight max-w-6xl">
             {roomName}
           </h1>
 
-          <p className="text-base sm:text-lg md:text-xl mb-6 sm:mb-8 max-w-2xl drop-shadow-md">
+          <p className="text-base sm:text-lg md:text-xl mb-6 sm:mb-8 max-w-6xl drop-shadow-md">
             {description}
           </p>
 

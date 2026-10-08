@@ -184,7 +184,7 @@ const renderSection = (section: RoomSection, room: RoomData) => {
   }
 };
 
-export const RoomDetailContent = ({ room }: Props) => {
+export const  RoomDetailContent = ({ room }: Props) => {
   return (
     <>
       {room.sections.map((section, index) => (

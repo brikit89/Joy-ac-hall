@@ -39,6 +39,7 @@
       "priceTypeNote": "AC",
       "title": "Room Features & Pricing",
       "capacity": "3 Guests",
+      "image":"/uploads/family-king-room.jpeg",
       "type": "features",
       "features": [
         "🛏️ 1 King  Bed ",
@@ -93,6 +94,18 @@
           "label": "Hot Water"
         }
       ]
+    },
+    {
+      "type": "attractions",
+      "title": "Nearby Attractions",
+      "sectionId": "attractions"
+    },
+    {
+      "type": "reviews",
+      "title": "Google Reviews",
+      "subtitle": "Read all reviews on Google",
+      "sectionId": "reviews",
+      "background": "gray"
     },
     {
       "type": "booking",
