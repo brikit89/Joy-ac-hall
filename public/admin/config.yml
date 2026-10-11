@@ -1105,6 +1105,23 @@ collections:
 
                       - { name: description, label: Description, widget: text }
 
+
+              # ─────────────────────────────────────
+              # BLOGS
+              # ─────────────────────────────────────
+
+              - name: blogs
+                label: Blogs Section
+                widget: object
+                fields:
+                  - name: type
+                    widget: hidden
+                    default: blogs
+
+                  - name: title
+                    label: Title
+                    widget: string
+                    default: "Our Blogs"
               # ─────────────────────────────────────
               # FAQ
               # ─────────────────────────────────────
@@ -1129,3 +1146,43 @@ collections:
                       label: sectionId,
                       widget: string,
                     }
+
+  # ── 7. Blogs ───────────────────────────────────────
+  - name: blogs
+    label: Blogs
+    files:
+      - file: client/data/blogs.json
+        label: Blog List
+        name: list
+        format: json
+
+        fields:
+          - name: title
+            label: Section title
+            widget: string
+          
+          - name: items
+            label: Blogs
+            widget: list
+            summary: "{{fields.title}}"
+
+            fields:
+              
+              - {
+                  name: title,
+                  label: Title,
+                  widget: string
+                }
+
+              - {
+                  name: description,
+                  label: Description,
+                  widget: text
+                }
+
+              - {
+                  name: image,
+                  label: Image,
+                  widget: image
+                }
+

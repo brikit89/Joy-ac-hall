@@ -1,0 +1,17 @@
+{
+  "title": "Our Blogs",
+  "items": [
+    {
+      
+      "title": "Discover the Beauty of Rameswaram",
+      "description": "Explore the beautiful temples, beaches, and cultural attractions that make Rameswaram a popular destination for travelers.",
+      "image": "/uploads/heater.jpeg"
+    },
+    {
+      "title": "Top Places to Visit in Rameswaram",
+      "description": "From the famous Ramanathaswamy Temple to beautiful coastal locations, discover the must-visit places in Rameswaram.",
+      "image": "/uploads/heater.jpeg"
+    }
+    
+  ]
+}

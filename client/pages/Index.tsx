@@ -5,6 +5,7 @@ import { GoogleReviews } from "@/components/GoogleReviews";
 
 import faqsData from "@/data/faqs.json";
 import attractionsData from "@/data/attractions.json";
+import blogData from "@/data/blogs.json";
 import siteConfig from "@/data/site.json";
 import routesMeta from "@/data/routesMeta.json";
 import homepage from "@/data/homepage.json";
@@ -25,6 +26,7 @@ import RoomDetailsModal, {
 } from "@/components/sections/RoomDetailsModal";
 import MobileBookingBar from "@/components/sections/MobileBookingbar";
 import FloatingButtons from "@/components/sections/FloatingButtons";
+import BlogSection from "@/components/sections/BlogSection";
 
 // --------------------------------------------------
 // Room data
@@ -122,7 +124,7 @@ const Index = () => {
   const rooms = cmsRooms;
 
   const attractions = attractionsData.items;
-
+  const blogs = blogData.items;
   const faqs = faqsData.items;
 
   // ------------------------------------------------
@@ -190,6 +192,8 @@ const Index = () => {
       case "landmarks":
         return <NearbyLandmarksSection key={key} {...props} />;
 
+      case "blogs":
+        return <BlogSection key={key} {...props} blogs={blogs}/>
       case "faq":
         return <FAQSection key={key} {...props} faqs={faqs} />;
 
