@@ -3,15 +3,10 @@
   "items": [
     {
       
-      "title": "Discover the Beauty of Rameswaram",
-      "description": "Explore the beautiful temples, beaches, and cultural attractions that make Rameswaram a popular destination for travelers.",
-      "image": "/uploads/heater.jpeg"
-    },
-    {
-      "title": "Top Places to Visit in Rameswaram",
-      "description": "From the famous Ramanathaswamy Temple to beautiful coastal locations, discover the must-visit places in Rameswaram.",
-      "image": "/uploads/heater.jpeg"
+      "title": "Best Places to Visit in Rameswaram",
+      "description": "Rameswaram is a popular pilgrimage and tourist destination, known for its spiritual landmarks, coastal beauty, and historical significance. Ramanathaswamy Temple and Agni Theertham are important places for pilgrims, while Pamban Bridge offers scenic coastal views. Visitors can also explore the Dr. A.P.J. Abdul Kalam Memorial, Dhanushkodi, Villoondi Theertham, and Panchamukhi Anjaneya Temple. For nature lovers, the Kurusadai Island region is known for its marine biodiversity, subject to local access restrictions. Before travelling, visitors should check temple timings, local transport, weather conditions, and access rules to plan a comfortable and memorable trip.",
+      "image": "/uploads/visit.jpeg"
     }
-    
+
   ]
 }

@@ -35,7 +35,7 @@ export default function BlogSection({
                 <h4 className="text-2xl md:text-3xl font-bold text-primary mb-4">
                   {blog.title}
                 </h4>
-                <p className="text-gray-600 leading-relaxed">
+                <p className="text-gray-600 leading-relaxed text-justify">
                   {blog.description}
                 </p>
               </div>
