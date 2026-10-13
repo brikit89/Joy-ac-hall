@@ -5,12 +5,12 @@
 # GitHub backend — content commits go to your repo's main branch.
 # The OAuth proxy below is the Cloudflare Worker in cloudflare-worker/.
 backend:
-  name: test-repo
-  # name: github
-  # repo: brikit89/Joy-ac-hall   # was Ozzitech/Joy-ac-hall
-  # branch: main
-  # base_url: https://joy-ac-hall-cms-oauth.brikit-38a.workers.dev
-  # auth_endpoint: auth
+  # name: test-repo
+  name: github
+  repo: brikit89/Joy-ac-hall   # was Ozzitech/Joy-ac-hall
+  branch: main
+  base_url: https://joy-ac-hall-cms-oauth.brikit-38a.workers.dev
+  auth_endpoint: auth
 
 # Local proxy for in-development editing without GitHub
 # Run with: npm run cms:proxy
