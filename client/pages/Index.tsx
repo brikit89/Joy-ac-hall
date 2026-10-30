@@ -5,7 +5,7 @@ import { GoogleReviews } from "@/components/GoogleReviews";
 
 import faqsData from "@/data/faqs.json";
 import attractionsData from "@/data/attractions.json";
-import blogData from "@/data/blogs.json";
+import blogData from "@/data/blogs/blogs.json";
 import siteConfig from "@/data/site.json";
 import routesMeta from "@/data/routesMeta.json";
 import homepage from "@/data/homepage.json";
@@ -124,7 +124,7 @@ const Index = () => {
   const rooms = cmsRooms;
 
   const attractions = attractionsData.items;
-  const blogs = blogData.items;
+  const blogs = blogData.blogs;
   const faqs = faqsData.items;
 
   // ------------------------------------------------
@@ -193,7 +193,8 @@ const Index = () => {
         return <NearbyLandmarksSection key={key} {...props} />;
 
       case "blogs":
-        return <BlogSection key={key} {...props} blogs={blogs}/>
+        return <h2 className="text-center" id="blog"></h2>
+        // return <BlogSection key={key} {...props} blogs={blogs}/>
       case "faq":
         return <FAQSection key={key} {...props} faqs={faqs} />;
 

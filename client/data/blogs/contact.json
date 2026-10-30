@@ -1,0 +1,28 @@
+{
+  "contacts": [
+    {
+      "title": "Call Us",
+      "icon": "Phone",
+      "href": "tel:+917010454868",
+      "description": "+91 7010454868"
+    },
+    {
+      "title": "Visit Us",
+      "icon": "MapPin",
+      "href": "https://maps.google.com/?q=Joy+AC+Hall+%26+Dormitory+Rameswaram",
+      "description": "Thangachimadam, Rameswaram, Tamil Nadu"
+    },
+    {
+      "title": "Website",
+      "icon": "Globe",
+      "href": "https://www.joyachall.com/",
+      "description": "www.joyachall.com"
+    },
+    {
+      "title": "Email Us",
+      "icon": "Mail",
+      "href": "mailto:admin@joyachall.com",
+      "description": "admin@joyachall.com"
+    }
+  ]
+}

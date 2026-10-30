@@ -566,7 +566,6 @@ collections:
                 widget: string
                 default: "Nearby Attractions"
 
-
           # ═══════════════════════════════════════
           # FAQ
           # ═══════════════════════════════════════
@@ -1105,7 +1104,6 @@ collections:
 
                       - { name: description, label: Description, widget: text }
 
-
               # ─────────────────────────────────────
               # BLOGS
               # ─────────────────────────────────────
@@ -1151,38 +1149,177 @@ collections:
   - name: blogs
     label: Blogs
     files:
-      - file: client/data/blogs.json
+      - file: client/data/blogs/blogs.json
         label: Blog List
-        name: list
+        name: blogList
         format: json
 
         fields:
           - name: title
             label: Section title
             widget: string
-          
-          - name: items
+
+          - name: blogs
             label: Blogs
             widget: list
             summary: "{{fields.title}}"
 
             fields:
-              
-              - {
-                  name: title,
-                  label: Title,
-                  widget: string
-                }
+              - name: title
+                label: Title
+                widget: string
 
-              - {
-                  name: description,
-                  label: Description,
-                  widget: text
-                }
+              - name: description
+                label: Description
+                widget: text
 
-              - {
-                  name: image,
-                  label: Image,
-                  widget: image
-                }
+              - name: slug
+                label: Blog Slug
+                widget: string
+                hint: "Example: rameswaram-tourist-places"
 
+              - name: button
+                label: Blog Button
+                widget: object
+                fields:
+                  - name: text
+                    label: Button Text
+                    widget: string
+                    default: "Read More"
+
+                  - name: link
+                    label: Blog Page Link
+                    widget: string
+                    hint: "Example: /blogs/rameswaram-tourist-places"
+
+              - name: imageThumbnail
+                label: Image Thumbnail
+                widget: image
+                required: false
+                
+
+              # Blog content sections
+              - name: sections
+                label: Blog Sections
+                widget: list
+                required: false
+                summary: "{{fields.type}} - {{fields.title}}"
+
+                fields:
+                  - name: type
+                    label: Section Layout
+                    widget: select
+                    default: image-description
+                    options:
+                      - label: Image + Description
+                        value: image-description
+
+                      - label: Image + Description + Highlights
+                        value: image-description-highlights
+
+                  - name: title
+                    label: Section Title
+                    widget: string
+
+                  - name: image
+                    label: Section Image
+                    widget: image
+                    
+                  - name: position
+                    label: Section Position
+                    widget: select
+                    required: false
+                    options:
+                      - label: Left Image Right Content
+                        value: left
+                      - label: Right Image Left Content
+                        value: right
+
+
+                  - name: imageAlt
+                    label: Image Alt Text
+                    widget: string
+                    required: false
+
+                  - name: description
+                    label: Description
+                    widget: text
+
+                  - name: highlights
+                    label: Highlights
+                    widget: list
+                    required: false
+                    fields:
+                      - name: title
+                        label: Highlight Title
+                        widget: string
+
+                      - name: description
+                        label: Highlight Description
+                        widget: text
+
+      - file: client/data/blogs/faqs.json
+        label: FAQ List
+        name: faqList
+        format: json
+
+        fields:
+          - name: faqs
+            label: Questions
+            widget: list
+            fields:
+              - name: question
+                label: Question
+                widget: string
+
+              - name: answer
+                label: Answer
+                widget: text
+
+      - file: client/data/blogs/travel-tips.json
+        label: Travel Tips List
+        name: tipsList
+        format: json
+
+        fields:
+          - name: tips
+            label: Travel Tips
+            widget: list
+            fields:
+              - name: question
+                label: Title
+                widget: string
+
+              - name: answer
+                label: Description
+                widget: text
+
+      - file: client/data/blogs/contact.json
+        label: Contact Section
+        name: contactSection
+        format: json
+
+        fields:
+          - name: contacts
+            label: Contact Items
+            widget: list
+            summary: "{{fields.title}}"
+
+            fields:
+              - name: title
+                label: Title
+                widget: string
+
+              - name: icon
+                label: Icon
+                widget: string
+                hint: "Enter a Lucide React icon name, example: Phone, Mail, MapPin, Globe"
+
+              - name: description
+                label: Description
+                widget: text
+
+              - name: href
+                label: Link
+                widget: text
+                required: false

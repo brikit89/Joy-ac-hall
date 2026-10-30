@@ -25,6 +25,9 @@ const AboutSection = ({
   return (
     <section id={sectionId} className="py-20 px-4 bg-gray-50">
       <div className="max-w-6xl mx-auto">
+        <h2 className="text-4xl md:text-4xl text-center font-bold text-primary mb-4">
+              {title}
+            </h2>
         <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* Image */}
           <div className="animate-in fade-in duration-1000">
@@ -39,15 +42,15 @@ const AboutSection = ({
 
           {/* Content */}
           <div className="animate-in fade-in duration-1000">
-            <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">
-              {title}
-            </h2>
+            
 
             <div className="w-20 h-1 bg-accent rounded-full mb-6" />
 
-            <p className="text-gray-700 text-lg mb-6 leading-relaxed">
+            <p className="text-gray-700 text-lg text-justify mb-6 leading-relaxed">
               <ReactMarkdown>{description}</ReactMarkdown>
             </p>
+            </div>
+            </div>
 
             <div className="space-y-3">
               {highlights.map((highlight, index) => (
@@ -60,8 +63,6 @@ const AboutSection = ({
                 </div>
               ))}
             </div>
-          </div>
-        </div>
       </div>
     </section>
   );

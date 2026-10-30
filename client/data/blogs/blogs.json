@@ -1,0 +1,169 @@
+{
+  "title": "Our Blogs",
+  "description": "Explore Rameswaram travel guides, sightseeing tips, accommodation options and useful information for planning your visit.",
+  "blogs": [
+    {
+      "title": "Rameswaram Tourist Places: A Complete Sightseeing and Travel Guide",
+      "description": "Discover the best places to visit in Rameswaram, suggested one-day and two-day itineraries, practical travel tips, and accommodation options for families and groups.",
+      "button": {
+        "text": "Read More",
+        "link": "/blogs/rameswaram-tourist-places"
+      },
+      "slug": "rameswaram-tourist-places",
+      "imageThumbnail": "/images/blogs/rameswaram-tourist-places.jpg",
+      "sections": [
+        {
+          "type": "image-description",
+          "position":"left",
+          "title": "Ramanathaswamy Temple",
+          "image": "/images/blogs/ramanathaswamy-temple.jpg",
+          "description": "Ramanathaswamy Temple is one of the most important pilgrimage destinations in India and a major attraction in Rameswaram. Dedicated to Lord Shiva, the temple is renowned for its magnificent corridors, carved pillars, towering gopurams and religious significance."
+        },
+        {
+          "type": "image-description",
+          "position":"right",
+          "title": "Pamban Bridge",
+          "image": "/images/blogs/pamban-bridge.jpg",
+          "description": "Pamban Bridge is one of the best-known landmarks associated with Rameswaram. The sea bridge connects the island region with mainland Tamil Nadu and offers a striking coastal setting."
+        },
+        {
+          "type": "image-description",
+          "position":"left",
+          "title": "Dr. A.P.J. Abdul Kalam Memorial",
+          "image": "/images/blogs/apj-abdul-kalam-memorial.jpg",
+          "description": "The Dr. A.P.J. Abdul Kalam Memorial honours India's former President and renowned scientist, who was born in Rameswaram. The memorial is an interesting stop for families, students and visitors who want to learn more about his life, achievements and contributions to science and public service."
+        }
+      ]
+    },
+    {
+      "title": "How Many Days Are Needed to Visit Rameswaram?",
+      "description": "Plan your Rameswaram trip with practical one-day and two-day itinerary suggestions based on sightseeing, temple visits and travel time.",
+      "button": {
+        "text": "Read More",
+        "link": "/blogs/how-many-days-rameswaram"
+      },
+      "slug": "how-many-days-rameswaram",
+      "imageThumbnail": "/images/blogs/rameswaram-trip.jpg",
+      "sections": [
+        {
+          "type": "image-description-highlights",
+          "title": "One-Day Rameswaram Trip",
+          "image": "/images/blogs/rameswaram-trip.jpg",
+          "description": "A one-day visit may suit travellers focusing on the principal attractions. A well-planned itinerary can cover the main temple, nearby sacred sites, the Dr. A.P.J. Abdul Kalam Memorial and selected viewpoints.",
+          "highlights": [
+            {
+              "title": "Morning",
+              "description": "Visit Ramanathaswamy Temple and nearby sacred sites."
+            },
+            {
+              "title": "Late Morning or Afternoon",
+              "description": "Visit the Dr. A.P.J. Abdul Kalam Memorial, subject to opening hours."
+            },
+            {
+              "title": "Later in the Day",
+              "description": "Visit Pamban Bridge viewpoints and other nearby attractions depending on travel time."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Where Should You Stay When Visiting Rameswaram?",
+      "description": "Explore accommodation options for families, smaller groups and larger groups visiting Rameswaram, including AC family rooms and private group stays.",
+      "button": {
+        "text": "Read More",
+        "link": "/blogs/where-to-stay-rameswaram"
+      },
+      "slug": "where-to-stay-rameswaram",
+      "imageThumbnail": "/images/blogs/joy-ac-hall.jpg",
+      "sections": [
+        {
+          "type": "image-description-highlights",
+          "title": "AC Family Rooms",
+          "image": "/images/blogs/ac-family-room.jpg",
+          "description": "Private family rooms are suitable for families and smaller groups who prefer their own sleeping space and bathroom facilities. At Joy AC Hall & Rooms, guests can choose from AC family-room options suited to different group sizes.",
+          "highlights": [
+            {
+              "title": "Room Occupancy",
+              "description": "Check the maximum permitted occupancy before booking."
+            },
+            {
+              "title": "Extra Sleeping Arrangements",
+              "description": "Confirm whether extra mattresses are available."
+            },
+            {
+              "title": "Facilities",
+              "description": "Check bathroom, air-conditioning, parking and other room facilities."
+            }
+          ]
+        },
+        {
+          "type": "image-description",
+          "position":"left",
+          "title": "Private Group Stay",
+          "image": "/images/blogs/group-accommodation.jpg",
+          "description": "For larger families, friends travelling together, pilgrimage groups and tour groups, a private group stay may be more practical than booking multiple separate rooms. Joy AC Hall & Rooms offers private group accommodation for approximately 15–70 guests, subject to the arrangement and confirmed occupancy."
+        },
+        {
+          "type": "image-description",
+          "position":"right",
+          "title": "Guest Kitchen and Shared Facilities",
+          "image": "/images/blogs/guest-kitchen.jpg",
+          "description": "Guests can consider practical facilities such as guest kitchen access, parking, free Wi-Fi, RO drinking water and hot water when selecting accommodation for a family or group stay."
+        }
+      ]
+    },
+    {
+      "title": "Why Consider Staying in Thangachimadam?",
+      "description": "Learn why Thangachimadam can be considered when planning accommodation for a Rameswaram trip, especially for families and larger groups.",
+      "button": {
+        "text": "Read More",
+        "link": "/blogs/staying-in-thangachimadam"
+      },
+      "slug": "staying-in-thangachimadam",
+      "imageThumbnail": "/images/blogs/thangachimadam.jpg",
+      "sections": [
+        {
+          "type": "image-description-highlights",
+          "title": "Joy AC Hall & Rooms",
+          "image": "/images/blogs/joy-ac-hall.jpg",
+          "description": "Joy AC Hall & Rooms welcomes families and groups looking for practical accommodation in Thangachimadam. The property provides accommodation options and facilities suitable for different group sizes.",
+          "highlights": [
+            {
+              "title": "AC Family Rooms",
+              "description": "Accommodation options are available for families and smaller groups."
+            },
+            {
+              "title": "Private Group Accommodation",
+              "description": "Private group accommodation is available for approximately 15–70 guests, subject to arrangement and confirmed occupancy."
+            },
+            {
+              "title": "Parking",
+              "description": "Parking facilities are available for guests."
+            },
+            {
+              "title": "Free Wi-Fi",
+              "description": "Guests can access free Wi-Fi during their stay."
+            },
+            {
+              "title": "Water Facilities",
+              "description": "RO drinking water and hot water facilities are available."
+            },
+            {
+              "title": "Guest Kitchen",
+              "description": "Guest kitchen facilities are available."
+            },
+            {
+              "title": "Fresh-Up Arrangements",
+              "description": "Fresh-up arrangements are available for eligible confirmed bookings."
+            },
+            {
+              "title": "CCTV Surveillance",
+              "description": "CCTV surveillance is provided at the property."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

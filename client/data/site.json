@@ -1,5 +1,39 @@
 {
   "phoneURL": "tel:+918122445538",
+  "blogHeader": {
+    "logo": "/logo.png",
+    "scrolledLogo": "/logo-coloured.png",
+    "logoAlt": "Joy AC Hall & Rooms",
+    "navLinks": [
+      {
+        "id": "home",
+        "label": "Home",
+        "href": "/"
+      },
+      {
+        "id": "explore",
+        "label": "Explore",
+        "href": "#Explore"
+      },
+      {
+        "id": "travel-tips",
+        "label": "Travel Tips",
+        "href": "#travel-tips"
+      },
+      {
+        "id": "faq",
+        "label": "FAQ",
+        "href": "#faq"
+      },
+      {
+        "id": "contact",
+        "label": "Contact",
+        "href": "#contact"
+      }
+    ],
+    "bookingLabel": "Book Now",
+    "bookingUrl": "https://be.aiosell.com/book/2e94839cd4"
+  },
   "roomHeader": {
     "logo": "/logo.png",
     "scrolledLogo": "/logo-coloured.png",
