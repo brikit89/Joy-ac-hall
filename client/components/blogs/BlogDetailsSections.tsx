@@ -23,7 +23,7 @@ const BlogDetailsSection = ({
   imageAlt = "Blog image",
   highlights = [],
   position = "left",
-  sectionId = "blog-details",
+  sectionId = "explore",
 }: BlogDetailsProps) => {
   const hasHighlights =
     type === "image-description-highlights" && highlights.length > 0;

@@ -18,7 +18,7 @@ interface BlogHeroProps {
 export const BlogHero = ({
   title,
   description,
-  image,
+  image ,
   button,
   sectionID = "blog-hero",
   onReadMore,
@@ -38,12 +38,11 @@ export const BlogHero = ({
             backgroundPosition: "center",
           }}
         />
-
-        <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-black/60" />
       </div>
+      <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-black/60" />
 
       {/* Content */}
-      <div className="relative h-full flex flex-col items-center justify-center text-center text-white px-4 sm:px-6 lg:px-8">
+      <div className="relative h-full flex flex-col items-center justify-center text-center text-gray-200 px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto w-full animate-fadeInUp flex flex-col items-center">
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 drop-shadow-lg leading-tight max-w-6xl">
             {title}

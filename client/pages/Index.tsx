@@ -193,8 +193,8 @@ const Index = () => {
         return <NearbyLandmarksSection key={key} {...props} />;
 
       case "blogs":
-        return <h2 className="text-center" id="blog"></h2>
-        // return <BlogSection key={key} {...props} blogs={blogs}/>
+        // return <h2 className="text-center" id="blog"></h2>
+        return <BlogSection key={key} {...props} blogs={blogs}/>
       case "faq":
         return <FAQSection key={key} {...props} faqs={faqs} />;
 

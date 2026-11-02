@@ -1197,6 +1197,12 @@ collections:
                 widget: image
                 required: false
                 
+              - name: bannerImage
+                label: Banner Image
+                widget: image
+                required: false
+                hint : "If Thumbnail is not needed as banner use this option to add seperate image for banner"
+                
 
               # Blog content sections
               - name: sections

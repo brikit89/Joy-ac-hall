@@ -3,35 +3,71 @@
   "description": "Explore Rameswaram travel guides, sightseeing tips, accommodation options and useful information for planning your visit.",
   "blogs": [
     {
-      "title": "Rameswaram Tourist Places: A Complete Sightseeing and Travel Guide",
-      "description": "Discover the best places to visit in Rameswaram, suggested one-day and two-day itineraries, practical travel tips, and accommodation options for families and groups.",
+      "title": "Best Places to Visit in Rameswaram",
+      "description": "Rameswaram is a popular pilgrimage and tourist destination, known for its spiritual landmarks, coastal beauty, and historical significance. Ramanathaswamy Temple and Agni Theertham are important places for pilgrims, while Pamban Bridge offers scenic coastal views. Visitors can also explore the Dr. A.P.J. Abdul Kalam Memorial, Dhanushkodi, Villoondi Theertham, and Panchamukhi Anjaneya Temple.",
       "button": {
         "text": "Read More",
         "link": "/blogs/rameswaram-tourist-places"
       },
       "slug": "rameswaram-tourist-places",
-      "imageThumbnail": "/images/blogs/rameswaram-tourist-places.jpg",
+      "imageThumbnail": "/uploads/rameswaram-tourist-places.jpeg",
+      "bannerImage": "/uploads/rameswaram-tourist-places.jpg",
       "sections": [
         {
           "type": "image-description",
-          "position":"left",
+          "position": "left",
           "title": "Ramanathaswamy Temple",
-          "image": "/images/blogs/ramanathaswamy-temple.jpg",
+          "image": "/uploads/ramanathaswamy-temple.jpg",
           "description": "Ramanathaswamy Temple is one of the most important pilgrimage destinations in India and a major attraction in Rameswaram. Dedicated to Lord Shiva, the temple is renowned for its magnificent corridors, carved pillars, towering gopurams and religious significance."
         },
         {
           "type": "image-description",
-          "position":"right",
+          "position": "right",
           "title": "Pamban Bridge",
-          "image": "/images/blogs/pamban-bridge.jpg",
+          "image": "/uploads/pamban-bridge.jpg",
           "description": "Pamban Bridge is one of the best-known landmarks associated with Rameswaram. The sea bridge connects the island region with mainland Tamil Nadu and offers a striking coastal setting."
         },
         {
           "type": "image-description",
-          "position":"left",
+          "position": "left",
           "title": "Dr. A.P.J. Abdul Kalam Memorial",
-          "image": "/images/blogs/apj-abdul-kalam-memorial.jpg",
+          "image": "/uploads/apj-abdul-kalam-memorial.webp",
           "description": "The Dr. A.P.J. Abdul Kalam Memorial honours India's former President and renowned scientist, who was born in Rameswaram. The memorial is an interesting stop for families, students and visitors who want to learn more about his life, achievements and contributions to science and public service."
+        },
+        {
+          "type": "image-description",
+          "position": "left",
+          "title": "Dhanushkodi",
+          "image": "/uploads/Dhanushkodi.jpg",
+          "description": "Dhanushkodi is known for its coastal scenery, historic ruins and dramatic meeting of the sea and shoreline. It is a popular excursion for visitors who want to experience a different side of Rameswaram beyond the temple and town centre. Because it is farther from the main town, plan sufficient travel time and check local weather, road access and any restrictions before setting out. "
+        },
+        {
+          "type": "image-description",
+          "position": "right",
+          "title": "Agni Theertham",
+          "image": "/uploads/agni-theertham.jpg",
+          "description": "Agni Theertham is a well-known sacred waterfront near Ramanathaswamy Temple. Many pilgrims visit this area as part of their religious journey. If you are planning to visit the temple and nearby sacred sites, organising them together can help you use your time efficiently."
+        },
+        {
+          "type": "image-description",
+          "position": "left",
+          "title": "Villoondi Theertham",
+          "image": "/uploads/villoondi-theertham.jpg",
+          "description": "Villoondi Theertham is another recognised religious and coastal attraction in the Rameswaram region. It can be included in a sightseeing plan alongside other local places, depending on your available time."
+        },
+        {
+          "type": "image-description",
+          "position": "right",
+          "title": "Panchamukhi Anjaneya Temple",
+          "image": "/uploads/panchamukhi-anjaneya-temple.jpg",
+          "description": "Panchamukhi Anjaneya Temple is a popular religious stop for devotees visiting Rameswaram. Visitors interested in the region's religious traditions can consider including it in their itinerary."
+        },
+        {
+          "type": "image-description",
+          "position": "left",
+          "title": "Kurusadai Island and Nearby Coastal Attractions",
+          "image": "/uploads/kurusadai-island.jpg",
+          "description": "The Gulf of Mannar region is known for its coastal ecosystems and marine biodiversity. Kurusadai Island is associated with this natural heritage. Access to islands and marine areas may be regulated, so check authorised boat-trip availability, permitted activities and local conservation rules before planning an excursion."
         }
       ]
     },
@@ -43,13 +79,14 @@
         "link": "/blogs/how-many-days-rameswaram"
       },
       "slug": "how-many-days-rameswaram",
-      "imageThumbnail": "/images/blogs/rameswaram-trip.jpg",
+      "imageThumbnail": "/uploads/rameswaram-trip.jpg",
+      "bannerImage": null,
       "sections": [
         {
           "type": "image-description-highlights",
           "title": "One-Day Rameswaram Trip",
-          "image": "/images/blogs/rameswaram-trip.jpg",
-          "description": "A one-day visit may suit travellers focusing on the principal attractions. A well-planned itinerary can cover the main temple, nearby sacred sites, the Dr. A.P.J. Abdul Kalam Memorial and selected viewpoints.",
+          "image": "/uploads/rameswaram-trip.jpg",
+          "description": "A one-day visit may suit travellers focusing on the principal attractions. A well-planned itinerary can cover the main temple, nearby sacred sites, the Dr. A.P.J. Abdul Kalam Memorial and selected viewpoints. However, long queues and travel delays may limit the number of attractions you can visit.",
           "highlights": [
             {
               "title": "Morning",
@@ -64,6 +101,30 @@
               "description": "Visit Pamban Bridge viewpoints and other nearby attractions depending on travel time."
             }
           ]
+        },
+        {
+          "type": "image-description-highlights",
+          "title": "Two-Day Rameswaram Trip",
+          "image": "/uploads/day_2.jpg",
+          "description": "A two-day visit allows travellers to explore Rameswaram at a more relaxed pace. It provides additional time for temple visits, historical attractions, coastal sightseeing and local experiences without rushing through the itinerary.",
+          "highlights": [
+            {
+              "title": "Day 1 – Temple and Local Sightseeing",
+              "description": "Visit Ramanathaswamy Temple and nearby religious attractions. Explore the Dr. A.P.J. Abdul Kalam Memorial and visit Pamban Bridge viewpoints. Return to your accommodation and relax."
+            },
+            {
+              "title": "Day 2 – Dhanushkodi and Coastal Attractions",
+              "description": "Plan an excursion to Dhanushkodi, known for its coastal scenery and historic ruins. Check local weather, road conditions and accessibility before starting your journey."
+            },
+            {
+              "title": "Afternoon – Additional Experiences",
+              "description": "Explore other suitable coastal or religious attractions depending on available time and accessibility."
+            },
+            {
+              "title": "Evening – Shopping and Departure",
+              "description": "Allow time for local shopping, meals and preparing for your onward journey."
+            }
+          ]
         }
       ]
     },
@@ -75,12 +136,13 @@
         "link": "/blogs/where-to-stay-rameswaram"
       },
       "slug": "where-to-stay-rameswaram",
-      "imageThumbnail": "/images/blogs/joy-ac-hall.jpg",
+      "imageThumbnail": "/uploads/joyAC.jfif",
+      "bannerImage": null,
       "sections": [
         {
           "type": "image-description-highlights",
           "title": "AC Family Rooms",
-          "image": "/images/blogs/ac-family-room.jpg",
+          "image": "/uploads/family-king-deluxe.jpeg",
           "description": "Private family rooms are suitable for families and smaller groups who prefer their own sleeping space and bathroom facilities. At Joy AC Hall & Rooms, guests can choose from AC family-room options suited to different group sizes.",
           "highlights": [
             {
@@ -99,17 +161,17 @@
         },
         {
           "type": "image-description",
-          "position":"left",
+          "position": "left",
           "title": "Private Group Stay",
-          "image": "/images/blogs/group-accommodation.jpg",
+          "image": "/uploads/family-king-deluxe.jpeg",
           "description": "For larger families, friends travelling together, pilgrimage groups and tour groups, a private group stay may be more practical than booking multiple separate rooms. Joy AC Hall & Rooms offers private group accommodation for approximately 15–70 guests, subject to the arrangement and confirmed occupancy."
         },
         {
           "type": "image-description",
-          "position":"right",
-          "title": "Guest Kitchen and Shared Facilities",
-          "image": "/images/blogs/guest-kitchen.jpg",
-          "description": "Guests can consider practical facilities such as guest kitchen access, parking, free Wi-Fi, RO drinking water and hot water when selecting accommodation for a family or group stay."
+          "position": "right",
+          "title": "Which Option Is Right for You?",
+          "image": "/uploads/duplex-room-bed-3.png",
+          "description": "Choose an individual family room if you prefer a private room and your group fits the room's occupancy limit. Consider private group accommodation if you are travelling with a larger group and prefer a shared property arrangement. For particularly large groups, compare the cost and practicality of reserving several family rooms against booking the private group stay.          "
         }
       ]
     },
@@ -121,12 +183,13 @@
         "link": "/blogs/staying-in-thangachimadam"
       },
       "slug": "staying-in-thangachimadam",
-      "imageThumbnail": "/images/blogs/thangachimadam.jpg",
+      "imageThumbnail": "/uploads/thangachimadam.jpg",
+      "bannerImage": null,
       "sections": [
         {
           "type": "image-description-highlights",
           "title": "Joy AC Hall & Rooms",
-          "image": "/images/blogs/joy-ac-hall.jpg",
+          "image": "/uploads/joyAC.jfif",
           "description": "Joy AC Hall & Rooms welcomes families and groups looking for practical accommodation in Thangachimadam. The property provides accommodation options and facilities suitable for different group sizes.",
           "highlights": [
             {

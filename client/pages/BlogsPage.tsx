@@ -17,7 +17,7 @@ function BlogsPage() {
       <BlogHero
         title={blog.title}
         description={blog.description}
-        image={blog.imageThumbnail}
+        image={blog.bannerImage ?? blog.imageThumbnail}
       />
       {blog?.sections?.map((section, index) => (
         <BlogDetailsSection
@@ -31,13 +31,12 @@ function BlogsPage() {
           }
           imageAlt={section.title}
           highlights={section.highlights}
-          sectionId={`blog-section-${index}`}
         />
       ))}
       <FAQSection title="Travel Tips" sectionId="travel-tips" faqs={tips} />
       <ContactSection
         items={contacts}
-        sectionID="contacts"
+        sectionID="contact"
         title="Our Contacts"
       />
       <FAQSection faqs={faqs} />
