@@ -1,6 +1,6 @@
 {
   "id": 2,
-  "order": 1,
+  "order": 5,
   "name": " Deluxe Family Room",
   "slug": "family-deluxe-room",
   "occupancy": {
@@ -32,25 +32,25 @@
       ]
     },
     {
-      "priceType": "per room",
+      "priceType": "PER ROOM",
       "priceNumeric": 3800,
       "price": "Rs. 3,800",
       "priceTypeNote": "AC",
       "title": "Room Features & Pricing",
-      "capacity": "8 Guests",
+      "capacity": "8 GUESTS",
       "type": "features",
       "image": "/RoomsImage/FamilyDeluxeRoom/Family%20Deluxe%20hero%20banner.png",
       "features": [
-        "👨‍👩‍👧‍👦 Up to 8 Guests",
-        "🛏️ 4 Double Beds",
-        "➕ Extra Mattresses Available",
-        "❄️ Air Conditioned ",
-        "🚿 Private Attached Bathroom ",
-        "🪞 Wardrobe & Mirror ",
-        "🧼 In-Room Wash Basin & Mirror ",
-        "🪑 Table & Chairs",
-        " ♨️ Hot Water",
-        " 📶 Free Wi-Fi"
+        "Up to 8 Guests",
+        "4 Double Beds",
+        "Extra Mattresses Available",
+        "Air Conditioned ",
+        "Private Attached Bathroom ",
+        "Wardrobe & Mirror ",
+        "In-Room Wash Basin & Mirror ",
+        "Table & Chairs",
+        "Hot Water",
+        "Free Wi-Fi"
       ],
       "roomTypes": [
         "AC Family Room",

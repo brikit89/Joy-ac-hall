@@ -11,7 +11,7 @@
       "type": "hero",
       "roomName": "Double Room",
       "description": "Comfortable AC / Non-AC double room for up to 4 persons. Ideal for couples and small families with electric kettle, wardrobe and hot water.",
-      "image": "/RoomsImage/DoubleRoom/Double%20room%20Hero%20banner.png",
+      "image": "/uploads/double-bed-family-room-rameswaram.png",
       "bookButtonText": "Book Now",
       "detailsButtonText": "View Details"
     },
@@ -19,7 +19,7 @@
       "type": "gallery",
       "title": "Room Gallery",
       "sliderImages": [
-        "/RoomsImage/DoubleRoom/Double%20room%20Hero%20banner.png",
+        "/uploads/double-bed-family-room-rameswaram.png",
         "/RoomsImage/DoubleRoom/Double%20room%20ac.png",
         "/RoomsImage/DoubleRoom/Double%20room%20bed%202%20.png",
         "/RoomsImage/DoubleRoom/double%20room%20bathroom.png",
@@ -31,14 +31,14 @@
       ]
     },
     {
-      "priceType": "per room",
+      "priceType": "PER ROOM",
       "priceNumeric": 2000,
       "price": "Rs. 2,000",
       "priceTypeNote": "AC",
       "title": "Room Features & Pricing",
-      "capacity": "4 Guests",
+      "capacity": "4 GUESTS",
       "type": "features",
-      "image": "/RoomsImage/DoubleRoom/Double%20room%20Hero%20banner.png",
+      "image": "/uploads/double-bed-family-room-rameswaram.png",
       "features": [
         "AC / Non-AC available",
         "Electric kettle",

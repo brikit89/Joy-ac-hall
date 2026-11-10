@@ -1,6 +1,6 @@
 {
   "id": 1,
-  "order": 5,
+  "order": 3,
   "name": "Private Group Stay",
   "slug": "private-group-stay",
   "occupancy": {
@@ -28,12 +28,12 @@
       "sliderVideos": []
     },
     {
-      "priceType": "per person",
+    "priceType": "PER PERSON",
       "priceNumeric": 250,
       "price": "Rs. 250",
       "priceTypeNote": "Non AC",
       "title": "Room Features & Pricing",
-      "capacity": "30–50 persons",
+      "capacity": "30–50 PERSONS",
       "type": "features",
       "image": "/RoomsImage/Dormitoryhall/Dormitory%20Hall%20hero%20banner.png",
       "features": [

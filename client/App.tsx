@@ -11,6 +11,8 @@ import NotFound from "./pages/NotFound";
 import RoomPage from "./pages/RoomPage";
 import { ScrollToTop } from "./components/ScrollToTop";
 import BlogsPage from "./pages/BlogsPage";
+import HomeStayPage from "./pages/HomeStayPage";
+import ResortPage from "./pages/ResortPage";
 
 const queryClient = new QueryClient();
 
@@ -25,6 +27,8 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/rooms/:slug" element={<RoomPage />} />
           <Route path="/blogs/:slug" element={<BlogsPage />} />
+          <Route path="/homestay" element={<HomeStayPage />} />
+          <Route path="/resort" element={<ResortPage />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

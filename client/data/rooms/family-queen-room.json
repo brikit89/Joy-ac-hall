@@ -34,24 +34,24 @@
     },
     {
       "sectionID": "features",
-      "priceType": "per room",
+      "priceType": "PER ROOM",
       "priceNumeric": 2500,
       "price": "Rs.2,500",
       "priceTypeNote": "AC",
       "title": "Room Features & Pricing",
-      "capacity": "4 Guests",
+      "capacity": "4 GUESTS",
       "type": "features",
       "image": "/uploads/family-queen-.jpeg",
       "features": [
-        "🛏️ 1 Queen Bed ",
-        "🛏️ 1 Double Bed",
-        "👨‍👩‍👧‍👦 4 Adults + 1 Child",
-        "❄️ Air Conditioned",
-        "🚿 Private Attached Bathroom",
-        "🚿 Shower",
-        "🚽 Western Toilet",
-        "🪞 Mirror",
-        "📶 Free Wi-Fi"
+        "1 Queen Bed ",
+        "1 Double Bed",
+        "4 Adults + 1 Child",
+        "Air Conditioned",
+        "Private Attached Bathroom",
+        "Shower",
+        "Western Toilet",
+        "Mirror",
+        "Free Wi-Fi"
       ],
       "roomTypes": [
         "AC Family Room"

@@ -1,3 +1,4 @@
+
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 
@@ -22,87 +23,112 @@ interface RoomsSectionProps {
   onRoomSelect?: (roomId: number) => void;
 }
 
-
 const RoomsSection = ({
   rooms,
-  buttonText,
-  sectionId="rooms",
+  buttonText = "View Room",
+  sectionId = "rooms",
   title = "Accommodation Options",
   description = "Choose from budget-friendly dormitory rooms or comfortable family and double rooms near Ramanathaswamy Temple and Pamban Bridge.",
   onRoomSelect,
 }: RoomsSectionProps) => {
   return (
-    <section id={sectionId} className="py-20 px-4 bg-white">
-      <div className="max-w-6xl mx-auto">
+    <section id={sectionId} className="bg-gray-100 px-4 py-20">
+      <div className="mx-auto max-w-6xl">
 
-        <h2 className="text-4xl md:text-5xl font-bold text-center text-primary mb-4">
-          {title}
-        </h2>
+        {/* Section Header */}
+        <div className="mb-14 text-center">
+          <h2 className="mb-4 text-3xl font-bold text-primary md:text-4xl">
+            {title}
+          </h2>
 
-        <div className="w-20 h-1 bg-accent mx-auto rounded-full mb-6" />
+          <div className="mx-auto mb-6 h-1 w-20 rounded-full bg-accent" />
 
-        <p className="text-center text-gray-600 mb-16 max-w-2xl mx-auto">
-          {description}
-        </p>
+          <p className="mx-auto max-w-2xl text-sm leading-7 text-gray-600 md:text-base">
+            {description}
+          </p>
+        </div>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        {/* Rooms Grid */}
+        <div className="grid grid-cols-1 items-stretch gap-8 md:grid-cols-2">
+
           {rooms.map((room) => (
             <div
               key={room.id}
-              className="card-hover rounded-lg overflow-hidden shadow-md border border-gray-100 bg-white flex flex-col  h-full"            >
-              <div className="relative h-48 overflow-hidden">
+              className="card-hover flex h-full flex-col overflow-hidden rounded-xl border border-gray-100 bg-white shadow-md"
+            >
+              {/* Room Image */}
+              <div className="h-55 w-full shrink-0 overflow-hidden">
                 <img
                   src={room.image}
                   alt={room.name}
                   loading="lazy"
                   decoding="async"
-                  className="w-full h-full max-w-full object-cover hover:scale-105 transition-transform duration-300"
+                  className="h-45 w-full object-cover border rounded-xl transition-transform duration-300 hover:scale-105"
                 />
               </div>
 
-              <div className="p-6 flex flex-col  h-full">
-                <h3 className="text-2xl font-bold text-primary mb-2">
-                  {room.name}
-                </h3>
+              {/* Room Content */}
+              <div className="flex flex-1 flex-col p-6">
 
-                <p className="text-gray-600 font-medium text-sm mb-3">
-                  {room.capacity}
-                </p>
+                {/* Room Details */}
+                <div>
+                  <h3 className="mb-2 text-xl font-bold text-primary md:text-2xl">
+                    {room.name}
+                  </h3>
 
-                <p className="mb-4">
-                  <span className="text-2xl font-bold text-accent">
-                    {room.price}
-                  </span>{" "}
-                  <span className="text-sm font-normal text-gray-600">
-                    {room.priceType}
-                    {room.priceTypeNote
-                      ? ` (${room.priceTypeNote})`
-                      : ""}
-                  </span>
-                </p>
+                  <p className="mb-4 text-sm font-medium text-gray-600">
+                    {room.capacity}
+                  </p>
 
-                <ul className="space-y-2 mb-6">
-                  {room.features.map((feature, index) => (
-                    <li
-                      key={index}
-                      className="flex items-start gap-2 text-gray-700"
+                  {/* Price */}
+                  <div className="mb-5 flex flex-wrap items-baseline gap-2">
+                    <span className="text-2xl font-bold text-accent">
+                      {room.price}
+                    </span>
+
+                    <span className="text-sm text-gray-600">
+                      {room.priceType}
+                      {room.priceTypeNote
+                        ? ` (${room.priceTypeNote})`
+                        : ""}
+                    </span>
+                  </div>
+
+                  {/* Features */}
+                  <ul className="space-y-3">
+                    {room.features.map((feature, index) => (
+                      <li
+                        key={`${room.id}-${index}`}
+                        className="flex items-start gap-3 text-sm leading-6 text-gray-700"
+                      >
+                        <span className="shrink-0 font-bold text-accent">
+                          ✓
+                        </span>
+                        <span>{feature}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
+                {/* Action Button */}
+                <div className="mt-auto pt-6">
+                  <Button
+                    asChild
+                    className="w-full bg-primary hover:bg-primary/90"
+                  >
+                    <Link
+                      to={room.route}
+                      onClick={() => onRoomSelect?.(room.id)}
                     >
-                      <span className="text-accent">✓</span>
-                      {feature}
-                    </li>
-                  ))}
-                </ul>
-
-                <Link to={room.route} className=" mt-auto block">
-                  <Button className="w-full  bg-primary  hover:bg-primary/90">
-                    {buttonText}
+                      {buttonText}
+                    </Link>
                   </Button>
-                </Link>
+                </div>
 
-                
               </div>
             </div>
           ))}
+
         </div>
       </div>
     </section>
