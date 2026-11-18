@@ -5,8 +5,8 @@
   "type": "sha-stay",
   "slug": "sha-king-room",
   "occupancy": {
-    "minValue": "",
-    "maxValue": ""
+    "minValue": "1",
+    "maxValue": "5"
   },
   "sections": [
     {
@@ -46,11 +46,7 @@
       ],
       "roomTypes": []
     },
-    {
-      "type": "amenities",
-      "title": "Facilities & Amenities",
-      "amenities": []
-    },
+    
     {
       "type": "attractions",
       "title": "Nearby Attractions",

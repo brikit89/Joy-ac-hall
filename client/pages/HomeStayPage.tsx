@@ -46,14 +46,14 @@ const roomModules = import.meta.glob<{
 
 const cmsRooms: RoomCard[] = Object.values(roomModules)
 
-  .map((m) => {
-    const room = m.default;
+  // .map((m) => {
+    // const room = m.default;
 
     // use if needed seperate room filter
 
-    // .map((m) => m.default)
-    // .filter((room) => room.type === "sha-stay")
-    // .map((room) => {
+    .map((m) => m.default)
+    .filter((room) => room.type === "sha-stay")
+    .map((room) => {
     const featuresSection = room.sections?.find(
       (section: any) => section.type === "features",
     );
