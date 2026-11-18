@@ -10,7 +10,7 @@
       "title": "Joy AC Hall & Rooms — Family Rooms & Private Group Stay in Rameswaram",
       "type": "hero",
       "video": "https://cdn.builder.io/o/assets%2F9ab187ea44d746dabf821e39227b5937%2Fa1335934641e4b4ebce173b7ca108902?alt=media&token=66214e13-9c6d-4e26-806c-c914f6ce775b&apiKey=9ab187ea44d746dabf821e39227b5937",
-      "primaryButtonUrl": "https://wa.me/918122445538"
+      "primaryButtonUrl": "https://wa.me/918122445538?text=Hi%20Joy%20AC%20Hall%2C%20I%20am%20planning%20a%20group%20stay%20in%20Rameswaram.%20We%20would%20like%20to%20know%20about%20your%20group%20accommodation%20facilities%2C%20room%20availability%2C%20and%20pricing.%20Please%20share%20the%20details."
     },
     {
       "type": "about",
@@ -35,6 +35,36 @@
         {
           "title": "Near Rameswaram Attractions ",
           "description": "— Easy access to Ramanathaswamy Temple, APJ Abdul Kalam Memorial and Dhanushkodi."
+        }
+      ]
+    },
+    {
+      "type": "cards",
+      "sectionId": "cards",
+      "title": "Family Rooms & Private Group Stay in Rameswaram",
+      "description": "Find a comfortable stay for your visit, with options for families, groups, and every kind of getaway.",
+      "grid_columns": 3,
+      "cards": [
+        {
+          "title": "Rooms",
+          "description": "Rest easy in a thoughtfully prepared room, with the comforts you need for a relaxing stay.",
+          "buttonText": "Explore rooms",
+          "link": "#rooms",
+          "image": "/uploads/family-queen-bedroom.jpeg"
+        },
+        {
+          "title": "Sha Stay",
+          "description": "Feel at home in a warm, comfortable stay close to the places you came to see.",
+          "buttonText": "View Sha-stay",
+          "link": "/Sha Stay",
+          "image": "/sha/king/king-bed-640.jpg"
+        },
+        {
+          "title": "Resort",
+          "description": "Unwind and enjoy a welcoming retreat with space to make your stay your own.",
+          "buttonText": "Discover the resort",
+          "link": "/resort",
+          "image": "/uploads/rooms-entrance.jpeg"
         }
       ]
     },

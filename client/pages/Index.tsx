@@ -27,6 +27,7 @@ import RoomDetailsModal, {
 import MobileBookingBar from "@/components/sections/MobileBookingbar";
 import FloatingButtons from "@/components/sections/FloatingButtons";
 import BlogSection from "@/components/sections/BlogSection";
+import { CardSection } from "@/components/sections/CardSection";
 
 // --------------------------------------------------
 // Room data
@@ -37,7 +38,7 @@ interface RoomCard {
   order: number;
   name: string;
   slug: string;
-
+  type?: "joy-ac-hall" | "sha-stay";
   sections?: Array<{ type: string; [key: string]: any }>;
   occupancy?: {
     minValue: number;
@@ -55,6 +56,12 @@ const cmsRooms: RoomCard[] = Object.values(roomModules)
   .map((m) => {
     const room = m.default;
 
+
+     // use if needed seperate room filter
+
+    // .map((m) => m.default)
+    // .filter((room) => room.type === "joy-ac-hall")
+    // .map((room) => {
     const featuresSection = room.sections?.find(
       (section: any) => section.type === "features",
     );
@@ -66,7 +73,6 @@ const cmsRooms: RoomCard[] = Object.values(roomModules)
     const heroSection = room.sections?.find(
       (section: any) => section.type === "hero",
     );
-
     return {
       id: room.id,
       order: room.order,
@@ -165,6 +171,9 @@ const Index = () => {
       case "about":
         return <AboutSection key={key} {...props} />;
 
+      case "cards":
+        return <CardSection key={key} {...props} />;
+
       case "rooms":
         return (
           <RoomsSection
@@ -194,7 +203,7 @@ const Index = () => {
 
       case "blogs":
         // return <h2 className="text-center" id="blog"></h2>
-        return <BlogSection key={key} {...props} blogs={blogs}/>
+        return <BlogSection key={key} {...props} blogs={blogs} />;
       case "faq":
         return <FAQSection key={key} {...props} faqs={faqs} />;
 

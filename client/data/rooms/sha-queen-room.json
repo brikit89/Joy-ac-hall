@@ -1,0 +1,70 @@
+{
+  "id": "7",
+  "order": "7",
+  "name": "SHA Queen Room",
+  "type": "sha-stay",
+  "slug": "sha-queen-room",
+  "occupancy": {
+    "minValue": "1",
+    "maxValue": "4"
+  },
+  "sections": [
+    {
+      "type": "hero",
+      "roomName": "SHA Queen Room",
+      "description": "A cosy and relaxing room designed for couples and small families.",
+      "image": "/sha/queen/queen-room-960.jpg",
+      "bookButtonText": "Book Now",
+      "detailsButtonText": "View Details"
+    },
+    {
+      "type": "gallery",
+      "title": "Room Gallery",
+      "sliderImages": [
+        "/sha/queen/queen-room-960.jpg",
+        "/sha/queen/queen-bed-640.jpg",
+        "/sha/queen/queen-entrance-640.jpg",
+        "/sha/queen/queen-washbasin-640.jpg",
+        "/sha/queen/queen-bathroom-640.jpg",
+        "/sha/queen/queen-room-2-640.jpg"
+      ],
+      "sliderVideos": []
+    },
+    {
+      "type": "features",
+      "priceType": "",
+      "priceNumeric": "",
+      "price": "Price on Enquiry",
+      "priceTypeNote": "",
+      "title": "Room Features & Pricing",
+      "capacity": "Sleeps up to 4 guests",
+      "image": "/sha/queen/queen-room-960.jpg",
+      "features": [
+        "Queen-size bed",
+        "Attached bathroom",
+        "Air conditioning",
+        "Extra mattress option (subject to availability)"
+      ],
+      "roomTypes": []
+    },
+
+    {
+      "type": "attractions",
+      "title": "Nearby Attractions",
+      "sectionId": "attractions"
+    },
+    {
+      "type": "reviews",
+      "title": "Google Reviews",
+      "subtitle": "Read all reviews on Google",
+      "sectionId": "reviews",
+      "background": "gray"
+    },
+    {
+      "type": "booking",
+      "title": "Book Your Stay",
+      "phone": "+918122445538",
+      "whatsappUrl":"https://wa.me/918122445538?text=Hi%20Joy%20AC%20Hall%2C%20I%20would%20like%20to%20book%20a%20SHA%20Queen%20Room.%20Please%20share%20availability%20and%20pricing."
+    }
+  ]
+}

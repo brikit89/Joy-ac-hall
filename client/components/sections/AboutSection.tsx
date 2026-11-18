@@ -2,8 +2,8 @@ import { Star } from "lucide-react";
 import ReactMarkdown from "react-markdown";
 
 interface Highlight {
-  title: string;
-  description: string;
+  title?: string;
+  description?: string;
 }
 interface AboutSectionProps {
   title: string;
@@ -11,7 +11,7 @@ interface AboutSectionProps {
   image: string;
   imageAlt?: string;
   description: string;
-  highlights: Highlight[];
+  highlights?: Highlight[];
 }
 
 const AboutSection = ({
@@ -20,7 +20,7 @@ const AboutSection = ({
   sectionId="about",
   imageAlt = "About us",
   description,
-  highlights,
+  highlights =[],
 }: AboutSectionProps) => {
   return (
     <section id={sectionId} className="py-20 px-4 bg-gray-50">
@@ -28,6 +28,7 @@ const AboutSection = ({
         <h2 className="text-4xl md:text-4xl text-center font-bold text-primary mb-4">
               {title}
             </h2>
+            <div className="w-20 h-1 bg-accent rounded-full mb-6  mx-auto" />
         <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* Image */}
           <div className="animate-in fade-in duration-1000">
@@ -44,7 +45,6 @@ const AboutSection = ({
           <div className="animate-in fade-in duration-1000">
             
 
-            <div className="w-20 h-1 bg-accent rounded-full mb-6" />
 
             <p className="text-gray-700 text-lg text-justify mb-6 leading-relaxed">
               <ReactMarkdown>{description}</ReactMarkdown>
@@ -52,7 +52,7 @@ const AboutSection = ({
             </div>
             </div>
 
-            <div className="space-y-3">
+            <div className="space-y-3 mt-10">
               {highlights.map((highlight, index) => (
                 <div key={index} className="flex items-start gap-3">
                   <Star className="w-6 h-6 text-accent mt-1 flex-shrink-0" />

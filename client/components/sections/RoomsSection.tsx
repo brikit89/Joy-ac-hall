@@ -1,4 +1,3 @@
-
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 
@@ -34,7 +33,6 @@ const RoomsSection = ({
   return (
     <section id={sectionId} className="bg-gray-100 px-4 py-20">
       <div className="mx-auto max-w-6xl">
-
         {/* Section Header */}
         <div className="mb-14 text-center">
           <h2 className="mb-4 text-3xl font-bold text-primary md:text-4xl">
@@ -50,7 +48,6 @@ const RoomsSection = ({
 
         {/* Rooms Grid */}
         <div className="grid grid-cols-1 items-stretch gap-8 md:grid-cols-2">
-
           {rooms.map((room) => (
             <div
               key={room.id}
@@ -69,7 +66,6 @@ const RoomsSection = ({
 
               {/* Room Content */}
               <div className="flex flex-1 flex-col p-6">
-
                 {/* Room Details */}
                 <div>
                   <h3 className="mb-2 text-xl font-bold text-primary md:text-2xl">
@@ -88,14 +84,12 @@ const RoomsSection = ({
 
                     <span className="text-sm text-gray-600">
                       {room.priceType}
-                      {room.priceTypeNote
-                        ? ` (${room.priceTypeNote})`
-                        : ""}
+                      {room.priceTypeNote ? ` (${room.priceTypeNote})` : ""}
                     </span>
                   </div>
 
                   {/* Features */}
-                  <ul className="space-y-3">
+                  <ul className="grid grid-rows-5 grid-flow-col gap-x-8 gap-y-3">
                     {room.features.map((feature, index) => (
                       <li
                         key={`${room.id}-${index}`}
@@ -124,11 +118,9 @@ const RoomsSection = ({
                     </Link>
                   </Button>
                 </div>
-
               </div>
             </div>
           ))}
-
         </div>
       </div>
     </section>

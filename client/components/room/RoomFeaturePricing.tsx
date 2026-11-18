@@ -12,12 +12,11 @@ interface RoomData {
   roomTypes: string[];
 }
 
-
 export const RoomFeaturesPricing = ({
   capacity,
   features,
   price,
-  sectionID="features",
+  sectionID = "features",
   priceType,
   roomTypes,
   image,
@@ -48,20 +47,23 @@ export const RoomFeaturesPricing = ({
               <p className="text-gray-600">Maximum {capacity}</p>
             </div>
 
-            <h3 className="text-2xl font-bold text-primary mb-4">
-              Room Types Available
-            </h3>
-
-            <div className="flex flex-wrap gap-3 mb-8">
-              {roomTypes.map((type, idx) => (
-                <span
-                  key={idx}
-                  className="bg-accent/20 text-primary px-4 py-2 rounded-full font-medium"
-                >
-                  {type}
-                </span>
-              ))}
-            </div>
+            {roomTypes.length >= 1 && (
+              <div>
+                <h3 className="text-2xl font-bold text-primary mb-4">
+                  Room Types Available
+                </h3>
+                <div className="flex flex-wrap gap-3 mb-8">
+                  {roomTypes.map((type, idx) => (
+                    <span
+                      key={idx}
+                      className="bg-accent/20 text-primary px-4 py-2 rounded-full font-medium"
+                    >
+                      {type}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            )}
 
             <h3 className="text-2xl font-bold text-primary mb-4">Features</h3>
 

@@ -1,0 +1,73 @@
+{
+  "id": "6",
+  "order": "6",
+  "name": "SHA King Room",
+  "type": "sha-stay",
+  "slug": "sha-king-room",
+  "occupancy": {
+    "minValue": "",
+    "maxValue": ""
+  },
+  "sections": [
+    {
+      "type": "hero",
+      "roomName": "SHA King Room",
+      "description": "Spacious and comfortable accommodation with a king-size bed, ideal for couples and small families.",
+      "image": "/sha/king/king-room-640.jpg",
+      "bookButtonText": "Book Now",
+      "detailsButtonText": "View Details"
+    },
+    {
+      "type": "gallery",
+      "title": "Room Gallery",
+      "sliderImages": [
+        "/sha/king/king-room-640.jpg",
+        "/sha/king/king-bed-640.jpg",
+        "/sha/king/king-entrance-640.jpg",
+        "/sha/king/king-tv-640.jpg",
+        "/sha/king/king-bathroom-640.jpg"
+      ],
+      "sliderVideos": []
+    },
+    {
+      "type": "features",
+      "priceType": "",
+      "priceNumeric": "",
+      "price": "Price on Enquiry",
+      "priceTypeNote": "",
+      "title": "Room Features & Pricing",
+      "capacity": "Sleeps up to 5 guests",
+      "image": "/sha/king/king-room-640.jpg",
+      "features": [
+        "King-size bed",
+        "Attached bathroom",
+        "Air conditioning",
+        "Extra mattress option (subject to availability)"
+      ],
+      "roomTypes": []
+    },
+    {
+      "type": "amenities",
+      "title": "Facilities & Amenities",
+      "amenities": []
+    },
+    {
+      "type": "attractions",
+      "title": "Nearby Attractions",
+      "sectionId": "attractions"
+    },
+    {
+      "type": "reviews",
+      "title": "Google Reviews",
+      "subtitle": "Read all reviews on Google",
+      "sectionId": "reviews",
+      "background": "gray"
+    },
+    {
+      "type": "booking",
+      "title": "Book Your Stay",
+      "phone": "+918122445538",
+      "whatsappUrl":  "https://wa.me/918122445538?text=Hi%20Joy%20AC%20Hall%2C%20I%20would%20like%20to%20book%20a%20SHA%20King%20Room.%20Please%20share%20availability%20and%20pricing."
+    }
+  ]
+}

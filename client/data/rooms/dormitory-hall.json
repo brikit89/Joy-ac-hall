@@ -2,6 +2,7 @@
   "id": 1,
   "order": 3,
   "name": "Private Group Stay",
+  "type": "joy-ac-hall",
   "slug": "private-group-stay",
   "occupancy": {
     "minValue": 30,
@@ -28,7 +29,7 @@
       "sliderVideos": []
     },
     {
-    "priceType": "PER PERSON",
+      "priceType": "PER PERSON",
       "priceNumeric": 250,
       "price": "Rs. 250",
       "priceTypeNote": "Non AC",
@@ -101,7 +102,7 @@
       "type": "booking",
       "title": "Book Your Stay",
       "phone": "+918122445538",
-      "whatsappUrl": "https://wa.me/918122445538"
+      "whatsappURL": "https://wa.me/918122445538?text=Hi%20Joy%20AC%20Hall%2C%20I%20would%20like%20to%20enquire%20about%20booking%20the%20Dormitory%20Hall.%20Please%20share%20availability%20and%20pricing."
     }
   ]
 }

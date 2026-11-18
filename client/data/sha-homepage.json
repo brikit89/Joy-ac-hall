@@ -1,0 +1,133 @@
+{
+  "sections": [
+    {
+      "type": "hero",
+      "title": "A Peaceful Stay in the Heart of Rameswaram",
+      "subtitle": "Experience comfort and relaxation at SHA Stays, a resort-style accommodation designed for families, couples and travellers. Enjoy comfortable rooms, welcoming outdoor spaces and a refreshing atmosphere during your visit to Rameswaram.",
+      "sectionId": "home",
+      "primaryButtonLabel": "Check Availability",
+      "primaryButtonUrl": "#contact",
+      "secondaryButtonLabel": "Explore Our Rooms",
+      "secondaryButtonUrl": "#rooms",
+      "showScrollIndicator": true,
+      "posterImage": "/sha/hero-800.avif"
+    },
+    {
+      "type": "about",
+      "title": "Your Comfortable Getaway in Rameswaram",
+      "sectionId": "about",
+      "image": "/sha/outdoor-arch-960.jpg",
+      "imageAlt": "SHA Stays property or garden",
+      "description": "SHA Stays brings together comfort, privacy and a relaxed atmosphere. Whether you're visiting for a spiritual journey, a family holiday or a short getaway, we offer a welcoming place to unwind. From comfortable interiors to peaceful outdoor surroundings, every part of your stay is designed to make your Rameswaram visit enjoyable."
+    },
+    {
+      "type": "rooms",
+      "title": "Find Your Perfect Stay",
+      "sectionId": "rooms",
+      "description": "Choose from our thoughtfully arranged King and Queen rooms, designed to offer a comfortable stay for different travel needs.",
+      "buttonText": "View Rooms"
+    },
+    {
+      "type": "amenities",
+      "title": "Everything You Need for a Comfortable Stay",
+      "description": "Enjoy essential amenities and thoughtful facilities that make your stay convenient and relaxing.",
+      "sectionId": "amenities",
+      "amenities": [
+        {
+          "label": "Air-conditioned rooms",
+          "icon": "Wind"
+        },
+        {
+          "label": "Attached bathrooms",
+          "icon": "Droplets"
+        },
+        {
+          "label": "Hot water",
+          "icon": "Thermometer"
+        },
+        {
+          "label": "Wi-Fi",
+          "icon": "Wifi"
+        },
+        {
+          "label": "Parking facility",
+          "icon": "ParkingSquare"
+        },
+        {
+          "label": "Outdoor garden",
+          "icon": "CheckCircle"
+        }
+      ]
+    },
+    {
+      "type": "about",
+      "title": "More Than Just a Room",
+      "sectionId": "experience",
+      "image": "/sha/outdoor-gate-640.jpg",
+      "imageAlt": "SHA Stays garden and outdoor area",
+      "description": "SHA Stays offers a comfortable, welcoming place to stay in Rameswaram. Whether you’re visiting for a spiritual journey, a family holiday or a short getaway, our King and Queen rooms provide a relaxed space to rest and recharge. Each room includes a comfortable bed, air conditioning and an attached bathroom. Larger groups can also find accommodation suited to group travel.  SHA Stays is a convenient base for discovering Rameswaram, spending time together and making your visit memorable. We look forward to welcoming couples, families and travellers for a pleasant stay.",
+      "highlights": [
+        {
+          "description": "Relax in the garden surroundings."
+        },
+        {
+          "description": "Enjoy quality time with family and friends."
+        },
+        {
+          "description": "Experience a quieter, more relaxed stay."
+        }
+      ]
+    },
+    {
+      "type": "gallery",
+      "title": "A Glimpse of SHA Stays",
+      "description": "Explore authentic photographs of the property, rooms, garden and outdoor spaces.",
+      "sectionId": "gallery",
+      "images": [
+        "/sha/outdoor-night-1280.jpg" ,
+         "/sha/entrance-forecourt-night-640.jpg" ,
+         "/sha/highway-signboard-640.jpg" ,
+         "/sha/king-cottage-night-640.jpg" ,
+         "/sha/outdoor-gate-640.jpg" ,
+         "/sha/walkway-arch-night-960.jpg"
+      ]
+    },
+    {
+      "type": "faq",
+      "title": "Frequently Asked Questions",
+      "sectionId": "faq",
+      "list": {
+        "items": [
+          {
+            "question": "What room types are available?",
+            "answer": "King and Queen rooms"
+          },
+          {
+            "question": "Are the rooms air-conditioned?",
+            "answer": "Yes."
+          },
+          {
+            "question": "Is hot water available?",
+            "answer": "Yes."
+          },
+          {
+            "question": "Do rooms have attached bathrooms?",
+            "answer": "Yes."
+          },
+          {
+            "question": "Can extra beds be arranged?",
+            "answer": "Subject to availability."
+          },
+          {
+            "question": "Is parking available?",
+            "answer": "Confirm parking arrangements with the property before publishing."
+          },
+          {
+            "question": "Is food available?",
+            "answer": "Contact the property for current dining arrangements."
+          }
+        ]
+      }
+    }
+  ]
+}

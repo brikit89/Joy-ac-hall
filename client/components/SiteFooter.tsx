@@ -46,9 +46,9 @@ export const SiteFooter = ({
     <footer className="bg-primary text-white py-16 px-4">
       <div className="max-w-6xl mx-auto">
         {/* Main Footer */}
-        <div className="grid md:grid-cols-3 gap-12 mb-12">
+        <div className="grid md:grid-cols-5 gap-12 mb-12">
           {/* About */}
-          <div>
+          <div className="col-span-3">
             <h4 className="text-xl font-bold mb-4">{aboutTitle}</h4>
 
             <p className="text-gray-200">{aboutText}</p>

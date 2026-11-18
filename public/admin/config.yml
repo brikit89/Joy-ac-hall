@@ -5,12 +5,12 @@
 # GitHub backend — content commits go to your repo's main branch.
 # The OAuth proxy below is the Cloudflare Worker in cloudflare-worker/.
 backend:
-  # name: test-repo
-  name: github
-  repo: brikit89/Joy-ac-hall   # was Ozzitech/Joy-ac-hall
-  branch: main
-  base_url: https://joy-ac-hall-cms-oauth.brikit-38a.workers.dev
-  auth_endpoint: auth
+  name: test-repo
+  # name: github
+  # repo: brikit89/Joy-ac-hall # was Ozzitech/Joy-ac-hall
+  # branch: main
+  # base_url: https://joy-ac-hall-cms-oauth.brikit-38a.workers.dev
+  # auth_endpoint: auth
 
 # Local proxy for in-development editing without GitHub
 # Run with: npm run cms:proxy
@@ -278,6 +278,12 @@ collections:
           name: id,
           label: "ID (unique number — use next free id, e.g. 6)",
           widget: number,
+        }
+      - {
+          name: type,
+          label: Room type,
+          widget: select,
+          options: [joy-ac-hall, sha-stay],
         }
       - {
           name: order,
@@ -1144,6 +1150,334 @@ collections:
                       label: sectionId,
                       widget: string,
                     }
+              # ─────────────────────────────────────
+              # CARDS
+              # ─────────────────────────────────────
+
+              - name: cards
+                label: Cards
+                label_singular: Card
+                widget: object
+                fields:
+                  - name: type
+                    label: Type
+                    widget: hidden
+                    default: cards
+                  - name: sectionId
+                    label: Section ID
+                    widget: hidden
+                    default: cards
+                  - name: title
+                    label: Section title
+                    widget: string
+                  - name: description
+                    label: Section description
+                    widget: text
+                  - name: grid_columns
+                    label: Grid columns
+                    widget: number
+                    default: 3
+                    value_type: int
+                    min: 1
+                    max: 4
+                  - name: cards
+                    label: Card items
+                    label_singular: Card
+                    widget: list
+                    summary: "{{fields.title}}"
+                    fields:
+                      - { name: title, label: Title, widget: string }
+                      - { name: description, label: Description, widget: text }
+                      - { name: buttonText, label: Button text, widget: string }
+                      - { name: link, label: Link, widget: string }
+                      - { name: image, label: Image, widget: image }
+
+      - file: client/data/sha-homepage.json
+        label: SHA Homepage Sections
+        name: sections
+        format: json
+
+        fields:
+          - name: sections
+            label: Sections
+            widget: list
+            summary: "{{fields.type}} — {{fields.title}}"
+
+            types:
+              # ─────────────────────────────────────
+              # HERO
+              # ─────────────────────────────────────
+
+              - name: hero
+                label: Hero Section
+                widget: object
+                fields:
+                  - name: type
+                    widget: hidden
+                    default: hero
+                  - { name: title, label: Title, widget: string }
+
+                  - { name: subtitle, label: Subtitle, widget: text }
+                  - {
+                      name: sectionId,
+                      required: false,
+                      label: sectionId,
+                      widget: string,
+                    }
+                  - {
+                      name: video,
+                      label: Background Video URL,
+                      widget: file,
+                      required: false,
+                      hint: "Optional MP4/video URL. Leave empty to use an image.",
+                    }
+
+                  - {
+                      name: posterImage,
+                      label: Video Poster Image,
+                      widget: image,
+                      required: false,
+                      hint: "Image shown while the background video loads.",
+                    }
+
+                  - {
+                      name: primaryButtonLabel,
+                      label: Primary Button Label,
+                      widget: string,
+                      default: "Check Group Rates",
+                    }
+
+                  - {
+                      name: primaryButtonUrl,
+                      label: Primary Button URL,
+                      widget: string,
+                    }
+
+                  - {
+                      name: secondaryButtonLabel,
+                      label: Secondary Button Label,
+                      widget: string,
+                      default: "Explore Stay Options",
+                    }
+
+                  - {
+                      name: secondaryButtonUrl,
+                      label: Secondary Button URL,
+                      widget: string,
+                      default: "#rooms",
+                    }
+
+                  - {
+                      name: showScrollIndicator,
+                      label: Show Scroll Indicator,
+                      widget: boolean,
+                      default: true,
+                    }
+
+              # ─────────────────────────────────────
+              # ABOUT
+              # ─────────────────────────────────────
+
+              - name: about
+                label: About Section
+                widget: object
+                fields:
+                  - name: type
+                    widget: hidden
+                    default: about
+                  - { name: title, label: Title, widget: string }
+                  - {
+                      name: sectionId,
+                      required: false,
+                      label: sectionId,
+                      widget: string,
+                    }
+
+                  - {
+                      name: image,
+                      label: Image,
+                      widget: image,
+                      required: false,
+                    }
+
+                  - {
+                      name: imageAlt,
+                      label: Image Alt Text,
+                      widget: string,
+                      required: false,
+                    }
+
+                  - { name: description, label: Description, widget: markdown }
+
+                  - name: highlights
+                    label: Highlights
+                    required: false
+                    widget: list
+                    fields:
+                      - {
+                          name: title,
+                          required: false,
+                          label: Title,
+                          widget: string,
+                        }
+
+                      - {
+                          name: description,
+                          label: Description,
+                          widget: text,
+
+                          required: false,
+                        }
+
+              # ─────────────────────────────────────
+              # ROOMS
+              # ─────────────────────────────────────
+
+              - name: rooms
+                label: Rooms Section
+                widget: object
+                fields:
+                  - name: type
+                    widget: hidden
+                    default: rooms
+                  - {
+                      name: title,
+                      label: Title,
+                      widget: string,
+                      default: "Accommodation Options",
+                    }
+                  - {
+                      name: sectionId,
+                      required: false,
+                      label: sectionId,
+                      widget: string,
+                    }
+
+                  - { name: description, label: Description, widget: text }
+
+                  - {
+                      name: buttonText,
+                      label: Button Label,
+                      widget: string,
+                      default: "View Room Details",
+                    }
+
+              # ─────────────────────────────────────
+              # AMENITIES
+              # ─────────────────────────────────────
+
+              - name: amenities
+                label: Amenities Section
+                widget: object
+                fields:
+                  - name: type
+                    widget: hidden
+                    default: amenities
+                  - {
+                      name: title,
+                      label: Title,
+                      widget: string,
+                      default: "Facilities & Amenities",
+                    }
+
+                  - { name: description, label: Description, widget: text }
+                  - {
+                      name: sectionId,
+                      required: false,
+                      label: sectionId,
+                      widget: string,
+                    }
+
+                  - name: amenities
+                    label: Amenities
+                    widget: list
+                    fields:
+                      - { name: label, label: Name, widget: string }
+
+                      - {
+                          name: icon,
+                          label: Icon,
+                          widget: select,
+                          options:
+                            [
+                              Wifi,
+                              Wind,
+                              Droplets,
+                              Shield,
+                              ParkingSquare,
+                              UtensilsCrossed,
+                              Coffee,
+                              Tv,
+                              Mic2,
+                              Thermometer,
+                              Bus,
+                              Users,
+                              CheckCircle,
+                            ],
+                          default: check,
+                        }
+
+              - name: gallery
+                label: Gallery Section
+                widget: object
+                fields:
+                  - name: type
+                    widget: hidden
+                    default: gallery
+
+                  - name: title
+                    label: Title
+                    widget: string
+                    default: "A Glimpse of SHA Stays"
+
+                  - name: description
+                    label: Description
+                    widget: text
+
+                  - name: sectionId
+                    label: Section ID
+                    widget: string
+                    required: false
+
+                  - name: images
+                    label: Images
+                    widget: list
+                    summary: "{{fields.image}}"
+                    fields:
+                      - name: image
+                        label: Image
+                        widget: image                
+
+              - name: faq
+                label: FAQ Section
+                widget: object
+                fields:
+                  - name: type
+                    widget: hidden
+                    default: faq
+                  - {
+                      name: title,
+                      label: Title,
+                      widget: string,
+                      default: "Frequently Asked Questions",
+                    }
+
+                  - {
+                      name: sectionId,
+                      required: false,
+                      label: sectionId,
+                      widget: string,
+                    }
+                  - label: FAQ list
+                    name: list
+                    format: json
+                    fields:
+                      - name: items
+                        label: Questions
+                        widget: list
+                        fields:
+                          - { name: question, label: Question, widget: string }
+                          - { name: answer, label: Answer, widget: text }
 
   # ── 7. Blogs ───────────────────────────────────────
   - name: blogs
@@ -1196,13 +1530,12 @@ collections:
                 label: Image Thumbnail
                 widget: image
                 required: false
-                
+
               - name: bannerImage
                 label: Banner Image
                 widget: image
                 required: false
-                hint : "If Thumbnail is not needed as banner use this option to add seperate image for banner"
-                
+                hint: "If Thumbnail is not needed as banner use this option to add seperate image for banner"
 
               # Blog content sections
               - name: sections
@@ -1230,7 +1563,7 @@ collections:
                   - name: image
                     label: Section Image
                     widget: image
-                    
+
                   - name: position
                     label: Section Position
                     widget: select
@@ -1240,7 +1573,6 @@ collections:
                         value: left
                       - label: Right Image Left Content
                         value: right
-
 
                   - name: imageAlt
                     label: Image Alt Text
@@ -1329,3 +1661,12 @@ collections:
                 label: Link
                 widget: text
                 required: false
+
+# home page
+# about
+# rooms
+# ammenties & facilites
+# Expresriense sha stays
+# photo galery
+# Booking & Enquiry
+# FAQ

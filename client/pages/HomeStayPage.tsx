@@ -1,9 +1,237 @@
-import React from 'react'
+import React, { useEffect, useState } from "react";
+import { useDocumentMeta } from "@/hooks/useDocumentMeta";
 
-function HomeStayPage() {
-  return (
-    <div>HomeStayPage</div>
-  )
+import siteConfig from "@/data/site.json";
+import routesMeta from "@/data/routesMeta.json";
+import homepage from "@/data/sha-homepage.json";
+
+import HeroSection from "@/components/sections/Herosection";
+import AboutSection from "@/components/sections/AboutSection";
+import RoomsSection from "@/components/sections/RoomsSection";
+import AmenitiesSection from "@/components/sections/AmenititesSection";
+import FAQSection from "@/components/sections/FAQSection";
+
+import Header from "@/components/Header";
+import { SiteFooter } from "@/components/SiteFooter";
+import RoomDetailsModal, {
+  RoomDetails,
+} from "@/components/sections/RoomDetailsModal";
+import MobileBookingBar from "@/components/sections/MobileBookingbar";
+import FloatingButtons from "@/components/sections/FloatingButtons";
+import { CardSection } from "@/components/sections/CardSection";
+import GallerySection from "@/components/sections/GallerySection";
+
+// --------------------------------------------------
+// Room data
+// --------------------------------------------------
+
+interface RoomCard {
+  id: number;
+  order: number;
+  name: string;
+  slug: string;
+  type?: "joy-ac-hall" | "sha-stay";
+  sections?: Array<{ type: string; [key: string]: any }>;
+  occupancy?: {
+    minValue: number;
+    maxValue: number;
+  };
 }
 
-export default HomeStayPage
+const roomModules = import.meta.glob<{
+  default: Omit<RoomCard, "route">;
+}>("@/data/rooms/*.json", {
+  eager: true,
+});
+
+const cmsRooms: RoomCard[] = Object.values(roomModules)
+
+  .map((m) => {
+    const room = m.default;
+
+    // use if needed seperate room filter
+
+    // .map((m) => m.default)
+    // .filter((room) => room.type === "sha-stay")
+    // .map((room) => {
+    const featuresSection = room.sections?.find(
+      (section: any) => section.type === "features",
+    );
+
+    const gallerySection = room.sections?.find(
+      (section: any) => section.type === "gallery",
+    );
+
+    const heroSection = room.sections?.find(
+      (section: any) => section.type === "hero",
+    );
+    return {
+      id: room.id,
+      order: room.order,
+      name: room.name,
+      slug: room.slug,
+
+      capacity:
+        featuresSection?.capacity ??
+        (room.occupancy
+          ? `${room.occupancy.minValue}–${room.occupancy.maxValue} persons`
+          : ""),
+
+      price: featuresSection?.price ?? "",
+
+      priceType: featuresSection?.priceType ?? "",
+
+      priceTypeNote: featuresSection?.priceTypeNote,
+
+      features: featuresSection?.features ?? [],
+
+      image:
+        featuresSection?.image ??
+        heroSection?.image ??
+        gallerySection?.sliderImages?.[0] ??
+        "",
+
+      sliderImages: gallerySection?.sliderImages ?? [],
+
+      sliderVideos: gallerySection?.sliderVideos ?? [],
+
+      roomTypes: featuresSection?.roomTypes ?? [],
+
+      route: `/rooms/${room.slug}`,
+    };
+  })
+  .sort((a, b) => a.order - b.order);
+
+// --------------------------------------------------
+// Homepage section type
+// --------------------------------------------------
+
+interface HomepageSection {
+  type: string;
+  [key: string]: any;
+}
+
+// --------------------------------------------------
+// Homepage
+// --------------------------------------------------
+
+const Index = () => {
+  // ------------------------------------------------
+  // Existing CMS data
+  // ------------------------------------------------
+
+  const rooms = cmsRooms;
+  const faqSection = homepage.sections.find(
+    (section) => section.type === "faq",
+  );
+
+  const faqs = faqSection?.list?.items ?? [];
+
+  // ------------------------------------------------
+  // FAQ Schema
+  // ------------------------------------------------
+
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+
+    mainEntity: faqs.map((faq) => ({
+      "@type": "Question",
+      name: faq.question,
+
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: faq.answer,
+      },
+    })),
+  };
+
+  useDocumentMeta({
+    ...routesMeta["/"],
+    jsonLd: [faqSchema],
+  });
+
+  // ------------------------------------------------
+  // Render CMS section
+  // ------------------------------------------------
+
+  const renderSection = (section: any, key: string) => {
+    const { type, ...props } = section;
+
+    switch (type) {
+      case "hero":
+        return <HeroSection key={key} {...props} />;
+
+      case "about":
+        return <AboutSection key={key} {...props} />;
+
+      case "cards":
+        return <CardSection key={key} {...props} />;
+
+      case "rooms":
+        return (
+          <RoomsSection
+            onRoomSelect={setSelectedRoom}
+            key={key}
+            {...props}
+            rooms={rooms}
+          />
+        );
+
+      case "amenities":
+        return <AmenitiesSection key={key} {...props} />;
+
+      case "gallery":
+        return <GallerySection key={key} {...props} />;
+
+      case "faq":
+        return <FAQSection key={key} {...props} faqs={faqs} />;
+
+      default:
+        console.warn("Unknown homepage section type:", type);
+        return null;
+    }
+  };
+
+  const [selectedRoom, setSelectedRoom] = useState<RoomDetails | null>(null);
+
+  // ------------------------------------------------
+  // PAGE
+  // ------------------------------------------------
+
+  return (
+    <div className="min-h-screen bg-white pb-16 lg:pb-0">
+      {/* Global Header */}
+
+      <Header {...siteConfig.shaheader} />
+
+      {/* CMS Controlled Homepage */}
+
+      <main>
+        {(homepage.sections as HomepageSection[]).map((section, index) =>
+          renderSection(section, `${section.type}-${index}`),
+        )}
+      </main>
+
+      {/* Global Footer */}
+
+      <SiteFooter {...siteConfig.footer} />
+      <RoomDetailsModal
+        room={selectedRoom}
+        phoneUrl={siteConfig.phoneURL}
+        whatsappUrl={siteConfig.whatsappURL}
+        onClose={() => setSelectedRoom(null)}
+      />
+      <MobileBookingBar
+        phoneUrl={siteConfig.phoneURL}
+        whatsappUrl={siteConfig.whatsappURL}
+      />
+      <FloatingButtons
+        phoneUrl={siteConfig.phoneURL}
+        whatsappUrl={siteConfig.whatsappURL}
+      />
+    </div>
+  );
+};
+
+export default Index;

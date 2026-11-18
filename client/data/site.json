@@ -78,6 +78,45 @@
     "bookingLabel": "Book Now",
     "bookingUrl": "https://be.aiosell.com/book/2e94839cd4"
   },
+  "shaheader": {
+    "logo": "/logo.png",
+    "scrolledLogo": "/logo-coloured.png",
+    "logoAlt": "Joy AC Hall & Rooms",
+    "navLinks": [
+      {
+        "id": "home",
+        "label": "Home",
+        "href": "/"
+      },
+      {
+        "id": "about",
+        "label": "About",
+        "href": "#about"
+      },
+      {
+        "id": "rooms",
+        "label": "Rooms",
+        "href": "#rooms"
+      },
+      {
+        "id": "amenities",
+        "label": "Amenities",
+        "href": "#amenities"
+      },
+      {
+        "id": "gallery",
+        "label": "Gallery",
+        "href": "#gallery"
+      },
+      {
+        "id": "faq",
+        "label": "FAQ",
+        "href": "#faq"
+      }
+    ],
+    "bookingLabel": "Book Now",
+    "bookingUrl": "https://be.aiosell.com/book/2e94839cd4"
+  },
   "googleReviewsUrl": "https://www.google.com/maps/place/Joy+AC+Hall+%26+Dormitory",
   "header": {
     "logo": "/logo.png",
@@ -110,14 +149,14 @@
         "href": "#attractions"
       },
       {
-        "id": "faq",
-        "label": "FAQ",
-        "href": "#faq"
-      },
-      {
         "id": "blog",
         "label": "Blog",
         "href": "#blog"
+      },
+      {
+        "id": "faq",
+        "label": "FAQ",
+        "href": "#faq"
       }
     ],
     "bookingLabel": "Book Now",
@@ -185,6 +224,6 @@
   },
   "email": "admin@joyachall.com",
   "bookingCtaLabel": "Book Now",
-  "whatsappURL": "https://wa.me/918122445538",
+  "whatsappURL": "https://wa.me/918122445538?text=Hi%20Joy%20AC%20Hall%2C%20I%20would%20like%20to%20book%20a%20room.%20Please%20share%20the%20availability%20and%20pricing.",
   "googleMapsUrl": "https://maps.google.com/?q=Joy+AC+Hall+%26+Dormitory+Rameswaram"
 }

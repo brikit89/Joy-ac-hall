@@ -1,6 +1,7 @@
 {
   "id": 3,
   "order": 4,
+  "type":"joy-ac-hall",
   "name": "Double Room with Private Bathroom",
   "slug": "double-room",
   "occupancy": {
@@ -106,7 +107,7 @@
       "type": "booking",
       "title": "Book Your Stay",
       "phone": "+918122445538",
-      "whatsappUrl": "https://wa.me/918122445538"
+      "whatsappUrl":  "https://wa.me/918122445538?text=Hi%20Joy%20AC%20Hall%2C%20I%20would%20like%20to%20book%20a%20Double%20Room.%20Please%20share%20availability%20and%20pricing."
     }
   ]
 }
