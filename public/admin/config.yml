@@ -38,14 +38,10 @@ collections:
         format: json
 
         fields:
-          # ─────────────────────────────────
-          # HEADER
-          # ─────────────────────────────────
-
           - name: header
-            label: Header
+            label: Main Website Header
             widget: object
-            fields:
+            fields: &headerFields
               - { name: logo, label: Logo URL, widget: string, required: false }
               - {
                   name: scrolledLogo,
@@ -53,12 +49,11 @@ collections:
                   widget: string,
                   required: false,
                 }
-
               - {
                   name: logoAlt,
                   label: Logo Alt Text,
                   widget: string,
-                  default: "Joy AC Hall & Rooms",
+                  required: false,
                 }
 
               - name: navLinks
@@ -71,20 +66,31 @@ collections:
 
               - {
                   name: bookingLabel,
-                  label: "Header CTA label",
+                  label: Booking Button Label,
                   widget: string,
-                  default: "Book Now",
                   required: false,
-                  hint: "Shown on the header button (e.g. Book Now).",
                 }
               - {
-                  required: false,
                   name: bookingUrl,
-                  label: "Booking link (Header CTA)",
+                  label: Booking URL,
                   widget: string,
-                  hint: "Full URL opened by the header Book Now button.",
+                  required: false,
                 }
 
+          - name: blogHeader
+            label: Blog Header
+            widget: object
+            fields: *headerFields
+
+          - name: roomHeader
+            label: Room Header
+            widget: object
+            fields: *headerFields
+
+          - name: shaheader
+            label: SHA Header
+            widget: object
+            fields: *headerFields
           # ─────────────────────────────────
           # CONTACT / GLOBAL INFORMATION
           # ─────────────────────────────────
@@ -1446,7 +1452,7 @@ collections:
                     fields:
                       - name: image
                         label: Image
-                        widget: image                
+                        widget: image
 
               - name: faq
                 label: FAQ Section
@@ -1470,7 +1476,6 @@ collections:
                     }
                   - label: FAQ list
                     name: list
-                    format: json
                     fields:
                       - name: items
                         label: Questions
@@ -1661,5 +1666,3 @@ collections:
                 label: Link
                 widget: text
                 required: false
-
-

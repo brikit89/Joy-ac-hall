@@ -1,5 +1,4 @@
 {
-  "phoneURL": "tel:+918122445538",
   "blogHeader": {
     "logo": "/logo.png",
     "scrolledLogo": "/logo-coloured.png",
@@ -117,7 +116,6 @@
     "bookingLabel": "Book Now",
     "bookingUrl": "https://be.aiosell.com/book/2e94839cd4"
   },
-  "googleReviewsUrl": "https://www.google.com/maps/place/Joy+AC+Hall+%26+Dormitory",
   "header": {
     "logo": "/logo.png",
     "scrolledLogo": "/logo-coloured.png",
@@ -162,6 +160,8 @@
     "bookingLabel": "Book Now",
     "bookingUrl": "https://be.aiosell.com/book/2e94839cd4"
   },
+  "googleReviewsUrl": "https://www.google.com/maps/place/Joy+AC+Hall+%26+Dormitory",
+  "phoneURL": "tel:+918122445538",
   "phone": "+91 81224 45538",
   "whatsapp": "+918122445538",
   "phoneDisplay": "+91 81224 45538",
