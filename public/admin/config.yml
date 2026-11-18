@@ -1194,7 +1194,7 @@ collections:
 
       - file: client/data/sha-homepage.json
         label: SHA Homepage Sections
-        name: sections
+        name: shaSections
         format: json
 
         fields:
@@ -1662,11 +1662,4 @@ collections:
                 widget: text
                 required: false
 
-# home page
-# about
-# rooms
-# ammenties & facilites
-# Expresriense sha stays
-# photo galery
-# Booking & Enquiry
-# FAQ
+
