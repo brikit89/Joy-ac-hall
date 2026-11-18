@@ -1461,29 +1461,32 @@ collections:
                   - name: type
                     widget: hidden
                     default: faq
-                  - {
-                      name: title,
-                      label: Title,
-                      widget: string,
-                      default: "Frequently Asked Questions",
-                    }
 
-                  - {
-                      name: sectionId,
-                      required: false,
-                      label: sectionId,
-                      widget: string,
-                    }
-                  - label: FAQ list
-                    name: list
+                  - name: title
+                    label: Title
+                    widget: string
+                    default: "Frequently Asked Questions"
+
+                  - name: sectionId
+                    label: Section ID
+                    widget: string
+                    required: false
+
+                  - name: list
+                    label: FAQ List
+                    widget: object
                     fields:
                       - name: items
                         label: Questions
                         widget: list
                         fields:
-                          - { name: question, label: Question, widget: string }
-                          - { name: answer, label: Answer, widget: text }
+                          - name: question
+                            label: Question
+                            widget: string
 
+                          - name: answer
+                            label: Answer
+                            widget: text
   # ── 7. Blogs ───────────────────────────────────────
   - name: blogs
     label: Blogs
