@@ -45,12 +45,12 @@
       "buttonText": "View Room Details"
     },
     {
-      "sectionId": "Accommodation",
+      "sectionId": "accommodation",
       "primaryButtonLabel": "Visit Sha-Stay",
       "showScrollIndicator": false,
-      "secondaryButtonUrl": "/sha-stays#rooms",
+      "secondaryButtonUrl": "/resort",
       "posterImage": "/uploads/hero-800.avif",
-      "secondaryButtonLabel": "Explore Stay Options",
+      "secondaryButtonLabel": "Visit Resorts",
       "subtitle": "Looking for a different stay option? Explore SHA Stays, our welcoming property, with comfortable King and Queen rooms for couples, families and travellers. Discover another way to enjoy your visit to Rameswaram, with a stay that suits your plans and preferences.",
       "title": "Accommodation Options",
       "type": "hero",

@@ -25,7 +25,7 @@ interface HeroSectionProps {
 const HeroSection = ({
   title,
   subtitle,
-  sectionId = "hero",
+  sectionId,
   video,
   posterImage,
 
@@ -108,16 +108,28 @@ const HeroSection = ({
             )}
 
             {/* Secondary */}
-            {secondaryButtonLabel && (
-              <Button
-                size="lg"
-                variant="outline"
-                className="bg-white/20 border-white text-white hover:bg-white/30"
-                onClick={handleExplore}
-              >
-                {secondaryButtonLabel}
-              </Button>
-            )}
+            {secondaryButtonLabel &&
+              (secondaryButtonUrl?.startsWith("#") ? (
+                <Button
+                  size="lg"
+                  variant="outline"
+                  className="bg-white/20 border-white text-white hover:bg-white/30"
+                  onClick={handleExplore}
+                >
+                  {secondaryButtonLabel}
+                </Button>
+              ) : (
+                <a href={secondaryButtonUrl} target="_blank">
+                  <Button
+                    size="lg"
+                    variant="outline"
+                    className="bg-white/20 border-white text-white hover:bg-white/30"
+                    onClick={handleExplore}
+                  >
+                    {secondaryButtonLabel}
+                  </Button>
+                </a>
+              ))}
           </div>
         </div>
 

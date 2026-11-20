@@ -135,10 +135,11 @@
         "id": "rooms",
         "label": "Rooms",
         "href": "#rooms"
-      },{
-        "id": "Accommodation ",
+      },
+      {
+        "id": "accommodation ",
         "label": "Accommodation ",
-        "href": "#Accommodation "
+        "href": "#accommodation "
       },
       {
         "id": "amenities",
