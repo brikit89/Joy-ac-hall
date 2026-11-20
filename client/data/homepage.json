@@ -15,7 +15,7 @@
     {
       "type": "about",
       "sectionId": "about",
-      "title": "Family Rooms & Private Group Stay in Rameswaram",
+      "title": "Joy AC Hall & Rooms in Rameswaram",
       "image": "https://cdn.builder.io/api/v1/image/assets%2F9ab187ea44d746dabf821e39227b5937%2F6cb03dfcf88d421e94c4b20dd13e32b3",
       "imageAlt": "Joy AC Hall & Rooms in Rameswaram",
       "description": "**Joy AC Hall & Rooms** offers comfortable **AC family rooms and private group accommodation in Rameswaram**, located in Thangachimadam near Pamban Bridge. Our family rooms are suitable for **4–10 guests**, while our private group stay is designed for larger groups of **15–70 guests**.\n\nWhether you're visiting Rameswaram for a family trip, pilgrimage or group tour, we provide a convenient and comfortable base for exploring **Pamban Bridge, Ramanathaswamy Temple, Dr. A.P.J. Abdul Kalam Memorial, Dhanushkodi** and other popular attractions.\n\nWe also offer a **complimentary fresh-up facility** for our guests. Guests arriving early before check-in or travelling after checkout can **leave their luggage with us and use our 4 common bathrooms to freshen up**, subject to availability. This is especially convenient for families and pilgrimage groups who want to make the most of their time in Rameswaram.",
@@ -38,12 +38,23 @@
         }
       ]
     },
-
     {
       "type": "rooms",
-      "title": "Accommodation Options",
+      "title": "Family Rooms & Private Group Stay in Rameswaram",
       "description": "Choose from comfortable AC family rooms for 4–10 guests or private group accommodation for 15–70 guests, conveniently located in Thangachimadam near Pamban Bridge and Rameswaram’s major attractions.",
       "buttonText": "View Room Details"
+    },
+    {
+      "sectionId": "Accommodation",
+      "primaryButtonLabel": "Visit Sha-Stay",
+      "showScrollIndicator": false,
+      "secondaryButtonUrl": "/sha-stays#rooms",
+      "posterImage": "/uploads/hero-800.avif",
+      "secondaryButtonLabel": "Explore Stay Options",
+      "subtitle": "Looking for a different stay option? Explore SHA Stays, our welcoming property, with comfortable King and Queen rooms for couples, families and travellers. Discover another way to enjoy your visit to Rameswaram, with a stay that suits your plans and preferences.",
+      "title": "Accommodation Options",
+      "type": "hero",
+      "primaryButtonUrl": "/sha-stays"
     },
     {
       "type": "amenities",
