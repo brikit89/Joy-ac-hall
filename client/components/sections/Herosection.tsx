@@ -25,7 +25,7 @@ interface HeroSectionProps {
 const HeroSection = ({
   title,
   subtitle,
-  sectionId,
+  sectionId="accommodation",
   video,
   posterImage,
 

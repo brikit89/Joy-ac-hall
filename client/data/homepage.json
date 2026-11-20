@@ -46,7 +46,6 @@
       "buttonText": "View Room Details"
     },
     {
-      "sectionId": "accommodation",
       "primaryButtonLabel": "Visit Sha-Stay",
       "showScrollIndicator": false,
       "secondaryButtonUrl": "/resort",
