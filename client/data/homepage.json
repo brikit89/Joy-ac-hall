@@ -1,6 +1,7 @@
 {
   "sections": [
     {
+      "sectionId": "hero",
       "primaryButtonLabel": "Check Group Rates",
       "showScrollIndicator": true,
       "secondaryButtonUrl": "#rooms",
